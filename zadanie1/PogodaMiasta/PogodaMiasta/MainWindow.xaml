@@ -40,6 +40,7 @@
             <StackPanel Grid.Row="1">
                 <Label HorizontalAlignment="Center" Content="Show details:"></Label>
                 <Button x:Name="btnLoadMoreInfo" Content="Show" Click="btnMoreInfo_Click"></Button>
+                <ProgressBar x:Name="pbWaitingForDeatils" IsIndeterminate="True" Visibility="Hidden"></ProgressBar>
                 <Label HorizontalAlignment="Center" Content="Today weather:"></Label>
                 <Label HorizontalAlignment="Center" Content="Day"></Label>
                 <Label x:Name="lblDayWth" HorizontalAlignment="Center" Content="..."></Label>
@@ -47,6 +48,23 @@
                 <Label x:Name="lblNightWth" HorizontalAlignment="Center" Content="..."></Label>
                 <Label HorizontalAlignment="Center" Content="Current"></Label>
                 <Label x:Name="lblCurrentWth" HorizontalAlignment="Center" Content="..."></Label>
+            </StackPanel>
+            <StackPanel Grid.Row="1" Grid.Column="1">
+                <Label HorizontalAlignment="Center" Content="Alert"></Label>
+                <Button x:Name="btnCheckAlert" Content="Check" Click="btnCheckAlert_Click"></Button>
+                <ProgressBar x:Name="pbWaitingForAlerts" IsIndeterminate="True" Visibility="Hidden"></ProgressBar>
+                <Label x:Name="lblAlertStatus" HorizontalAlignment="Center" Content="..."></Label>
+                <Label x:Name="lblAlertDate" HorizontalAlignment="Center" Content="..."></Label>
+                <Label HorizontalAlignment="Center" Content="Alert Type"></Label>
+                <Label x:Name="lblAlertType" HorizontalAlignment="Center" Content="..."></Label>
+                <Label x:Name="lblAlertValue" HorizontalAlignment="Center" Content="..."></Label>
+            </StackPanel>
+            <StackPanel Grid.Row="1" Grid.Column="2">
+                <Label HorizontalAlignment="Center" Content="My IP location"></Label>
+                <Button x:Name="btnCheckIP" Content="Check" Click="btnCheckIP_Click"></Button>
+                <ProgressBar x:Name="pbWaitingForIP" IsIndeterminate="True" Visibility="Hidden"></ProgressBar>
+                <Label HorizontalAlignment="Center" Content="Your location is:"></Label>
+                <Label x:Name="lblIPLocation" HorizontalAlignment="Center" Content="..."></Label>
             </StackPanel>
         </Grid>
     </DockPanel>

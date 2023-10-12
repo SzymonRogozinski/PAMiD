@@ -12,8 +12,8 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\RetailAdmin\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\RetailAdmin\\.nuget\\packages"
+      "C:\\Users\\Szymon\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Szymon\\.nuget\\packages"
     ],
     "configProperties": {
       "Microsoft.NETCore.DotNetHostPolicy.SetAppPaths": true

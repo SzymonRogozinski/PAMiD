@@ -83,15 +83,52 @@ namespace P04WeatherForecastAPI.Client
             if (selectedCity != null)
             {
                 //Wyświetlenie migającego loadingu
-                //pbWaitingForTowns.Visibility = Visibility.Visible;
+                pbWaitingForDeatils.Visibility = Visibility.Visible;
                 string[] weather_list = await accuWeatherService.GetDetailWeather(selectedCity.Key);
                 lblDayWth.Content= weather_list[0];
                 lblNightWth.Content = weather_list[1];
-                var curr= await accuWeatherService.GetCurrentConditions(selectedCity.Key);
+                var curr= await accuWeatherService.GetCurrentWeather(selectedCity.Key);
                 lblCurrentWth.Content = curr;
                 //Wyświetlenie migającego loadingu
-                //pbWaitingForTowns.Visibility = Visibility.Hidden;
+                pbWaitingForDeatils.Visibility = Visibility.Hidden;
             }
+        }
+
+        //Wyświetla alert
+        private async void btnCheckAlert_Click(object sender, RoutedEventArgs e)
+        {
+            var selectedCity = (City)lbData.SelectedItem;
+            if (selectedCity != null)
+            {
+                //Wyświetlenie migającego loadingu
+                pbWaitingForAlerts.Visibility = Visibility.Visible;
+                string[] alert = await accuWeatherService.GetWeatherAlert(selectedCity.Key);
+                if (alert==null)
+                {
+                    lblAlertStatus.Content = "No alert";
+                }
+                else 
+                {
+                    lblAlertStatus.Content = "Alert!";
+                    lblAlertDate.Content = alert[0];
+                    lblAlertType.Content = alert[1];
+                    lblAlertValue.Content = alert[2];
+                }
+                //Wyświetlenie migającego loadingu
+                pbWaitingForAlerts.Visibility = Visibility.Hidden;
+            }
+        }
+
+        //Wyświetla lokalizację na bazie ip
+        private async void btnCheckIP_Click(object sender, RoutedEventArgs e)
+        {
+
+            //Wyświetlenie migającego loadingu
+            pbWaitingForIP.Visibility = Visibility.Visible;
+            string ip_string = await accuWeatherService.GetIPLocation();
+            lblIPLocation.Content = ip_string;
+            //Wyświetlenie migającego loadingu
+            pbWaitingForIP.Visibility = Visibility.Hidden;
         }
     }
 }

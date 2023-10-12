@@ -619,19 +619,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\RetailAdmin\\.nuget\\packages\\": {}
+    "C:\\Users\\Szymon\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie1\\PogodaMiasta\\PogodaMiasta\\PogodaMiasta.csproj",
+      "projectUniqueName": "C:\\Users\\Szymon\\Desktop\\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\\zadanie1\\PogodaMiasta\\PogodaMiasta\\PogodaMiasta.csproj",
       "projectName": "PogodaMiasta",
-      "projectPath": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie1\\PogodaMiasta\\PogodaMiasta\\PogodaMiasta.csproj",
-      "packagesPath": "C:\\Users\\RetailAdmin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie1\\PogodaMiasta\\PogodaMiasta\\obj\\",
+      "projectPath": "C:\\Users\\Szymon\\Desktop\\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\\zadanie1\\PogodaMiasta\\PogodaMiasta\\PogodaMiasta.csproj",
+      "packagesPath": "C:\\Users\\Szymon\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Szymon\\Desktop\\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\\zadanie1\\PogodaMiasta\\PogodaMiasta\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\RetailAdmin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Szymon\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -689,7 +689,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }
