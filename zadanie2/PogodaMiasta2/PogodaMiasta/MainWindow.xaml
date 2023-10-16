@@ -1,0 +1,71 @@
+﻿<Window x:Class="P04WeatherForecastAPI.Client.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:P04WeatherForecastAPI.Client"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="510">
+    <DockPanel>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+            </Grid.RowDefinitions>
+            <StackPanel>
+                <Label Content="City:" ></Label>
+                <TextBox x:Name="txtCity"></TextBox>
+                <Button x:Name="btnSearch" Content="Search" Click="btnSearch_Click"></Button>
+                <ListBox x:Name="lbData" DisplayMemberPath="LocalizedName" SelectionChanged="lbData_SelectionChanged"></ListBox>
+                <ProgressBar x:Name="pbSearching" IsIndeterminate="True" Visibility="Hidden"></ProgressBar>
+            </StackPanel>
+            <StackPanel Grid.Column="1">
+                <Label HorizontalAlignment="Center" Content="Temperature for city:"></Label>
+                <Label x:Name="lblCityName" HorizontalAlignment="Center" Content="..."></Label>
+                <Label  HorizontalAlignment="Center" Content="is:"></Label>
+                <Label x:Name="lblTemperatureValue" HorizontalAlignment="Center" Content=".."></Label>
+                <ProgressBar x:Name="pbWaitingForSearchedTown" IsIndeterminate="True" Visibility="Hidden"></ProgressBar>
+            </StackPanel>
+            <StackPanel Grid.Column="2">
+                <Label HorizontalAlignment="Center" Content="Neighbouring city:"></Label>
+                <Button x:Name="btnLoadTown" Content="Load" Click="btnLoadTown_Click"></Button>
+                <ListView Name="lvNeighbouringCities"></ListView>
+                <ProgressBar x:Name="pbWaitingForTowns" IsIndeterminate="True" Visibility="Hidden"></ProgressBar>
+            </StackPanel>
+            <StackPanel Grid.Row="1">
+                <Label HorizontalAlignment="Center" Content="Show details:"></Label>
+                <Button x:Name="btnLoadMoreInfo" Content="Show" Click="btnMoreInfo_Click"></Button>
+                <ProgressBar x:Name="pbWaitingForDeatils" IsIndeterminate="True" Visibility="Hidden"></ProgressBar>
+                <Label HorizontalAlignment="Center" Content="Today weather:"></Label>
+                <Label HorizontalAlignment="Center" Content="Day"></Label>
+                <Label x:Name="lblDayWth" HorizontalAlignment="Center" Content="..."></Label>
+                <Label HorizontalAlignment="Center" Content="Night"></Label>
+                <Label x:Name="lblNightWth" HorizontalAlignment="Center" Content="..."></Label>
+                <Label HorizontalAlignment="Center" Content="Current"></Label>
+                <Label x:Name="lblCurrentWth" HorizontalAlignment="Center" Content="..."></Label>
+            </StackPanel>
+            <StackPanel Grid.Row="1" Grid.Column="1">
+                <Label HorizontalAlignment="Center" Content="Alert"></Label>
+                <Button x:Name="btnCheckAlert" Content="Check" Click="btnCheckAlert_Click"></Button>
+                <ProgressBar x:Name="pbWaitingForAlerts" IsIndeterminate="True" Visibility="Hidden"></ProgressBar>
+                <Label x:Name="lblAlertStatus" HorizontalAlignment="Center" Content="..."></Label>
+                <Label x:Name="lblAlertDate" HorizontalAlignment="Center" Content="..."></Label>
+                <Label HorizontalAlignment="Center" Content="Alert Type"></Label>
+                <Label x:Name="lblAlertType" HorizontalAlignment="Center" Content="..."></Label>
+                <Label x:Name="lblAlertValue" HorizontalAlignment="Center" Content="..."></Label>
+            </StackPanel>
+            <StackPanel Grid.Row="1" Grid.Column="2">
+                <Label HorizontalAlignment="Center" Content="My IP location"></Label>
+                <Button x:Name="btnCheckIP" Content="Check" Click="btnCheckIP_Click"></Button>
+                <ProgressBar x:Name="pbWaitingForIP" IsIndeterminate="True" Visibility="Hidden"></ProgressBar>
+                <Label HorizontalAlignment="Center" Content="Your location is:"></Label>
+                <Label x:Name="lblIPLocation" HorizontalAlignment="Center" Content="..."></Label>
+            </StackPanel>
+        </Grid>
+    </DockPanel>
+</Window>
