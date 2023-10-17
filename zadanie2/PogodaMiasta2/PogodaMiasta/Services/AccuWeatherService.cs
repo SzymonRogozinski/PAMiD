@@ -2,6 +2,7 @@
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using P04WeatherForecastAPI.Client.Models;
+using PogodaMiasta.Services;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,7 +16,7 @@ using System.Windows.Media.Animation;
 
 namespace P04WeatherForecastAPI.Client.Services
 {
-    internal class AccuWeatherService
+    internal class AccuWeatherService: IWeather
     {
         private const string base_url = "http://dataservice.accuweather.com";
         private const string autocomplete_endpoint = "locations/v1/cities/autocomplete?apikey={0}&q={1}&language{2}";

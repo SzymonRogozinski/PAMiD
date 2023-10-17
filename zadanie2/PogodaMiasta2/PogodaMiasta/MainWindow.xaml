@@ -19,52 +19,52 @@
             </Grid.RowDefinitions>
             <StackPanel>
                 <Label Content="City:" ></Label>
-                <TextBox x:Name="txtCity"></TextBox>
-                <Button x:Name="btnSearch" Content="Search" Click="btnSearch_Click"></Button>
-                <ListBox x:Name="lbData" DisplayMemberPath="LocalizedName" SelectionChanged="lbData_SelectionChanged"></ListBox>
+                <TextBox x:Name="txtCity" ></TextBox>
+                <Button x:Name="btnSearch" Content="Search" Command="{Binding SearchTown_ClickCommand}" CommandParameter="{Binding Text, ElementName=txtCity}"></Button>
+                <ListBox x:Name="lbData" DisplayMemberPath="LocalizedName" ItemsSource="{Binding Cities}" SelectedItem="{Binding SelectedCity}"></ListBox>
                 <ProgressBar x:Name="pbSearching" IsIndeterminate="True" Visibility="Hidden"></ProgressBar>
             </StackPanel>
             <StackPanel Grid.Column="1">
                 <Label HorizontalAlignment="Center" Content="Temperature for city:"></Label>
-                <Label x:Name="lblCityName" HorizontalAlignment="Center" Content="..."></Label>
+                <Label x:Name="lblCityName" HorizontalAlignment="Center" Content="{Binding WeatherModel.CityName}"></Label>
                 <Label  HorizontalAlignment="Center" Content="is:"></Label>
-                <Label x:Name="lblTemperatureValue" HorizontalAlignment="Center" Content=".."></Label>
+                <Label x:Name="lblTemperatureValue" HorizontalAlignment="Center" Content="{Binding WeatherModel.Temperature}"></Label>
                 <ProgressBar x:Name="pbWaitingForSearchedTown" IsIndeterminate="True" Visibility="Hidden"></ProgressBar>
             </StackPanel>
             <StackPanel Grid.Column="2">
                 <Label HorizontalAlignment="Center" Content="Neighbouring city:"></Label>
-                <Button x:Name="btnLoadTown" Content="Load" Click="btnLoadTown_Click"></Button>
-                <ListView Name="lvNeighbouringCities"></ListView>
+                <Button x:Name="btnLoadTown" Content="Load" Command="{Binding NearbyTown_ClickCommand}"></Button>
+                <ListView Name="lvNeighbouringCities" ItemsSource="{Binding NearbyCities}" DisplayMemberPath="LocalizedName"></ListView>
                 <ProgressBar x:Name="pbWaitingForTowns" IsIndeterminate="True" Visibility="Hidden"></ProgressBar>
             </StackPanel>
             <StackPanel Grid.Row="1">
                 <Label HorizontalAlignment="Center" Content="Show details:"></Label>
-                <Button x:Name="btnLoadMoreInfo" Content="Show" Click="btnMoreInfo_Click"></Button>
+                <Button x:Name="btnLoadMoreInfo" Content="Show" Command="{Binding MoreInfo_ClickCommand}"></Button>
                 <ProgressBar x:Name="pbWaitingForDeatils" IsIndeterminate="True" Visibility="Hidden"></ProgressBar>
                 <Label HorizontalAlignment="Center" Content="Today weather:"></Label>
                 <Label HorizontalAlignment="Center" Content="Day"></Label>
-                <Label x:Name="lblDayWth" HorizontalAlignment="Center" Content="..."></Label>
+                <Label x:Name="lblDayWth" HorizontalAlignment="Center" Content="{Binding DayWeather.Detail}"></Label>
                 <Label HorizontalAlignment="Center" Content="Night"></Label>
-                <Label x:Name="lblNightWth" HorizontalAlignment="Center" Content="..."></Label>
+                <Label x:Name="lblNightWth" HorizontalAlignment="Center" Content="{Binding NightWeather.Detail}"></Label>
                 <Label HorizontalAlignment="Center" Content="Current"></Label>
-                <Label x:Name="lblCurrentWth" HorizontalAlignment="Center" Content="..."></Label>
+                <Label x:Name="lblCurrentWth" HorizontalAlignment="Center" Content="{Binding CurrentWeather.Detail}"></Label>
             </StackPanel>
             <StackPanel Grid.Row="1" Grid.Column="1">
                 <Label HorizontalAlignment="Center" Content="Alert"></Label>
-                <Button x:Name="btnCheckAlert" Content="Check" Click="btnCheckAlert_Click"></Button>
+                <Button x:Name="btnCheckAlert" Content="Check" Command="{Binding CheckAlert_ClickCommand}"></Button>
                 <ProgressBar x:Name="pbWaitingForAlerts" IsIndeterminate="True" Visibility="Hidden"></ProgressBar>
-                <Label x:Name="lblAlertStatus" HorizontalAlignment="Center" Content="..."></Label>
-                <Label x:Name="lblAlertDate" HorizontalAlignment="Center" Content="..."></Label>
+                <Label x:Name="lblAlertStatus" HorizontalAlignment="Center" Content="{Binding AlertInfo.Status}"></Label>
+                <Label x:Name="lblAlertDate" HorizontalAlignment="Center" Content="{Binding AlertInfo.Date}"></Label>
                 <Label HorizontalAlignment="Center" Content="Alert Type"></Label>
-                <Label x:Name="lblAlertType" HorizontalAlignment="Center" Content="..."></Label>
-                <Label x:Name="lblAlertValue" HorizontalAlignment="Center" Content="..."></Label>
+                <Label x:Name="lblAlertType" HorizontalAlignment="Center" Content="{Binding AlertInfo.Type}"></Label>
+                <Label x:Name="lblAlertValue" HorizontalAlignment="Center" Content="{Binding AlertInfo.Value}"></Label>
             </StackPanel>
             <StackPanel Grid.Row="1" Grid.Column="2">
                 <Label HorizontalAlignment="Center" Content="My IP location"></Label>
-                <Button x:Name="btnCheckIP" Content="Check" Click="btnCheckIP_Click"></Button>
+                <Button x:Name="btnCheckIP" Content="Check" Command="{Binding CheckIP_ClickCommand}"></Button>
                 <ProgressBar x:Name="pbWaitingForIP" IsIndeterminate="True" Visibility="Hidden"></ProgressBar>
                 <Label HorizontalAlignment="Center" Content="Your location is:"></Label>
-                <Label x:Name="lblIPLocation" HorizontalAlignment="Center" Content="..."></Label>
+                <Label x:Name="lblIPLocation" HorizontalAlignment="Center" Content="{Binding IPLocation.Detail}"></Label>
             </StackPanel>
         </Grid>
     </DockPanel>
