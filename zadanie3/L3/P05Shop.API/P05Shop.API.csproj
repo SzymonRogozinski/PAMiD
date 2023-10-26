@@ -16,4 +16,8 @@
     <ProjectReference Include="..\P07Shop.DataSeeder\P07Shop.DataSeeder.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Services\BookDB\" />
+  </ItemGroup>
+
 </Project>

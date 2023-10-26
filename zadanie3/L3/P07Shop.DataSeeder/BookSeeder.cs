@@ -11,6 +11,8 @@ namespace P07Shop.DataSeeder
 {
     public class BookSeeder
     {
+        private static string[] GenreNames = { "Criminal","Comic","Drama","Romance","Horror","Action","History"};
+        private static Random random = new Random();
 
         public static List<Book> GenerateProductData()
         {
@@ -19,7 +21,8 @@ namespace P07Shop.DataSeeder
                 .RuleFor(x => x.name, f => f.Lorem.Word() + " " + f.Lorem.Word())
                 .RuleFor(x => x.author, f => f.Name.FullName())
                 .RuleFor(x => x.pages, f => f.Random.Int(50, 2000))
-                .RuleFor(x => x.genres, f => GenerateGenres());
+                .RuleFor(x => x.genres, f => GenerateGenres())
+                .RuleFor(x => x.id, f => productId++);
 
             return productFaker.Generate(10).ToList();
 
@@ -27,7 +30,14 @@ namespace P07Shop.DataSeeder
 
         private static List<Genre> GenerateGenres ()
         { 
-            return null; 
+            
+            List<Genre> genres = new List<Genre>();
+            int range=random.Next(1,4);
+            for (int i = 0; i < range; i++) 
+            {
+                genres.Add(new Genre(GenreNames[random.Next(GenreNames.Length)]));
+            }
+            return genres; 
         }
     }
 }

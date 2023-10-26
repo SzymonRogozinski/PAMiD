@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:P04WeatherForecastAPI.Client"
         xmlns:converters="clr-namespace:P04WeatherForecastAPI.Client.Converters"
         mc:Ignorable="d"
-        Title="MainWindow" Height="420" Width="400">
+        Title="MainWindow" Height="420" Width="200">
     <Window.Resources>
         <BooleanToVisibilityConverter x:Key="boolToVisConv" ></BooleanToVisibilityConverter>
         <converters:TemperatureToDisplayConverter x:Key="tmpToDispConv"></converters:TemperatureToDisplayConverter>
@@ -34,6 +34,23 @@
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
 
+        <!--<DockPanel Grid.Column="0" Grid.Row="0" Margin="10">
+            <Button DockPanel.Dock="Top" Content="Manage Favorite Cities" Command="{Binding OpenFavotireCitiesCommand}" Style="{StaticResource mainButtonStyle}" ></Button>
+            <Button DockPanel.Dock="Top" Content="Open shop" Command="{Binding OpenShopWindowCommand}" Style="{StaticResource mainButtonStyle}" ></Button>
+            <Label DockPanel.Dock="Top" Content="City:" Style="{StaticResource mainLabelStyle}"></Label>
+            <TextBox DockPanel.Dock="Top" x:Name="txtCity"></TextBox>
+            <Button DockPanel.Dock="Top" x:Name="btnSearch" Content="Search" Command="{Binding LoadCitiesCommand}" CommandParameter="{Binding Text, ElementName=txtCity}" Style="{StaticResource mainButtonStyle}" ></Button>
+            <ListBox Height="200"   x:Name="lbData" ItemsSource="{Binding Cities}" SelectedItem="{Binding SelectedCity}" DisplayMemberPath="LocalizedName" Margin="0,10,0,0"></ListBox>
+        </DockPanel>-->
+        
+        <!--<StackPanel Grid.Column="1" Grid.Row="0" Margin="10">
+            <Label HorizontalAlignment="Center" Content="Temperature for city:" Style="{StaticResource mainLabelStyle}"></Label>
+            <Label x:Name="lblCityName" Content="{Binding SelectedCity.LocalizedName}" Style="{StaticResource mainLabelStyle}"></Label>
+            <Label Content="is:" Style="{StaticResource mainLabelStyle}"></Label>
+            <Label x:Name="lblTemperatureValue" Content="{Binding WeatherView.CurrentTemperature, Converter={StaticResource tmpToDispConv}}" Style="{StaticResource mainLabelStyle}"></Label>
+            <Image Visibility="{Binding WeatherView.HasPrecipitation, Converter={StaticResource boolToVisConv}}" Height="100" Source="/Images/rain.jpg" />
+        </StackPanel>-->
+
         <DockPanel Grid.Column="0" Grid.Row="0" Margin="10">
             <Button DockPanel.Dock="Top" Content="Manage Favorite Cities" Command="{Binding OpenFavotireCitiesCommand}" Style="{StaticResource mainButtonStyle}" ></Button>
             <Button DockPanel.Dock="Top" Content="Open shop" Command="{Binding OpenShopWindowCommand}" Style="{StaticResource mainButtonStyle}" ></Button>
@@ -42,13 +59,5 @@
             <Button DockPanel.Dock="Top" x:Name="btnSearch" Content="Search" Command="{Binding LoadCitiesCommand}" CommandParameter="{Binding Text, ElementName=txtCity}" Style="{StaticResource mainButtonStyle}" ></Button>
             <ListBox Height="200"   x:Name="lbData" ItemsSource="{Binding Cities}" SelectedItem="{Binding SelectedCity}" DisplayMemberPath="LocalizedName" Margin="0,10,0,0"></ListBox>
         </DockPanel>
-        
-        <StackPanel Grid.Column="1" Grid.Row="0" Margin="10">
-            <Label HorizontalAlignment="Center" Content="Temperature for city:" Style="{StaticResource mainLabelStyle}"></Label>
-            <Label x:Name="lblCityName" Content="{Binding SelectedCity.LocalizedName}" Style="{StaticResource mainLabelStyle}"></Label>
-            <Label Content="is:" Style="{StaticResource mainLabelStyle}"></Label>
-            <Label x:Name="lblTemperatureValue" Content="{Binding WeatherView.CurrentTemperature, Converter={StaticResource tmpToDispConv}}" Style="{StaticResource mainLabelStyle}"></Label>
-            <Image Visibility="{Binding WeatherView.HasPrecipitation, Converter={StaticResource boolToVisConv}}" Height="100" Source="/Images/rain.jpg" />
-        </StackPanel>
     </Grid>
 </Window>

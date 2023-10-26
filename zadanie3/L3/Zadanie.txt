@@ -1,11 +1,11 @@
 stworzenie nowego serwisu API, który będzie obsługiwał dane innych typów niż produkty. Student powinien samodzielnie wymyślić, jakie dane będzie zarządzać (np. książki, filmy, zadania, zamówienia itp.). 
 
 Wymagania:
-CRUD Operations: Serwis musi oferować podstawowe operacje CRUD (Create, Read, Update, Delete).
+CRUD Operations: Serwis musi oferować podstawowe operacje CRUD (Create, Read, Update, Delete). X
 
-Data Model: Zaprojektowanie modelu danych, które będą zarządzane.
+Data Model: Zaprojektowanie modelu danych, które będą zarządzane. X
 
-API Endpoints: Określenie i implementacja endpointów API do zarządzania danymi.
+API Endpoints: Określenie i implementacja endpointów API do zarządzania danymi. X
 
 Service Layer: Stworzenie warstwy serwisowej, która będzie zarządzać logiką biznesową.
 
