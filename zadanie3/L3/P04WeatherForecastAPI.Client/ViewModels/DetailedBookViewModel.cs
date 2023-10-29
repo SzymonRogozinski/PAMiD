@@ -9,10 +9,10 @@ namespace P04WeatherForecastAPI.Client.ViewModels
 {
     public class DetailedBookViewModel
     {
-        public string name { get; }
-        public string author { get;}
-        public int pages { get;}
-        public List<string> genres { get;}
+        public string name { get; set; }
+        public string author { get; set; }
+        public int pages { get; set;}
+        public List<string> genres { get; set;}
         public int id { get;}
 
         public DetailedBookViewModel(Book book)

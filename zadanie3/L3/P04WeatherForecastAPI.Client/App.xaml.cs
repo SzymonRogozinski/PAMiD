@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using P04WeatherForecastAPI.Client.Configuration;
+using P04WeatherForecastAPI.Client.Services.LibraryServices;
 using P04WeatherForecastAPI.Client.Services.ProductServices;
 using P04WeatherForecastAPI.Client.Services.WeatherServices;
 using P04WeatherForecastAPI.Client.ViewModels;
@@ -62,18 +63,22 @@ namespace P04WeatherForecastAPI.Client
         private void ConfigureAppServices(IServiceCollection services)
         {
             // konfiguracja serwisów 
-            services.AddSingleton<IAccuWeatherService, AccuWeatherService>();
-            services.AddSingleton<IFavoriteCityService, FavoriteCityService>();
-            services.AddSingleton<IProductService, ProductService>();
+
+            //services.AddSingleton<IAccuWeatherService, AccuWeatherService>();
+            //services.AddSingleton<IFavoriteCityService, FavoriteCityService>();
+            //services.AddSingleton<IProductService, ProductService>();
+            services.AddSingleton<ILibraryServices,LibraryServices>();
+
         }
 
         private void ConfigureViewModels(IServiceCollection services)
         {
 
             // konfiguracja viewModeli 
-            services.AddSingleton<MainViewModelV4>();
-            services.AddSingleton<FavoriteCityViewModel>();
-            services.AddSingleton<ProductsViewModel>();
+            //services.AddSingleton<MainViewModelV4>();
+            //services.AddSingleton<FavoriteCityViewModel>();
+            //services.AddSingleton<ProductsViewModel>();
+            services.AddSingleton<LibraryMainViewModel>();
             // services.AddSingleton<BaseViewModel,MainViewModelV3>();
         }
 
@@ -81,8 +86,8 @@ namespace P04WeatherForecastAPI.Client
         {
             // konfiguracja okienek 
             services.AddTransient<MainWindow>();
-            services.AddTransient<FavoriteCitiesView>();
-            services.AddTransient<ShopProductsView>();
+            //services.AddTransient<FavoriteCitiesView>();
+            //services.AddTransient<ShopProductsView>();
         }
 
         private void ConfigureHttpClients(IServiceCollection services, AppSettings appSettingsSection)
@@ -92,7 +97,8 @@ namespace P04WeatherForecastAPI.Client
                 Path = appSettingsSection.BaseProductEndpoint.Base_url,
             };
             //Microsoft.Extensions.Http
-            services.AddHttpClient<IProductService, ProductService>(client => client.BaseAddress = uriBuilder.Uri);
+            //services.AddHttpClient<IProductService, ProductService>(client => client.BaseAddress = uriBuilder.Uri);
+            services.AddHttpClient<ILibraryServices, LibraryServices>(client => client.BaseAddress = uriBuilder.Uri);
         }
 
         private void OnStartup(object sender, StartupEventArgs e)

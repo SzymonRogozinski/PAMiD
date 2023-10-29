@@ -1,6 +1,9 @@
 
 
+using P06Shop.Shared;
 using P06Shop.Shared.Library;
+using P06Shop.Shared.Shop;
+using P07Shop.DataSeeder;
 
 namespace P05Shop.API.Services.BookDB
 {
@@ -20,9 +23,28 @@ namespace P05Shop.API.Services.BookDB
             books.RemoveAt(id);
         }
 
-        public List<Book> GetAllBooks()
+        public async Task<ServiceResponse<List<Book>>> GetAllBooks()
         {
-            return books;
+            try
+            {
+                var response = new ServiceResponse<List<Book>>()
+                {
+                    Data = books,
+                    Message = "Ok",
+                    Success = true
+                };
+
+                return response;
+            }
+            catch (Exception)
+            {
+                return new ServiceResponse<List<Book>>()
+                {
+                    Data = null,
+                    Message = "Problem with dataseeder library",
+                    Success = false
+                };
+            }
         }
 
         public Book GetBook(int id)

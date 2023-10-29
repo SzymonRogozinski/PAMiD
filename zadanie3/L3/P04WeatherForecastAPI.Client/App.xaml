@@ -2,8 +2,9 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:P04WeatherForecastAPI.Client"
+             xmlns:converters="clr-namespace:P04WeatherForecastAPI.Client.Converters"
              Startup="OnStartup" ><!--StartupUri="MainWindow.xaml"-->
     <Application.Resources>
-         
+        <converters:TemperatureToDisplayConverter x:Key="tmpToDispConv"/>
     </Application.Resources>
 </Application>

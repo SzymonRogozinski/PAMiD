@@ -22,6 +22,11 @@ namespace P06Shop.Shared.Library
             this.genres = genres;
             this.id = id;
         }
+
+        public static explicit operator Book(ServiceResponse<Book> v)
+        {
+            throw new NotImplementedException();
+        }
     }
 
     public class Genre

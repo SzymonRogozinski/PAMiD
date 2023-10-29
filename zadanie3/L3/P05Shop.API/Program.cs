@@ -1,3 +1,4 @@
+using P05Shop.API.Services.BookDB;
 using P05Shop.API.Services.ProductService;
 using P06Shop.Shared.Services.ProductService;
 
@@ -12,6 +13,7 @@ builder.Services.AddSwaggerGen();
 
 
 builder.Services.AddScoped<IProductService, ProductService>();
+builder.Services.AddSingleton<IBookDB,SimpleBookDB>();
 
 // addScoped - obiekt jest tworzony za kazdym razem dla nowego zapytania http
 // jedno zaptranie tworzy jeden obiekt 
@@ -19,9 +21,7 @@ builder.Services.AddScoped<IProductService, ProductService>();
 // addTransinet obiekt jest tworzony za kazdym razem kiedy odwolujmey sie do konstuktora 
 // nawet wielokrotnie w cyklu jedengo zaptrania 
 
- //addsingleton - nowa instancja klasy tworzona jest tylko 1 na caly cykl trwania naszej aplikacji 
-
-
+//addsingleton - nowa instancja klasy tworzona jest tylko 1 na caly cykl trwania naszej aplikacji
 
 
 var app = builder.Build();

@@ -13,21 +13,28 @@ namespace P05Shop.API.Controllers
     public class BookController : Controller    //https://localhost:7230/api/Book
     {
         //private readonly IBookServices _bookService;
-        private IBookDB _bookDB;
+        private static IBookDB _bookDB=new SimpleBookDB();
         private static int nextId = 1;
 
         public BookController(IBookDB bookDB)
         {
             //_bookService = bookService;
-            _bookDB=bookDB;
+            //_bookDB=bookDB;
         }
 
         //https://localhost:7230/api/Book/getAll
         [HttpGet("getAll")]
-        public IEnumerable<Book> GetBooks()
+        public async Task<ActionResult<ServiceResponse<IEnumerable<Book>>>> GetBooks()
         {
-            var res = _bookDB.GetAllBooks();
-            return res;
+            var res = await _bookDB.GetAllBooks();
+            if (!res.Success)
+            {
+                return StatusCode(500, $"Internal server error {res.Message}");
+            }
+            else 
+            { 
+                return Ok(res);
+            }
         }
 
         //https://localhost:7230/api/Book/get?id=$
@@ -39,7 +46,7 @@ namespace P05Shop.API.Controllers
         }
 
         //https://localhost:7230/api/Book/add?name=sample&author=au&pages=$$$genres=*,*,*
-        [HttpPost("add")]
+        [HttpGet("add")]
         public void AddBook([FromQuery] string name, [FromQuery] string author, [FromQuery] int pages, [FromQuery] string genres)
         {
             string[] sliceGen = genres.Trim().Split(',');

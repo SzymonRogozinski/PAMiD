@@ -1,5 +1,6 @@
 
 
+using P06Shop.Shared;
 using P06Shop.Shared.Library;
 
 namespace P05Shop.API.Services.BookDB
@@ -7,7 +8,7 @@ namespace P05Shop.API.Services.BookDB
     public interface IBookDB
     {
         public Book GetBook(int id);
-        public List<Book> GetAllBooks();
+        public Task<ServiceResponse<List<Book>>> GetAllBooks();
         public void DeleteBook(int id);
         public void AddBook(Book book);
         public void UpdateBook(Book book,int id);

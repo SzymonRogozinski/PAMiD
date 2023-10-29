@@ -13,3 +13,18 @@ C:\Users\RetailAdmin\Desktop\PAMiD\zadanie3\L3\P07Shop.DataSeeder\obj\Debug\net7
 C:\Users\RetailAdmin\Desktop\PAMiD\zadanie3\L3\P07Shop.DataSeeder\obj\Debug\net7.0\refint\P07Shop.DataSeeder.dll
 C:\Users\RetailAdmin\Desktop\PAMiD\zadanie3\L3\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.pdb
 C:\Users\RetailAdmin\Desktop\PAMiD\zadanie3\L3\P07Shop.DataSeeder\obj\Debug\net7.0\ref\P07Shop.DataSeeder.dll
+F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie3\L3\P07Shop.DataSeeder\bin\Debug\net7.0\P07Shop.DataSeeder.deps.json
+F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie3\L3\P07Shop.DataSeeder\bin\Debug\net7.0\P07Shop.DataSeeder.dll
+F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie3\L3\P07Shop.DataSeeder\bin\Debug\net7.0\P07Shop.DataSeeder.pdb
+F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie3\L3\P07Shop.DataSeeder\bin\Debug\net7.0\P06Shop.Shared.dll
+F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie3\L3\P07Shop.DataSeeder\bin\Debug\net7.0\P06Shop.Shared.pdb
+F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie3\L3\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.csproj.AssemblyReference.cache
+F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie3\L3\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.GeneratedMSBuildEditorConfig.editorconfig
+F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie3\L3\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.AssemblyInfoInputs.cache
+F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie3\L3\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.AssemblyInfo.cs
+F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie3\L3\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.csproj.CoreCompileInputs.cache
+F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie3\L3\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.csproj.CopyComplete
+F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie3\L3\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.dll
+F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie3\L3\P07Shop.DataSeeder\obj\Debug\net7.0\refint\P07Shop.DataSeeder.dll
+F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie3\L3\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.pdb
+F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie3\L3\P07Shop.DataSeeder\obj\Debug\net7.0\ref\P07Shop.DataSeeder.dll

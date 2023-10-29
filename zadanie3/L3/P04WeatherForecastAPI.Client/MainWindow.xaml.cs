@@ -25,16 +25,22 @@ namespace P04WeatherForecastAPI.Client
     /// </summary>
     public partial class MainWindow : Window
     {
-        private readonly MainViewModelV4 _viewModel;
-        public MainWindow(MainViewModelV4 viewModel)
+        private readonly LibraryMainViewModel _viewModel;
+        public MainWindow(LibraryMainViewModel viewModel)
         {
             InitializeComponent();
             _viewModel = viewModel;
+            _viewModel.AddReference(this);
             DataContext = _viewModel;
+
             //accuWeatherService = new AccuWeatherService();
         }
 
-        
+        public string[] GetBookStrings()
+        {
+            string[] info ={ txtNewBookName.Text, txtNewBookAuthor.Text, txtNewBookPages.Text, txtNewBookGenre.Text };
+            return info;
+        }
 
 
 

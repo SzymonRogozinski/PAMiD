@@ -11,9 +11,9 @@ namespace P04WeatherForecastAPI.Client.Services.LibraryServices
     {
         Task<IEnumerable<Book>> GetAllBooksAsync();
         Task<Book> GetBookAsync(int id);
-        void removeBookAsync(int id);
-        void AddBookAsync(/*Todo*/);
-        void updateBookAsync(/*Todo*/int id);
+        Task<bool> removeBookAsync(int id);
+        Task<bool> AddBookAsync(string name, string author,int pages, string[] genres);
+        Task<bool> updateBookAsync(string name, string author, int pages, string[] genres,int id);
 
     }
 }

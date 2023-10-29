@@ -11,7 +11,7 @@ Service Layer: Stworzenie warstwy serwisowej, która będzie zarządzać logiką
 
 Validation: Implementacja walidacji danych przychodzących z żądań.
 
-Response Format: Użycie ogólnego formatu odpowiedzi, np. podobnego do ServiceResponse, który już znacie.
+Response Format: Użycie ogólnego formatu odpowiedzi, np. podobnego do ServiceResponse, który już znacie. X
 
 Error Handling: Zaimplementowanie podstawowego mechanizmu obsługi błędów.
 
