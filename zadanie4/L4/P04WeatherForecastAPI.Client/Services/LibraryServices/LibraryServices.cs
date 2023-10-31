@@ -11,6 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using P06Shop.Shared.Library;
 using System.Xml.Linq;
+using System.Windows.Documents;
 
 namespace P04WeatherForecastAPI.Client.Services.LibraryServices
 {
@@ -28,7 +29,21 @@ namespace P04WeatherForecastAPI.Client.Services.LibraryServices
 
         public async Task<bool> AddBookAsync(string name, string author, int pages, string genres)
         {
-            var response = await _httpClient.GetAsync(_appSettings.BaseProductEndpoint.AddProductEndpoint + $"?name={name}&author={author}&pages={pages}&genres={genres}");
+            string[] sliceGen = genres.Trim().Split(',');
+            List<Genre> genreList=new List<Genre>();
+            foreach (string genre in sliceGen) 
+            {
+                if (genre != "") 
+                {
+                    genreList.Add(new Genre(genre));
+                } 
+            }
+
+            Book book = new Book(name,author,pages,genreList,-1);
+            string Input = JsonConvert.SerializeObject(book);
+            StringContent data = new StringContent(Input, System.Text.Encoding.UTF8, "application/json");
+
+            var response = await _httpClient.PostAsync(_appSettings.BaseProductEndpoint.AddProductEndpoint,data);
             var json = await response.Content.ReadAsStringAsync();
             var result = JsonConvert.DeserializeObject<ServiceResponse<bool>>(json);
             if (!result.Success)
@@ -73,19 +88,32 @@ namespace P04WeatherForecastAPI.Client.Services.LibraryServices
 
         public async Task<bool> removeBookAsync(int id)
         {
-            var response = await _httpClient.GetAsync(_appSettings.BaseProductEndpoint.DeleteProductEndpoint + $"?id={id}");
-            var json = await response.Content.ReadAsStringAsync();
-            var result = JsonConvert.DeserializeObject<ServiceResponse<bool>>(json);
-            if (!result.Success)
+            var response =await _httpClient.DeleteAsync(_appSettings.BaseProductEndpoint.DeleteProductEndpoint + $"?id={id}");
+            var succes =response.IsSuccessStatusCode;
+            if (!succes)
             {
-                System.Console.WriteLine(result.Message);
+                System.Console.WriteLine(response.StatusCode);
             }
-            return result.Success;
+            return succes;
         }
 
         public async Task<bool> updateBookAsync(string name, string author, int pages, string genres, int id)
         {
-            var response = await _httpClient.GetAsync(_appSettings.BaseProductEndpoint.UpdateProductsEndpoint + $"?name={name}&author={author}&pages={pages}&genres={genres}&id={id}");
+            string[] sliceGen = genres.Trim().Split(',');
+            List<Genre> genreList = new List<Genre>();
+            foreach (string genre in sliceGen)
+            {
+                if (genre != "")
+                {
+                    genreList.Add(new Genre(genre));
+                }
+            }
+
+            Book book = new Book(name, author, pages, genreList, id);
+            string Input = JsonConvert.SerializeObject(book);
+            StringContent data = new StringContent(Input, System.Text.Encoding.UTF8, "application/json");
+
+            var response = await _httpClient.PutAsync(_appSettings.BaseProductEndpoint.UpdateProductsEndpoint,data);
             var json = await response.Content.ReadAsStringAsync();
             var result = JsonConvert.DeserializeObject<ServiceResponse<bool>>(json);
             if (!result.Success)

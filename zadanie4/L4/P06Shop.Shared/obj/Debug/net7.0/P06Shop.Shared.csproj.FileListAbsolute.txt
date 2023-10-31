@@ -21,3 +21,15 @@ F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadan
 F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie3\L3\P06Shop.Shared\obj\Debug\net7.0\refint\P06Shop.Shared.dll
 F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie3\L3\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.pdb
 F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie3\L3\P06Shop.Shared\obj\Debug\net7.0\ref\P06Shop.Shared.dll
+F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie4\L4\P06Shop.Shared\bin\Debug\net7.0\P06Shop.Shared.deps.json
+F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie4\L4\P06Shop.Shared\bin\Debug\net7.0\P06Shop.Shared.dll
+F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie4\L4\P06Shop.Shared\bin\Debug\net7.0\P06Shop.Shared.pdb
+F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie4\L4\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.csproj.AssemblyReference.cache
+F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie4\L4\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.GeneratedMSBuildEditorConfig.editorconfig
+F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie4\L4\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.AssemblyInfoInputs.cache
+F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie4\L4\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.AssemblyInfo.cs
+F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie4\L4\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.csproj.CoreCompileInputs.cache
+F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie4\L4\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.dll
+F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie4\L4\P06Shop.Shared\obj\Debug\net7.0\refint\P06Shop.Shared.dll
+F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie4\L4\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.pdb
+F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie4\L4\P06Shop.Shared\obj\Debug\net7.0\ref\P06Shop.Shared.dll

@@ -60,19 +60,10 @@ namespace P05Shop.API.Controllers
         }
 
         //https://localhost:7230/api/Book/add?name=sample&author=au&pages=$$$genres=*,*,*
-        [HttpGet("add")]
-        public async Task<ActionResult<ServiceResponse<bool>>> AddBook([FromQuery] string name, [FromQuery] string author, [FromQuery] int pages, [FromQuery] string genres)
+        [HttpPost("add")]
+        public async Task<ActionResult<ServiceResponse<bool>>> AddBook(Book book)//[FromQuery] string name, [FromQuery] string author, [FromQuery] int pages, [FromQuery] string genres)
         {
-            string[] sliceGen = genres.Trim().Split(',');
-            List<Genre> genreList=new List<Genre>();
-            foreach (string genre in sliceGen) 
-            {
-                if (genre != "") 
-                {
-                    genreList.Add(new Genre(genre));
-                } 
-            }
-            var res=await _bookDB.AddBook(new Book(name,author,pages,genreList,nextId));
+            var res=await _bookDB.AddBook(new Book(book.name, book.author, book.pages, book.genres,nextId));
             if (res.Success)
             {
                 nextId++;
@@ -86,8 +77,8 @@ namespace P05Shop.API.Controllers
         }
 
         //https://localhost:7230/api/Book/delete?&id=$
-        [HttpGet("delete")]
-        public async Task<ActionResult<ServiceResponse<bool>>> deleteBook([FromQuery] int id)
+        [HttpDelete("delete")]
+        public async Task<ActionResult<ServiceResponse<bool>>> deleteBook( int id)
         {
             var res=await _bookDB.DeleteBook(id);
             if (res.Success)
@@ -106,19 +97,11 @@ namespace P05Shop.API.Controllers
         }
 
         //https://localhost:7230/api/Book/update?name=sample&author=au&pages=$$$genres=*,*,*&id=$
-        [HttpGet("update")]
-        public async Task<ActionResult<ServiceResponse<bool>>>  updateBook([FromQuery] string name, [FromQuery] string author, [FromQuery] int pages, [FromQuery] string genres, [FromQuery] int id)
+        [HttpPut("update")]
+        public async Task<ActionResult<ServiceResponse<bool>>>  updateBook(Book book)
         {
-            string[] sliceGen = genres.Trim().Split(',');
-            List<Genre> genreList = new List<Genre>();
-            foreach (string genre in sliceGen)
-            {
-                if (genre != "")
-                {
-                    genreList.Add(new Genre(genre));
-                }
-            }
-            var res = await _bookDB.UpdateBook(new Book(name, author, pages, genreList, id),id);
+
+            var res = await _bookDB.UpdateBook(book, book.id);
             if (res.Success)
             {
                 return Ok(res);
