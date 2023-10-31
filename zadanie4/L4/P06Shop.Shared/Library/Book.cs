@@ -23,6 +23,9 @@ namespace P06Shop.Shared.Library
             this.id = id;
         }
 
+        public Book(){}
+
+
         public static explicit operator Book(ServiceResponse<Book> v)
         {
             throw new NotImplementedException();

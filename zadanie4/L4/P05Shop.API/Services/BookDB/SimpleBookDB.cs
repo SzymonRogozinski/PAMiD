@@ -16,7 +16,10 @@ namespace P05Shop.API.Services.BookDB
         {
             books = new Dictionary<int, Book>();
             //DataSeeder
-            //TODO
+            foreach (Book book in BookSeeder.GenerateProductData())
+            {
+                books.Add(book.id, book);
+            }
         }
 
         public async Task<ServiceResponse<bool>> AddBook(Book book)
