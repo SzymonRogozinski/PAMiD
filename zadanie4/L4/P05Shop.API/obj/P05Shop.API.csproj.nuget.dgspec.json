@@ -47,9 +47,17 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[7.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.13, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

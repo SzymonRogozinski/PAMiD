@@ -1,7 +1,6 @@
 ﻿using Microsoft.Extensions.Options;
 using Newtonsoft.Json;
 using P04WeatherForecastAPI.Client.Configuration;
-using P06Shop.Shared.Shop;
 using P06Shop.Shared;
 using System;
 using System.Collections.Generic;
@@ -39,7 +38,7 @@ namespace P04WeatherForecastAPI.Client.Services.LibraryServices
                 } 
             }
 
-            Book book = new Book(name,author,pages,genreList,-1);
+            P06Shop.Shared.Library.Book book = new P06Shop.Shared.Library.Book(name, author, pages, genreList, -1);
             string Input = JsonConvert.SerializeObject(book);
             StringContent data = new StringContent(Input, System.Text.Encoding.UTF8, "application/json");
 
@@ -54,14 +53,14 @@ namespace P04WeatherForecastAPI.Client.Services.LibraryServices
 
         }
 
-        public async Task<IEnumerable<Book>> GetAllBooksAsync()
+        public async Task<IEnumerable<P06Shop.Shared.Library.Book>> GetAllBooksAsync()
         {
             var response = await _httpClient.GetAsync(_appSettings.BaseProductEndpoint.GetAllProductsEndpoint);
             var json = await response.Content.ReadAsStringAsync();
-            var result = JsonConvert.DeserializeObject<ServiceResponse<List<Book>>>(json);
+            var result = JsonConvert.DeserializeObject<ServiceResponse<List<P06Shop.Shared.Library.Book>>>(json);
             if (result.Success)
             {
-                return (IEnumerable<Book>)result.Data;
+                return (IEnumerable<P06Shop.Shared.Library.Book>)result.Data;
             }
             else
             {
@@ -70,14 +69,14 @@ namespace P04WeatherForecastAPI.Client.Services.LibraryServices
             }
         }
 
-        public async Task<Book> GetBookAsync(int id)
+        public async Task<P06Shop.Shared.Library.Book> GetBookAsync(int id)
         {
             var response = await _httpClient.GetAsync(_appSettings.BaseProductEndpoint.GetOneProductEndpoint + $"?id={id}");
             var json = await response.Content.ReadAsStringAsync();
-            var result = JsonConvert.DeserializeObject<ServiceResponse<Book>>(json);
+            var result = JsonConvert.DeserializeObject<ServiceResponse<P06Shop.Shared.Library.Book>>(json);
             if (result.Success)
             {
-                return (Book)result.Data;
+                return (P06Shop.Shared.Library.Book)result.Data;
             }
             else
             {
@@ -109,7 +108,7 @@ namespace P04WeatherForecastAPI.Client.Services.LibraryServices
                 }
             }
 
-            Book book = new Book(name, author, pages, genreList, id);
+            P06Shop.Shared.Library.Book book = new P06Shop.Shared.Library.Book(name, author, pages, genreList, id);
             string Input = JsonConvert.SerializeObject(book);
             StringContent data = new StringContent(Input, System.Text.Encoding.UTF8, "application/json");
 

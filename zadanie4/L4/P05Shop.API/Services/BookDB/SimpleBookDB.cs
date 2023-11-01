@@ -2,7 +2,6 @@
 
 using P06Shop.Shared;
 using P06Shop.Shared.Library;
-using P06Shop.Shared.Shop;
 using P07Shop.DataSeeder;
 
 namespace P05Shop.API.Services.BookDB
@@ -10,19 +9,19 @@ namespace P05Shop.API.Services.BookDB
     public class SimpleBookDB : IBookDB
     {
         
-        private Dictionary<int, Book> books;
+        private Dictionary<int, P06Shop.Shared.Library.Book> books;
 
         public SimpleBookDB() 
         {
-            books = new Dictionary<int, Book>();
+            books = new Dictionary<int, P06Shop.Shared.Library.Book>();
             //DataSeeder
-            foreach (Book book in BookSeeder.GenerateProductData())
+            foreach (P06Shop.Shared.Library.Book book in BookSeeder.GenerateProductData())
             {
                 books.Add(book.id, book);
             }
         }
 
-        public async Task<ServiceResponse<bool>> AddBook(Book book)
+        public async Task<ServiceResponse<bool>> AddBook(P06Shop.Shared.Library.Book book)
         {
             try
             {
@@ -85,16 +84,16 @@ namespace P05Shop.API.Services.BookDB
             }
         }
 
-        public async Task<ServiceResponse<List<Book>>> GetAllBooks()
+        public async Task<ServiceResponse<List<P06Shop.Shared.Library.Book>>> GetAllBooks()
         {
             try
             {
-                List<Book> bookList=new List<Book>();
+                List<P06Shop.Shared.Library.Book> bookList = new List<P06Shop.Shared.Library.Book>();
                 foreach (var book in this.books)
                 {
                     bookList.Add(book.Value);
                 }
-                var response = new ServiceResponse<List<Book>>()
+                var response = new ServiceResponse<List<P06Shop.Shared.Library.Book>>()
                 {
                     Data = bookList,
                     Message = "Ok",
@@ -105,7 +104,7 @@ namespace P05Shop.API.Services.BookDB
             }
             catch (Exception)
             {
-                return new ServiceResponse<List<Book>>()
+                return new ServiceResponse<List<P06Shop.Shared.Library.Book>>()
                 {
                     Data = null,
                     Message = "Problem with data base",
@@ -114,14 +113,14 @@ namespace P05Shop.API.Services.BookDB
             }
         }
 
-        public async Task<ServiceResponse<Book>> GetBook(int id)
+        public async Task<ServiceResponse<P06Shop.Shared.Library.Book>> GetBook(int id)
         {
             
             try
             {
                 //Pobranie danych
-                Book book = books[id];
-                var response = new ServiceResponse<Book>()
+                P06Shop.Shared.Library.Book book = books[id];
+                var response = new ServiceResponse<P06Shop.Shared.Library.Book>()
                 {
                     Data = book,
                     Message = "Ok",
@@ -132,7 +131,7 @@ namespace P05Shop.API.Services.BookDB
             }
             catch (ArgumentNullException)
             {
-                return new ServiceResponse<Book>()
+                return new ServiceResponse<P06Shop.Shared.Library.Book>()
                 {
                     Data = null,
                     Message = "Data base don't contain this book",
@@ -141,7 +140,7 @@ namespace P05Shop.API.Services.BookDB
             }
             catch (Exception)
             {
-                return new ServiceResponse<Book>()
+                return new ServiceResponse<P06Shop.Shared.Library.Book>()
                 {
                     Data = null,
                     Message = "Problem with dataseeder library",
@@ -150,7 +149,7 @@ namespace P05Shop.API.Services.BookDB
             }
         }
 
-        public async Task<ServiceResponse<bool>> UpdateBook(Book book, int id)
+        public async Task<ServiceResponse<bool>> UpdateBook(P06Shop.Shared.Library.Book book, int id)
         {
             try
             {

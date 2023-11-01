@@ -44,3 +44,10 @@ Przykład dla appsettings.json:
 }
 
 W aplikacji należy później zmapować te ustawienia i wstrzyknąć je do serwisu, który będzie komunikował się z API.
+
+
+Laboratorium 4
+- Dodanie seeda w seederze (Stałe dane)
+- Data context
+- Dependency injection Data Context w program.cs
+- 

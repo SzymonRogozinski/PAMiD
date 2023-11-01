@@ -1,6 +1,4 @@
 using P05Shop.API.Services.BookDB;
-using P05Shop.API.Services.ProductService;
-using P06Shop.Shared.Services.ProductService;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,7 +10,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 
-builder.Services.AddScoped<IProductService, ProductService>();
+//builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddSingleton<IBookDB,SimpleBookDB>();
 
 // addScoped - obiekt jest tworzony za kazdym razem dla nowego zapytania http

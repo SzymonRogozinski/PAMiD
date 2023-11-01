@@ -1,6 +1,5 @@
 ﻿using Bogus;
 using P06Shop.Shared.Library;
-using P06Shop.Shared.Shop;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,10 +13,11 @@ namespace P07Shop.DataSeeder
         private static string[] GenreNames = { "Criminal","Comic","Drama","Romance","Horror","Action","History"};
         private static Random random = new Random();
 
-        public static List<Book> GenerateProductData()
+        public static List<P06Shop.Shared.Library.Book> GenerateProductData()
         {
             int productId = 1;
-            var productFaker = new Faker<Book>()
+            var productFaker = new Faker<P06Shop.Shared.Library.Book>()
+                .UseSeed(692137)
                 .RuleFor(x => x.name, f => f.Lorem.Word() + " " + f.Lorem.Word())
                 .RuleFor(x => x.author, f => f.Name.FullName())
                 .RuleFor(x => x.pages, f => f.Random.Int(50, 2000))

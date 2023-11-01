@@ -128,7 +128,6 @@ F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadan
 F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie4\L4\P04WeatherForecastAPI.Client\obj\Debug\net7.0-windows\P04WeatherForecastAPI.Client.csproj.AssemblyReference.cache
 F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie4\L4\P04WeatherForecastAPI.Client\obj\Debug\net7.0-windows\FavoriteCitiesView.g.cs
 F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie4\L4\P04WeatherForecastAPI.Client\obj\Debug\net7.0-windows\MainWindow.g.cs
-F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie4\L4\P04WeatherForecastAPI.Client\obj\Debug\net7.0-windows\ShopProductsView.g.cs
 F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie4\L4\P04WeatherForecastAPI.Client\obj\Debug\net7.0-windows\App.g.cs
 F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie4\L4\P04WeatherForecastAPI.Client\obj\Debug\net7.0-windows\GeneratedInternalTypeHelper.g.cs
 F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie4\L4\P04WeatherForecastAPI.Client\obj\Debug\net7.0-windows\P04WeatherForecastAPI.Client_MarkupCompile.cache
@@ -136,7 +135,6 @@ F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadan
 F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie4\L4\P04WeatherForecastAPI.Client\obj\Debug\net7.0-windows\App.baml
 F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie4\L4\P04WeatherForecastAPI.Client\obj\Debug\net7.0-windows\FavoriteCitiesView.baml
 F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie4\L4\P04WeatherForecastAPI.Client\obj\Debug\net7.0-windows\MainWindow.baml
-F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie4\L4\P04WeatherForecastAPI.Client\obj\Debug\net7.0-windows\ShopProductsView.baml
 F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie4\L4\P04WeatherForecastAPI.Client\obj\Debug\net7.0-windows\P04WeatherForecastAPI.Client.g.resources
 F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie4\L4\P04WeatherForecastAPI.Client\obj\Debug\net7.0-windows\P04WeatherForecastAPI.Client.GeneratedMSBuildEditorConfig.editorconfig
 F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie4\L4\P04WeatherForecastAPI.Client\obj\Debug\net7.0-windows\P04WeatherForecastAPI.Client.AssemblyInfoInputs.cache
