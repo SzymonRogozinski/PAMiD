@@ -1,3 +1,5 @@
+using Microsoft.EntityFrameworkCore;
+using P05Shop.API.Models;
 using P05Shop.API.Services.BookDB;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -10,8 +12,12 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 
+//Microsoft.EntityFrameworkCore.SqlServer
+builder.Services.AddDbContext<DataContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
 //builder.Services.AddScoped<IProductService, ProductService>();
-builder.Services.AddSingleton<IBookDB,SimpleBookDB>();
+builder.Services.AddScoped<IBookDB,RealBookDB>();
 
 // addScoped - obiekt jest tworzony za kazdym razem dla nowego zapytania http
 // jedno zaptranie tworzy jeden obiekt 

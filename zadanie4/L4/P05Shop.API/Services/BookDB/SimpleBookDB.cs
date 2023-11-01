@@ -1,5 +1,3 @@
-
-
 using P06Shop.Shared;
 using P06Shop.Shared.Library;
 using P07Shop.DataSeeder;

@@ -1744,19 +1744,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Szymon\\.nuget\\packages\\": {}
+    "C:\\Users\\RetailAdmin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Pulpit extension\\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\\PAMiD\\zadanie4\\L4\\P07Shop.DataSeeder\\P07Shop.DataSeeder.csproj",
+      "projectUniqueName": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie4\\L4\\P07Shop.DataSeeder\\P07Shop.DataSeeder.csproj",
       "projectName": "P07Shop.DataSeeder",
-      "projectPath": "F:\\Pulpit extension\\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\\PAMiD\\zadanie4\\L4\\P07Shop.DataSeeder\\P07Shop.DataSeeder.csproj",
-      "packagesPath": "C:\\Users\\Szymon\\.nuget\\packages\\",
-      "outputPath": "F:\\Pulpit extension\\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\\PAMiD\\zadanie4\\L4\\P07Shop.DataSeeder\\obj\\",
+      "projectPath": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie4\\L4\\P07Shop.DataSeeder\\P07Shop.DataSeeder.csproj",
+      "packagesPath": "C:\\Users\\RetailAdmin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie4\\L4\\P07Shop.DataSeeder\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Szymon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\RetailAdmin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1770,8 +1770,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "F:\\Pulpit extension\\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\\PAMiD\\zadanie4\\L4\\P06Shop.Shared\\P06Shop.Shared.csproj": {
-              "projectPath": "F:\\Pulpit extension\\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\\PAMiD\\zadanie4\\L4\\P06Shop.Shared\\P06Shop.Shared.csproj"
+            "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie4\\L4\\P06Shop.Shared\\P06Shop.Shared.csproj": {
+              "projectPath": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie4\\L4\\P06Shop.Shared\\P06Shop.Shared.csproj"
             }
           }
         }
@@ -1811,7 +1811,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -47,7 +47,7 @@ W aplikacji należy później zmapować te ustawienia i wstrzyknąć je do serwi
 
 
 Laboratorium 4
-- Dodanie seeda w seederze (Stałe dane)
-- Data context
+- Dodanie seeda w seederze (Stałe dane)X
+- Data context X
 - Dependency injection Data Context w program.cs
 - 

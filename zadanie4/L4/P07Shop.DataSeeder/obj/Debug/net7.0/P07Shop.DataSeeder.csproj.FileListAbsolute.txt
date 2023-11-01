@@ -43,3 +43,18 @@ F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadan
 F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie4\L4\P07Shop.DataSeeder\obj\Debug\net7.0\refint\P07Shop.DataSeeder.dll
 F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie4\L4\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.pdb
 F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie4\L4\P07Shop.DataSeeder\obj\Debug\net7.0\ref\P07Shop.DataSeeder.dll
+C:\Users\RetailAdmin\Desktop\PAMiD\zadanie4\L4\P07Shop.DataSeeder\bin\Debug\net7.0\P07Shop.DataSeeder.deps.json
+C:\Users\RetailAdmin\Desktop\PAMiD\zadanie4\L4\P07Shop.DataSeeder\bin\Debug\net7.0\P07Shop.DataSeeder.dll
+C:\Users\RetailAdmin\Desktop\PAMiD\zadanie4\L4\P07Shop.DataSeeder\bin\Debug\net7.0\P07Shop.DataSeeder.pdb
+C:\Users\RetailAdmin\Desktop\PAMiD\zadanie4\L4\P07Shop.DataSeeder\bin\Debug\net7.0\P06Shop.Shared.dll
+C:\Users\RetailAdmin\Desktop\PAMiD\zadanie4\L4\P07Shop.DataSeeder\bin\Debug\net7.0\P06Shop.Shared.pdb
+C:\Users\RetailAdmin\Desktop\PAMiD\zadanie4\L4\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.csproj.AssemblyReference.cache
+C:\Users\RetailAdmin\Desktop\PAMiD\zadanie4\L4\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\RetailAdmin\Desktop\PAMiD\zadanie4\L4\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.AssemblyInfoInputs.cache
+C:\Users\RetailAdmin\Desktop\PAMiD\zadanie4\L4\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.AssemblyInfo.cs
+C:\Users\RetailAdmin\Desktop\PAMiD\zadanie4\L4\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.csproj.CoreCompileInputs.cache
+C:\Users\RetailAdmin\Desktop\PAMiD\zadanie4\L4\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.csproj.CopyComplete
+C:\Users\RetailAdmin\Desktop\PAMiD\zadanie4\L4\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.dll
+C:\Users\RetailAdmin\Desktop\PAMiD\zadanie4\L4\P07Shop.DataSeeder\obj\Debug\net7.0\refint\P07Shop.DataSeeder.dll
+C:\Users\RetailAdmin\Desktop\PAMiD\zadanie4\L4\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.pdb
+C:\Users\RetailAdmin\Desktop\PAMiD\zadanie4\L4\P07Shop.DataSeeder\obj\Debug\net7.0\ref\P07Shop.DataSeeder.dll
