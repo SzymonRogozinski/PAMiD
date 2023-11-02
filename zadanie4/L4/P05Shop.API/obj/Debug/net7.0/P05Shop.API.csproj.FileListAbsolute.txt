@@ -124,16 +124,11 @@ F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadan
 F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie4\L4\P05Shop.API\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
 F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie4\L4\P05Shop.API\bin\Debug\net7.0\System.Security.Permissions.dll
 F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie4\L4\P05Shop.API\bin\Debug\net7.0\System.Windows.Extensions.dll
-F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie4\L4\P05Shop.API\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
 F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie4\L4\P05Shop.API\bin\Debug\net7.0\runtimes\win-arm64\native\sni.dll
 F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie4\L4\P05Shop.API\bin\Debug\net7.0\runtimes\win-x64\native\sni.dll
 F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie4\L4\P05Shop.API\bin\Debug\net7.0\runtimes\win-x86\native\sni.dll
 F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie4\L4\P05Shop.API\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie4\L4\P05Shop.API\bin\Debug\net7.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
-F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie4\L4\P05Shop.API\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
-F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie4\L4\P05Shop.API\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
-F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie4\L4\P05Shop.API\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie4\L4\P05Shop.API\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
 C:\Users\RetailAdmin\Desktop\PAMiD\zadanie4\L4\P05Shop.API\bin\Debug\net7.0\appsettings.Development.json
 C:\Users\RetailAdmin\Desktop\PAMiD\zadanie4\L4\P05Shop.API\bin\Debug\net7.0\appsettings.json
 C:\Users\RetailAdmin\Desktop\PAMiD\zadanie4\L4\P05Shop.API\bin\Debug\net7.0\P05Shop.API.exe
@@ -219,3 +214,37 @@ C:\Users\RetailAdmin\Desktop\PAMiD\zadanie4\L4\P05Shop.API\obj\Debug\net7.0\refi
 C:\Users\RetailAdmin\Desktop\PAMiD\zadanie4\L4\P05Shop.API\obj\Debug\net7.0\P05Shop.API.pdb
 C:\Users\RetailAdmin\Desktop\PAMiD\zadanie4\L4\P05Shop.API\obj\Debug\net7.0\P05Shop.API.genruntimeconfig.cache
 C:\Users\RetailAdmin\Desktop\PAMiD\zadanie4\L4\P05Shop.API\obj\Debug\net7.0\ref\P05Shop.API.dll
+F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie4\L4\P05Shop.API\bin\Debug\net7.0\Azure.Core.dll
+F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie4\L4\P05Shop.API\bin\Debug\net7.0\Azure.Identity.dll
+F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie4\L4\P05Shop.API\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie4\L4\P05Shop.API\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie4\L4\P05Shop.API\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie4\L4\P05Shop.API\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie4\L4\P05Shop.API\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie4\L4\P05Shop.API\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie4\L4\P05Shop.API\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie4\L4\P05Shop.API\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie4\L4\P05Shop.API\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie4\L4\P05Shop.API\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie4\L4\P05Shop.API\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie4\L4\P05Shop.API\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie4\L4\P05Shop.API\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie4\L4\P05Shop.API\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie4\L4\P05Shop.API\bin\Debug\net7.0\System.Memory.Data.dll
+F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie4\L4\P05Shop.API\bin\Debug\net7.0\System.Runtime.Caching.dll
+F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie4\L4\P05Shop.API\bin\Debug\net7.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie4\L4\P05Shop.API\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie4\L4\P05Shop.API\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie4\L4\P05Shop.API\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie4\L4\P05Shop.API\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie4\L4\P05Shop.API\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie4\L4\P05Shop.API\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie4\L4\P05Shop.API\bin\Debug\net7.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie4\L4\P05Shop.API\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie4\L4\P05Shop.API\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie4\L4\P05Shop.API\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie4\L4\P05Shop.API\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie4\L4\P05Shop.API\bin\Debug\net7.0\Humanizer.dll
+F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie4\L4\P05Shop.API\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie4\L4\P05Shop.API\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+F:\Pulpit extension\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\PAMiD\zadanie4\L4\P05Shop.API\bin\Debug\net7.0\Mono.TextTemplating.dll

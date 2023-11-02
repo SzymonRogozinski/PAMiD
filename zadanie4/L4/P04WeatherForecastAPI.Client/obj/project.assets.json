@@ -1346,19 +1346,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\RetailAdmin\\.nuget\\packages\\": {}
+    "C:\\Users\\Szymon\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie4\\L4\\P04WeatherForecastAPI.Client\\P04WeatherForecastAPI.Client.csproj",
+      "projectUniqueName": "F:\\Pulpit extension\\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\\PAMiD\\zadanie4\\L4\\P04WeatherForecastAPI.Client\\P04WeatherForecastAPI.Client.csproj",
       "projectName": "P04WeatherForecastAPI.Client",
-      "projectPath": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie4\\L4\\P04WeatherForecastAPI.Client\\P04WeatherForecastAPI.Client.csproj",
-      "packagesPath": "C:\\Users\\RetailAdmin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie4\\L4\\P04WeatherForecastAPI.Client\\obj\\",
+      "projectPath": "F:\\Pulpit extension\\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\\PAMiD\\zadanie4\\L4\\P04WeatherForecastAPI.Client\\P04WeatherForecastAPI.Client.csproj",
+      "packagesPath": "C:\\Users\\Szymon\\.nuget\\packages\\",
+      "outputPath": "F:\\Pulpit extension\\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\\PAMiD\\zadanie4\\L4\\P04WeatherForecastAPI.Client\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\RetailAdmin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Szymon\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1372,8 +1372,8 @@
         "net7.0-windows7.0": {
           "targetAlias": "net7.0-windows",
           "projectReferences": {
-            "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie4\\L4\\P06Shop.Shared\\P06Shop.Shared.csproj": {
-              "projectPath": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie4\\L4\\P06Shop.Shared\\P06Shop.Shared.csproj"
+            "F:\\Pulpit extension\\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\\PAMiD\\zadanie4\\L4\\P06Shop.Shared\\P06Shop.Shared.csproj": {
+              "projectPath": "F:\\Pulpit extension\\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\\PAMiD\\zadanie4\\L4\\P06Shop.Shared\\P06Shop.Shared.csproj"
             }
           }
         }
@@ -1436,7 +1436,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

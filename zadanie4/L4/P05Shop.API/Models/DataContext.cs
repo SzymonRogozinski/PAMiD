@@ -35,13 +35,39 @@ namespace P05Shop.API.Models
 
             modelBuilder.Entity<Book>()
              .Property(p => p.genres)
-             .IsRequired();
+             .IsRequired()
+             .HasConversion(
+                v => ConvertGenreListToString(v),
+                v => ConvertStringToGenreList(v)
+                );
 
             modelBuilder.Entity<Book>().HasKey(p => p.id);
 
             // data seed 
 
             modelBuilder.Entity<Book>().HasData(BookSeeder.GenerateProductData());
+        }
+
+        private string ConvertGenreListToString(List<Genre> genres) 
+        {
+            string result="";
+            for (int i = 0; i < genres.Count-1; i++)
+            {
+                result += genres[i].ToString() + ",";
+            }
+            result += genres[genres.Count - 1].ToString();
+            return result;
+        }
+
+        private List<Genre> ConvertStringToGenreList(string genres)
+        {
+            List<Genre> result =new List<Genre>();
+            string[] genreList= genres.Split(',');
+            foreach (string g in genreList) 
+            {
+                result.Add(new Genre(g));
+            }
+            return result;
         }
     }
 }
