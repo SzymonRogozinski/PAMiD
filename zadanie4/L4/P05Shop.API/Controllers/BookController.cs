@@ -12,7 +12,7 @@ namespace P05Shop.API.Controllers
     {
         //private readonly IBookServices _bookService;
         private static IBookDB _bookDB=new SimpleBookDB();
-        private static int nextId = 0;
+        private static int nextId = 10;
 
         public BookController(IBookDB bookDB)
         {

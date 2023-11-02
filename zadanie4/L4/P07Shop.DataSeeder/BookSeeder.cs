@@ -15,7 +15,7 @@ namespace P07Shop.DataSeeder
 
         public static List<P06Shop.Shared.Library.Book> GenerateProductData()
         {
-            int productId = 1;
+            int productId = 0;
             var productFaker = new Faker<P06Shop.Shared.Library.Book>()
                 .UseSeed(692137)
                 .RuleFor(x => x.name, f => f.Lorem.Word() + " " + f.Lorem.Word())
