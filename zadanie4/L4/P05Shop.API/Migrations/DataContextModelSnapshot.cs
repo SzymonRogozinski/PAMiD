@@ -55,7 +55,7 @@ namespace P05Shop.API.Migrations
                         {
                             id = 1,
                             author = "Dagmar Hackett",
-                            genres = "P06Shop.Shared.Library.Genre,P06Shop.Shared.Library.Genre,P06Shop.Shared.Library.Genre",
+                            genres = "Criminal",
                             name = "et cumque",
                             pages = 423
                         },
@@ -63,7 +63,7 @@ namespace P05Shop.API.Migrations
                         {
                             id = 2,
                             author = "Orval Tillman",
-                            genres = "P06Shop.Shared.Library.Genre,P06Shop.Shared.Library.Genre",
+                            genres = "Action,Horror,Action",
                             name = "error cupiditate",
                             pages = 1127
                         },
@@ -71,7 +71,7 @@ namespace P05Shop.API.Migrations
                         {
                             id = 3,
                             author = "Tyson Hudson",
-                            genres = "P06Shop.Shared.Library.Genre",
+                            genres = "History,Romance",
                             name = "placeat qui",
                             pages = 848
                         },
@@ -79,7 +79,7 @@ namespace P05Shop.API.Migrations
                         {
                             id = 4,
                             author = "Janessa Botsford",
-                            genres = "P06Shop.Shared.Library.Genre,P06Shop.Shared.Library.Genre",
+                            genres = "Drama,Criminal,History",
                             name = "ab non",
                             pages = 323
                         },
@@ -87,7 +87,7 @@ namespace P05Shop.API.Migrations
                         {
                             id = 5,
                             author = "Lera Flatley",
-                            genres = "P06Shop.Shared.Library.Genre,P06Shop.Shared.Library.Genre,P06Shop.Shared.Library.Genre",
+                            genres = "Horror,Romance",
                             name = "et blanditiis",
                             pages = 206
                         },
@@ -95,7 +95,7 @@ namespace P05Shop.API.Migrations
                         {
                             id = 6,
                             author = "Earnestine Sauer",
-                            genres = "P06Shop.Shared.Library.Genre,P06Shop.Shared.Library.Genre",
+                            genres = "Drama",
                             name = "quis beatae",
                             pages = 541
                         },
@@ -103,7 +103,7 @@ namespace P05Shop.API.Migrations
                         {
                             id = 7,
                             author = "Chad Grimes",
-                            genres = "P06Shop.Shared.Library.Genre",
+                            genres = "Horror,Romance",
                             name = "omnis veritatis",
                             pages = 221
                         },
@@ -111,7 +111,7 @@ namespace P05Shop.API.Migrations
                         {
                             id = 8,
                             author = "Tina Cassin",
-                            genres = "P06Shop.Shared.Library.Genre,P06Shop.Shared.Library.Genre,P06Shop.Shared.Library.Genre",
+                            genres = "History",
                             name = "est ut",
                             pages = 980
                         },
@@ -119,7 +119,7 @@ namespace P05Shop.API.Migrations
                         {
                             id = 9,
                             author = "Aidan Gleason",
-                            genres = "P06Shop.Shared.Library.Genre,P06Shop.Shared.Library.Genre",
+                            genres = "History",
                             name = "ad officiis",
                             pages = 898
                         },
@@ -127,7 +127,7 @@ namespace P05Shop.API.Migrations
                         {
                             id = 10,
                             author = "Griffin Mayert",
-                            genres = "P06Shop.Shared.Library.Genre,P06Shop.Shared.Library.Genre,P06Shop.Shared.Library.Genre",
+                            genres = "Romance,Horror,Horror",
                             name = "minima aut",
                             pages = 1090
                         });

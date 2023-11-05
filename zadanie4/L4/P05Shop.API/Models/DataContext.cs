@@ -53,9 +53,9 @@ namespace P05Shop.API.Models
             string result="";
             for (int i = 0; i < genres.Count-1; i++)
             {
-                result += genres[i].ToString() + ",";
+                result += genres[i].name + ",";
             }
-            result += genres[genres.Count - 1].ToString();
+            result += genres[genres.Count - 1].name;
             return result;
         }
 

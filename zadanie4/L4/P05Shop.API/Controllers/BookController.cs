@@ -11,11 +11,12 @@ namespace P05Shop.API.Controllers
     public class BookController : Controller    //https://localhost:7230/api/Book
     {
         //private readonly IBookServices _bookService;
-        private static IBookDB _bookDB=new SimpleBookDB();
+        private IBookDB _bookDB;
         private static int nextId = 11;
 
         public BookController(IBookDB bookDB)
         {
+            this._bookDB=bookDB;
             //_bookService = bookService;
             //_bookDB=bookDB;
         }
