@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Pulpit extension\\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\\PAMiD\\zadanie4\\L4\\P06Shop.Shared\\P06Shop.Shared.csproj": {}
+    "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie4\\L4\\P06Shop.Shared\\P06Shop.Shared.csproj": {}
   },
   "projects": {
-    "F:\\Pulpit extension\\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\\PAMiD\\zadanie4\\L4\\P06Shop.Shared\\P06Shop.Shared.csproj": {
+    "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie4\\L4\\P06Shop.Shared\\P06Shop.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Pulpit extension\\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\\PAMiD\\zadanie4\\L4\\P06Shop.Shared\\P06Shop.Shared.csproj",
+        "projectUniqueName": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie4\\L4\\P06Shop.Shared\\P06Shop.Shared.csproj",
         "projectName": "P06Shop.Shared",
-        "projectPath": "F:\\Pulpit extension\\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\\PAMiD\\zadanie4\\L4\\P06Shop.Shared\\P06Shop.Shared.csproj",
-        "packagesPath": "C:\\Users\\Szymon\\.nuget\\packages\\",
-        "outputPath": "F:\\Pulpit extension\\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\\PAMiD\\zadanie4\\L4\\P06Shop.Shared\\obj\\",
+        "projectPath": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie4\\L4\\P06Shop.Shared\\P06Shop.Shared.csproj",
+        "packagesPath": "C:\\Users\\RetailAdmin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie4\\L4\\P06Shop.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Szymon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\RetailAdmin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -61,7 +61,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }

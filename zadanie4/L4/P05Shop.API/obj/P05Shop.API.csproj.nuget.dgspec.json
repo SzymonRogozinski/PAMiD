@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Pulpit extension\\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\\PAMiD\\zadanie4\\L4\\P05Shop.API\\P05Shop.API.csproj": {}
+    "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie4\\L4\\P05Shop.API\\P05Shop.API.csproj": {}
   },
   "projects": {
-    "F:\\Pulpit extension\\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\\PAMiD\\zadanie4\\L4\\P05Shop.API\\P05Shop.API.csproj": {
+    "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie4\\L4\\P05Shop.API\\P05Shop.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Pulpit extension\\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\\PAMiD\\zadanie4\\L4\\P05Shop.API\\P05Shop.API.csproj",
+        "projectUniqueName": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie4\\L4\\P05Shop.API\\P05Shop.API.csproj",
         "projectName": "P05Shop.API",
-        "projectPath": "F:\\Pulpit extension\\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\\PAMiD\\zadanie4\\L4\\P05Shop.API\\P05Shop.API.csproj",
-        "packagesPath": "C:\\Users\\Szymon\\.nuget\\packages\\",
-        "outputPath": "F:\\Pulpit extension\\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\\PAMiD\\zadanie4\\L4\\P05Shop.API\\obj\\",
+        "projectPath": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie4\\L4\\P05Shop.API\\P05Shop.API.csproj",
+        "packagesPath": "C:\\Users\\RetailAdmin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie4\\L4\\P05Shop.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Szymon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\RetailAdmin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,11 +28,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "F:\\Pulpit extension\\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\\PAMiD\\zadanie4\\L4\\P06Shop.Shared\\P06Shop.Shared.csproj": {
-                "projectPath": "F:\\Pulpit extension\\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\\PAMiD\\zadanie4\\L4\\P06Shop.Shared\\P06Shop.Shared.csproj"
+              "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie4\\L4\\P06Shop.Shared\\P06Shop.Shared.csproj": {
+                "projectPath": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie4\\L4\\P06Shop.Shared\\P06Shop.Shared.csproj"
               },
-              "F:\\Pulpit extension\\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\\PAMiD\\zadanie4\\L4\\P07Shop.DataSeeder\\P07Shop.DataSeeder.csproj": {
-                "projectPath": "F:\\Pulpit extension\\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\\PAMiD\\zadanie4\\L4\\P07Shop.DataSeeder\\P07Shop.DataSeeder.csproj"
+              "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie4\\L4\\P07Shop.DataSeeder\\P07Shop.DataSeeder.csproj": {
+                "projectPath": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie4\\L4\\P07Shop.DataSeeder\\P07Shop.DataSeeder.csproj"
               }
             }
           }
@@ -93,21 +93,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "F:\\Pulpit extension\\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\\PAMiD\\zadanie4\\L4\\P06Shop.Shared\\P06Shop.Shared.csproj": {
+    "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie4\\L4\\P06Shop.Shared\\P06Shop.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Pulpit extension\\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\\PAMiD\\zadanie4\\L4\\P06Shop.Shared\\P06Shop.Shared.csproj",
+        "projectUniqueName": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie4\\L4\\P06Shop.Shared\\P06Shop.Shared.csproj",
         "projectName": "P06Shop.Shared",
-        "projectPath": "F:\\Pulpit extension\\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\\PAMiD\\zadanie4\\L4\\P06Shop.Shared\\P06Shop.Shared.csproj",
-        "packagesPath": "C:\\Users\\Szymon\\.nuget\\packages\\",
-        "outputPath": "F:\\Pulpit extension\\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\\PAMiD\\zadanie4\\L4\\P06Shop.Shared\\obj\\",
+        "projectPath": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie4\\L4\\P06Shop.Shared\\P06Shop.Shared.csproj",
+        "packagesPath": "C:\\Users\\RetailAdmin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie4\\L4\\P06Shop.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Szymon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\RetailAdmin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -154,21 +154,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "F:\\Pulpit extension\\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\\PAMiD\\zadanie4\\L4\\P07Shop.DataSeeder\\P07Shop.DataSeeder.csproj": {
+    "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie4\\L4\\P07Shop.DataSeeder\\P07Shop.DataSeeder.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Pulpit extension\\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\\PAMiD\\zadanie4\\L4\\P07Shop.DataSeeder\\P07Shop.DataSeeder.csproj",
+        "projectUniqueName": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie4\\L4\\P07Shop.DataSeeder\\P07Shop.DataSeeder.csproj",
         "projectName": "P07Shop.DataSeeder",
-        "projectPath": "F:\\Pulpit extension\\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\\PAMiD\\zadanie4\\L4\\P07Shop.DataSeeder\\P07Shop.DataSeeder.csproj",
-        "packagesPath": "C:\\Users\\Szymon\\.nuget\\packages\\",
-        "outputPath": "F:\\Pulpit extension\\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\\PAMiD\\zadanie4\\L4\\P07Shop.DataSeeder\\obj\\",
+        "projectPath": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie4\\L4\\P07Shop.DataSeeder\\P07Shop.DataSeeder.csproj",
+        "packagesPath": "C:\\Users\\RetailAdmin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie4\\L4\\P07Shop.DataSeeder\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Szymon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\RetailAdmin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -182,8 +182,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "F:\\Pulpit extension\\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\\PAMiD\\zadanie4\\L4\\P06Shop.Shared\\P06Shop.Shared.csproj": {
-                "projectPath": "F:\\Pulpit extension\\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\\PAMiD\\zadanie4\\L4\\P06Shop.Shared\\P06Shop.Shared.csproj"
+              "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie4\\L4\\P06Shop.Shared\\P06Shop.Shared.csproj": {
+                "projectPath": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie4\\L4\\P06Shop.Shared\\P06Shop.Shared.csproj"
               }
             }
           }
@@ -223,7 +223,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }

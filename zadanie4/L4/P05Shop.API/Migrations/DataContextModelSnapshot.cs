@@ -55,7 +55,7 @@ namespace P05Shop.API.Migrations
                         {
                             id = 1,
                             author = "Dagmar Hackett",
-                            genres = "P06Shop.Shared.Library.Genre,P06Shop.Shared.Library.Genre",
+                            genres = "P06Shop.Shared.Library.Genre,P06Shop.Shared.Library.Genre,P06Shop.Shared.Library.Genre",
                             name = "et cumque",
                             pages = 423
                         },
@@ -63,7 +63,7 @@ namespace P05Shop.API.Migrations
                         {
                             id = 2,
                             author = "Orval Tillman",
-                            genres = "P06Shop.Shared.Library.Genre,P06Shop.Shared.Library.Genre,P06Shop.Shared.Library.Genre",
+                            genres = "P06Shop.Shared.Library.Genre,P06Shop.Shared.Library.Genre",
                             name = "error cupiditate",
                             pages = 1127
                         },
@@ -71,7 +71,7 @@ namespace P05Shop.API.Migrations
                         {
                             id = 3,
                             author = "Tyson Hudson",
-                            genres = "P06Shop.Shared.Library.Genre,P06Shop.Shared.Library.Genre,P06Shop.Shared.Library.Genre",
+                            genres = "P06Shop.Shared.Library.Genre",
                             name = "placeat qui",
                             pages = 848
                         },
@@ -79,7 +79,7 @@ namespace P05Shop.API.Migrations
                         {
                             id = 4,
                             author = "Janessa Botsford",
-                            genres = "P06Shop.Shared.Library.Genre",
+                            genres = "P06Shop.Shared.Library.Genre,P06Shop.Shared.Library.Genre",
                             name = "ab non",
                             pages = 323
                         },
@@ -87,7 +87,7 @@ namespace P05Shop.API.Migrations
                         {
                             id = 5,
                             author = "Lera Flatley",
-                            genres = "P06Shop.Shared.Library.Genre,P06Shop.Shared.Library.Genre",
+                            genres = "P06Shop.Shared.Library.Genre,P06Shop.Shared.Library.Genre,P06Shop.Shared.Library.Genre",
                             name = "et blanditiis",
                             pages = 206
                         },
@@ -95,7 +95,7 @@ namespace P05Shop.API.Migrations
                         {
                             id = 6,
                             author = "Earnestine Sauer",
-                            genres = "P06Shop.Shared.Library.Genre",
+                            genres = "P06Shop.Shared.Library.Genre,P06Shop.Shared.Library.Genre",
                             name = "quis beatae",
                             pages = 541
                         },
@@ -103,7 +103,7 @@ namespace P05Shop.API.Migrations
                         {
                             id = 7,
                             author = "Chad Grimes",
-                            genres = "P06Shop.Shared.Library.Genre,P06Shop.Shared.Library.Genre",
+                            genres = "P06Shop.Shared.Library.Genre",
                             name = "omnis veritatis",
                             pages = 221
                         },
@@ -111,7 +111,7 @@ namespace P05Shop.API.Migrations
                         {
                             id = 8,
                             author = "Tina Cassin",
-                            genres = "P06Shop.Shared.Library.Genre,P06Shop.Shared.Library.Genre",
+                            genres = "P06Shop.Shared.Library.Genre,P06Shop.Shared.Library.Genre,P06Shop.Shared.Library.Genre",
                             name = "est ut",
                             pages = 980
                         },
@@ -127,7 +127,7 @@ namespace P05Shop.API.Migrations
                         {
                             id = 10,
                             author = "Griffin Mayert",
-                            genres = "P06Shop.Shared.Library.Genre",
+                            genres = "P06Shop.Shared.Library.Genre,P06Shop.Shared.Library.Genre,P06Shop.Shared.Library.Genre",
                             name = "minima aut",
                             pages = 1090
                         });
