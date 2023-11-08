@@ -1,0 +1,63 @@
+﻿@using P8LibraryWebAPPMVC.Client.Models;
+@model LibraryModel
+
+@{
+	ViewData["Title"] = "Library";
+}
+
+
+<h1 class="Title">Details</h1>
+<div class="Page">
+	<div class="content">
+		<h3>Adding book</h3>
+		<div class="section">
+			<label>Title</label>
+			<input type="text" id="name" value="@Model.newName" />
+		</div>
+		<div class="section">
+			<label>Author</label>
+			<input type="text" id="author" value="@Model.newAuthor" />
+		</div>
+		<div class="section">
+			<label>Page number</label>
+			<input type="text" id="pages" value="@Model.newPages" />
+		</div>
+		<div class="section">
+			<label>Genres</label>
+			<input type="text" id="genres" value="@Model.newGenres" />
+		</div>
+		<div class="content">
+			<button onclick="callForAdd()">Add this book</button>
+		</div>
+
+	</div>
+</div>
+
+<script>
+	function callForAdd() {
+
+		let name = window.document.getElementById("name").value;
+		let author = window.document.getElementById("author").value;
+		let pages = window.document.getElementById("pages").value;
+		let genres = window.document.getElementById("genres").value;
+
+		window.location.href = "/Library/Add?name=" + name + "&author=" + author + "&pages=" + pages + "&genres=" + genres;
+	}
+</script>
+
+
+<style>
+	.Title {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.Page {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.content {
+		margin: 5px;
+	}
+</style>

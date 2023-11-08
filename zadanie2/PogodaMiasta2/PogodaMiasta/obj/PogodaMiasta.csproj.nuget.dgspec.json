@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Pulpit extension\\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\\PAMiD\\zadanie2\\PogodaMiasta2\\PogodaMiasta\\PogodaMiasta.csproj": {}
+    "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie2\\PogodaMiasta2\\PogodaMiasta\\PogodaMiasta.csproj": {}
   },
   "projects": {
-    "F:\\Pulpit extension\\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\\PAMiD\\zadanie2\\PogodaMiasta2\\PogodaMiasta\\PogodaMiasta.csproj": {
+    "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie2\\PogodaMiasta2\\PogodaMiasta\\PogodaMiasta.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Pulpit extension\\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\\PAMiD\\zadanie2\\PogodaMiasta2\\PogodaMiasta\\PogodaMiasta.csproj",
+        "projectUniqueName": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie2\\PogodaMiasta2\\PogodaMiasta\\PogodaMiasta.csproj",
         "projectName": "PogodaMiasta",
-        "projectPath": "F:\\Pulpit extension\\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\\PAMiD\\zadanie2\\PogodaMiasta2\\PogodaMiasta\\PogodaMiasta.csproj",
-        "packagesPath": "C:\\Users\\Szymon\\.nuget\\packages\\",
-        "outputPath": "F:\\Pulpit extension\\Programowanie-Aplikacji-Mobilnych-i-Desktopowych\\PAMiD\\zadanie2\\PogodaMiasta2\\PogodaMiasta\\obj\\",
+        "projectPath": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie2\\PogodaMiasta2\\PogodaMiasta\\PogodaMiasta.csproj",
+        "packagesPath": "C:\\Users\\RetailAdmin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie2\\PogodaMiasta2\\PogodaMiasta\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Szymon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\RetailAdmin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -88,7 +88,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }

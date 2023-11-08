@@ -1,0 +1,50 @@
+﻿@using P8LibraryWebAPPMVC.Client.Models;
+@model LibraryModel
+
+@{
+	ViewData["Title"] = "Library";
+}
+
+@{
+	var titleList = Model.bookList.Select(book => new SelectListItem { Value = book.id.ToString(), Text = book.Title });
+}
+
+<h1 class="Title">ILibrary</h1>
+<div class="Page">
+	<div class="content">
+		<h3>Book List</h3>
+		<@Html.DropDownList(Model.detailedBook.name, titleList, new { @onchange="callChangefunc(this.value)" } )
+		<input type="hidden" id="book_id" value="@Model.detailedBook.id" />
+	</div>
+	<div class="content">
+		<button onclick="callForDetails()">Get details</button>
+	</div>
+	<a asp-action="AddPage">Add new book</a>
+</div>
+
+<script>
+	function callChangefunc(val) {
+		window.document.getElementById("book_id").value = val;
+	}
+
+	function callForDetails() {
+		let val = window.document.getElementById("book_id").value;
+		window.location.href = "/Library/GetById?id=" + val;
+	}
+</script>
+
+<style>
+	.Title{
+		display:flex;
+		justify-content:space-around;
+	}
+
+	.Page{
+		display:flex;
+		flex-direction:row;
+	}
+
+	.content{
+		margin: 5px;
+	}
+</style>

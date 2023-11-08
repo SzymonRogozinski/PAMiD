@@ -1,0 +1,73 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = P10ShopWebAPPMVC.Client
+build_property.RootNamespace = P10ShopWebAPPMVC.Client
+build_property.ProjectDir = C:\Users\RetailAdmin\Desktop\PAMiD\zadanie5\L5\P8LibraryWebAPPMVC.Client\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\RetailAdmin\Desktop\PAMiD\zadanie5\L5\P8LibraryWebAPPMVC.Client
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/RetailAdmin/Desktop/PAMiD/zadanie5/L5/P8LibraryWebAPPMVC.Client/Views/Calculator/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FsY3VsYXRvclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RetailAdmin/Desktop/PAMiD/zadanie5/L5/P8LibraryWebAPPMVC.Client/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RetailAdmin/Desktop/PAMiD/zadanie5/L5/P8LibraryWebAPPMVC.Client/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RetailAdmin/Desktop/PAMiD/zadanie5/L5/P8LibraryWebAPPMVC.Client/Views/NewCalcaultor/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmV3Q2FsY2F1bHRvclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RetailAdmin/Desktop/PAMiD/zadanie5/L5/P8LibraryWebAPPMVC.Client/Views/ProductsAPI/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNBUElcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RetailAdmin/Desktop/PAMiD/zadanie5/L5/P8LibraryWebAPPMVC.Client/Views/ProductsAPI/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNBUElcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RetailAdmin/Desktop/PAMiD/zadanie5/L5/P8LibraryWebAPPMVC.Client/Views/ProductsAPI/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNBUElcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RetailAdmin/Desktop/PAMiD/zadanie5/L5/P8LibraryWebAPPMVC.Client/Views/ProductsAPI/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNBUElcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RetailAdmin/Desktop/PAMiD/zadanie5/L5/P8LibraryWebAPPMVC.Client/Views/ProductsAPI/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNBUElcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RetailAdmin/Desktop/PAMiD/zadanie5/L5/P8LibraryWebAPPMVC.Client/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RetailAdmin/Desktop/PAMiD/zadanie5/L5/P8LibraryWebAPPMVC.Client/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RetailAdmin/Desktop/PAMiD/zadanie5/L5/P8LibraryWebAPPMVC.Client/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RetailAdmin/Desktop/PAMiD/zadanie5/L5/P8LibraryWebAPPMVC.Client/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RetailAdmin/Desktop/PAMiD/zadanie5/L5/P8LibraryWebAPPMVC.Client/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-p4vc6coj0j

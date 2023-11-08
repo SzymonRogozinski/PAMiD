@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\P8LibraryWebAPPMVC.Client.props" />
+</Project>
