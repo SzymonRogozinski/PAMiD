@@ -25,8 +25,11 @@ namespace P06Shop.Shared.Services.LibraryServices
             baseURL = _appSettings.BaseAPIUrl+"/"+_appSettings.BaseProductEndpoint.Base_url;
         }
 
-        public async Task<bool> AddBookAsync(string name, string author, int pages, string genres)
+        public async Task<bool> AddBookAsync(string name, string author, int pages, string genres) 
         {
+            if (name == null || author==null || genres==null || pages==0) { 
+                throw new ArgumentException(); 
+            }
             string[] sliceGen = genres.Trim().Split(',');
             List<Genre> genreList=new List<Genre>();
             foreach (string genre in sliceGen) 
@@ -70,7 +73,11 @@ namespace P06Shop.Shared.Services.LibraryServices
 
         public async Task<P06Shop.Shared.Library.Book> GetBookAsync(int id)
         {
-            var response = await _httpClient.GetAsync(_appSettings.BaseProductEndpoint.GetOneProductEndpoint + $"?id={id}");
+			if (id<=0)
+			{
+				throw new ArgumentException();
+			}
+			var response = await _httpClient.GetAsync(_appSettings.BaseProductEndpoint.GetOneProductEndpoint + $"?id={id}");
             var json = await response.Content.ReadAsStringAsync();
             var result = JsonConvert.DeserializeObject<ServiceResponse<P06Shop.Shared.Library.Book>>(json);
             if (result.Success)
@@ -86,7 +93,11 @@ namespace P06Shop.Shared.Services.LibraryServices
 
         public async Task<bool> removeBookAsync(int id)
         {
-            var response =await _httpClient.DeleteAsync(_appSettings.BaseProductEndpoint.DeleteProductEndpoint + $"?id={id}");
+			if (id <= 0)
+			{
+				throw new ArgumentException();
+			}
+			var response =await _httpClient.DeleteAsync(_appSettings.BaseProductEndpoint.DeleteProductEndpoint + $"?id={id}");
             var succes =response.IsSuccessStatusCode;
             if (!succes)
             {
@@ -97,7 +108,11 @@ namespace P06Shop.Shared.Services.LibraryServices
 
         public async Task<bool> updateBookAsync(string name, string author, int pages, string genres, int id)
         {
-            string[] sliceGen = genres.Trim().Split(',');
+			if (name == null || author == null || genres == null || pages == 0 || id<=0)
+			{
+				throw new ArgumentException();
+			}
+			string[] sliceGen = genres.Trim().Split(',');
             List<Genre> genreList = new List<Genre>();
             foreach (string genre in sliceGen)
             {

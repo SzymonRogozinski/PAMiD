@@ -1,5 +1,7 @@
 
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
+using P06Shop.Shared;
 using P06Shop.Shared.Library;
 using P06Shop.Shared.Services.LibraryServices;
 using P8LibraryWebAPPMVC.Client.Models;
@@ -45,14 +47,38 @@ namespace P08LibraryWebAPPMVC.Client.Controllers
 		[HttpGet]
 		public async  Task<IActionResult> Add(string name, string author, int pages, string genres)
 		{
-            await _libraryServices.AddBookAsync(name,author,pages,genres);
-			return RedirectToAction(nameof(Index));
+            try
+            {
+				var response = await _libraryServices.AddBookAsync(name, author, pages, genres);
+				if (!response)
+				{
+                    return StatusCode(500);
+				}
+
+				return RedirectToAction(nameof(Index));
+			}
+			catch(Exception ex)
+            {
+				return BadRequest("Illegal Argument!");
+			}
 		}
 
 		[HttpGet]
         public async Task<IActionResult> GetById(int id)
         {
-			var book = await _libraryServices.GetBookAsync(id);
+            Book book;
+			try
+			{
+				book = await _libraryServices.GetBookAsync(id);
+				if (book==null)
+				{
+					return StatusCode(500);
+				}
+			}
+			catch (Exception ex)
+			{
+				return BadRequest("Client error!");
+			}
 
             //Copy data
             string genreList = "";
@@ -62,6 +88,7 @@ namespace P08LibraryWebAPPMVC.Client.Controllers
                 genreList += book.genres[i].name + ",";
             }
 			genreList += book.genres[i].name;
+            model.detailedBook = await _libraryServices.GetBookAsync(id);
             model.genres = genreList;
 
 			return View(model);
@@ -70,16 +97,40 @@ namespace P08LibraryWebAPPMVC.Client.Controllers
         [HttpGet]
         public async Task<IActionResult> Update(string name, string author, int pages, string genres, int id)
         {
-            var response=await _libraryServices.updateBookAsync(name,author,pages,genres,id);
-			return RedirectToAction(nameof(Index));
+			try
+			{
+				var response = await _libraryServices.updateBookAsync(name, author, pages, genres, id);
+				if (!response)
+				{
+					return StatusCode(500);
+				}
+				return RedirectToAction(nameof(Index));
+			}
+			catch (Exception ex)
+			{
+				return BadRequest("Illegal Argument!");
+			}
+
 		}
 
         [HttpGet]
         public async Task<IActionResult> Delete()
         {
-			int id=model.detailedBook.id;
-			await _libraryServices.removeBookAsync(id);
-            return RedirectToAction(nameof(Index));
+			try
+			{
+				int id = model.detailedBook.id;
+				var response = await _libraryServices.removeBookAsync(id);
+				if (!response)
+				{
+					return StatusCode(500);
+				}
+				return RedirectToAction(nameof(Index));
+			}
+			catch (Exception ex)
+			{
+				return BadRequest("Client error!");
+			}
+
         }
     }
 }

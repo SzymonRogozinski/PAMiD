@@ -24,12 +24,6 @@ namespace P06Shop.Shared.Library
         }
 
         public Book(){}
-
-
-        public static explicit operator Book(ServiceResponse<Book> v)
-        {
-            throw new NotImplementedException();
-        }
     }
 
     public class Genre

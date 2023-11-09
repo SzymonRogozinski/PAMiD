@@ -13,11 +13,11 @@ builder.Services.AddSwaggerGen();
 
 
 //Microsoft.EntityFrameworkCore.SqlServer
-builder.Services.AddDbContext<DataContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+//builder.Services.AddDbContext<DataContext>(options =>
+//    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 //builder.Services.AddScoped<IProductService, ProductService>();
-builder.Services.AddScoped<IBookDB,RealBookDB>();
+builder.Services.AddSingleton<IBookDB,SimpleBookDB>();
 
 // addScoped - obiekt jest tworzony za kazdym razem dla nowego zapytania http
 // jedno zaptranie tworzy jeden obiekt 
