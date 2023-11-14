@@ -7,7 +7,6 @@ C:\Users\RetailAdmin\Desktop\PAMiD\zadanie5\L5\P8LibraryWebAPPMVC.Client\obj\Deb
 C:\Users\RetailAdmin\Desktop\PAMiD\zadanie5\L5\P8LibraryWebAPPMVC.Client\obj\Debug\net7.0\P8LibraryWebAPPMVC.Client.RazorAssemblyInfo.cache
 C:\Users\RetailAdmin\Desktop\PAMiD\zadanie5\L5\P8LibraryWebAPPMVC.Client\obj\Debug\net7.0\P8LibraryWebAPPMVC.Client.RazorAssemblyInfo.cs
 C:\Users\RetailAdmin\Desktop\PAMiD\zadanie5\L5\P8LibraryWebAPPMVC.Client\bin\Debug\net7.0\appsettings.Development.json
-C:\Users\RetailAdmin\Desktop\PAMiD\zadanie5\L5\P8LibraryWebAPPMVC.Client\bin\Debug\net7.0\appsettings.Production.json
 C:\Users\RetailAdmin\Desktop\PAMiD\zadanie5\L5\P8LibraryWebAPPMVC.Client\bin\Debug\net7.0\appsettings.json
 C:\Users\RetailAdmin\Desktop\PAMiD\zadanie5\L5\P8LibraryWebAPPMVC.Client\bin\Debug\net7.0\P8LibraryWebAPPMVC.Client.staticwebassets.runtime.json
 C:\Users\RetailAdmin\Desktop\PAMiD\zadanie5\L5\P8LibraryWebAPPMVC.Client\bin\Debug\net7.0\P8LibraryWebAPPMVC.Client.exe

@@ -82,7 +82,7 @@ namespace P06Shop.Shared.Services.LibraryServices
             var result = JsonConvert.DeserializeObject<ServiceResponse<P06Shop.Shared.Library.Book>>(json);
             if (result.Success)
             {
-                return (P06Shop.Shared.Library.Book)result.Data;
+                return (Book)result.Data;
             }
             else
             {

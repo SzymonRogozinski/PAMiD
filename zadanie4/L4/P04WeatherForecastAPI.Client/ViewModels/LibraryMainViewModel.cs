@@ -78,7 +78,7 @@ namespace P04WeatherForecastAPI.Client.ViewModels
         {
             if (SelectedBook == null) 
             {
-                DetailedBook = new DetailedBookViewModel(new Book("","",0,new List<Genre>(),-1));
+                DetailedBook = new DetailedBookViewModel(new Book("","",0,new List<Genre>()));
             }
             else
             {

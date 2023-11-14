@@ -14,16 +14,15 @@ namespace P06Shop.Shared.Library
         public List<Genre> genres { get; set; }
         public int id { get; set; }
 
-        public Book(string name,string author,int pages, List<Genre> genres,int id) 
-        { 
-            this.name = name;
-            this.author = author;
-            this.pages = pages;
-            this.genres = genres;
-            this.id = id;
-        }
+		public Book(string name, string author, int pages, List<Genre> genres)
+		{
+			this.name = name;
+			this.author = author;
+			this.pages = pages;
+			this.genres = genres;
+		}
 
-        public Book(){}
+		public Book(){}
 
 
         public static explicit operator Book(ServiceResponse<Book> v)

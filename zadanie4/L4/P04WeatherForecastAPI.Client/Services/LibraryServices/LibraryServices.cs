@@ -38,7 +38,7 @@ namespace P04WeatherForecastAPI.Client.Services.LibraryServices
                 } 
             }
 
-            P06Shop.Shared.Library.Book book = new P06Shop.Shared.Library.Book(name, author, pages, genreList, -1);
+            Book book = new P06Shop.Shared.Library.Book(name, author, pages, genreList);
             string Input = JsonConvert.SerializeObject(book);
             StringContent data = new StringContent(Input, System.Text.Encoding.UTF8, "application/json");
 
@@ -108,7 +108,8 @@ namespace P04WeatherForecastAPI.Client.Services.LibraryServices
                 }
             }
 
-            P06Shop.Shared.Library.Book book = new P06Shop.Shared.Library.Book(name, author, pages, genreList, id);
+            Book book = new Book(name, author, pages, genreList);
+            book.id = id;
             string Input = JsonConvert.SerializeObject(book);
             StringContent data = new StringContent(Input, System.Text.Encoding.UTF8, "application/json");
 

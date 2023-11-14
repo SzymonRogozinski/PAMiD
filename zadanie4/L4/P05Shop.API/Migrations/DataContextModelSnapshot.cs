@@ -55,7 +55,7 @@ namespace P05Shop.API.Migrations
                         {
                             id = 1,
                             author = "Dagmar Hackett",
-                            genres = "Criminal",
+                            genres = "Romance,History",
                             name = "et cumque",
                             pages = 423
                         },
@@ -63,7 +63,7 @@ namespace P05Shop.API.Migrations
                         {
                             id = 2,
                             author = "Orval Tillman",
-                            genres = "Action,Horror,Action",
+                            genres = "History,Horror,Horror",
                             name = "error cupiditate",
                             pages = 1127
                         },
@@ -71,7 +71,7 @@ namespace P05Shop.API.Migrations
                         {
                             id = 3,
                             author = "Tyson Hudson",
-                            genres = "History,Romance",
+                            genres = "History",
                             name = "placeat qui",
                             pages = 848
                         },
@@ -79,7 +79,7 @@ namespace P05Shop.API.Migrations
                         {
                             id = 4,
                             author = "Janessa Botsford",
-                            genres = "Drama,Criminal,History",
+                            genres = "Criminal",
                             name = "ab non",
                             pages = 323
                         },
@@ -87,7 +87,7 @@ namespace P05Shop.API.Migrations
                         {
                             id = 5,
                             author = "Lera Flatley",
-                            genres = "Horror,Romance",
+                            genres = "Criminal,Criminal,Romance",
                             name = "et blanditiis",
                             pages = 206
                         },
@@ -95,7 +95,7 @@ namespace P05Shop.API.Migrations
                         {
                             id = 6,
                             author = "Earnestine Sauer",
-                            genres = "Drama",
+                            genres = "Horror,Horror,Criminal",
                             name = "quis beatae",
                             pages = 541
                         },
@@ -103,7 +103,7 @@ namespace P05Shop.API.Migrations
                         {
                             id = 7,
                             author = "Chad Grimes",
-                            genres = "Horror,Romance",
+                            genres = "History,Horror,Romance",
                             name = "omnis veritatis",
                             pages = 221
                         },
@@ -111,7 +111,7 @@ namespace P05Shop.API.Migrations
                         {
                             id = 8,
                             author = "Tina Cassin",
-                            genres = "History",
+                            genres = "Comic,Action,Horror",
                             name = "est ut",
                             pages = 980
                         },
@@ -119,7 +119,7 @@ namespace P05Shop.API.Migrations
                         {
                             id = 9,
                             author = "Aidan Gleason",
-                            genres = "History",
+                            genres = "Action,Comic",
                             name = "ad officiis",
                             pages = 898
                         },
@@ -127,7 +127,7 @@ namespace P05Shop.API.Migrations
                         {
                             id = 10,
                             author = "Griffin Mayert",
-                            genres = "Romance,Horror,Horror",
+                            genres = "Action,History,Horror",
                             name = "minima aut",
                             pages = 1090
                         });

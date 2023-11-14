@@ -13,7 +13,7 @@
 <div class="Page">
 	<div class="content">
 		<h3>Book List</h3>
-		<@Html.DropDownList(Model.detailedBook.name, titleList, new { @onchange="callChangefunc(this.value)" } )
+		@Html.DropDownList(Model.detailedBook.name, titleList, new { @onchange="callChangefunc(this.value)" } )
 		<input type="hidden" id="book_id" value="@Model.detailedBook.id" />
 	</div>
 	<div class="content">

@@ -62,7 +62,7 @@ namespace P05Shop.API.Controllers
         [HttpPost("add")]
         public async Task<ActionResult<ServiceResponse<bool>>> AddBook(P06Shop.Shared.Library.Book book)//[FromQuery] string name, [FromQuery] string author, [FromQuery] int pages, [FromQuery] string genres)
         {
-            var res=await _bookDB.AddBook(new P06Shop.Shared.Library.Book(book.name, book.author, book.pages, book.genres, nextId));
+            var res=await _bookDB.AddBook(new Book(book.name, book.author, book.pages, book.genres));
             if (res.Success)
             {
                 nextId++;
@@ -97,7 +97,7 @@ namespace P05Shop.API.Controllers
 
         //https://localhost:7230/api/Book/update?name=sample&author=au&pages=$$$genres=*,*,*&id=$
         [HttpPut("update")]
-        public async Task<ActionResult<ServiceResponse<bool>>>  updateBook(P06Shop.Shared.Library.Book book)
+        public async Task<ActionResult<ServiceResponse<bool>>>  updateBook(Book book)
         {
 
             var res = await _bookDB.UpdateBook(book, book.id);

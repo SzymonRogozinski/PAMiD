@@ -163,7 +163,7 @@ namespace P05Shop.API.Services.BookDB
             }
         }
 
-        public async Task<ServiceResponse<bool>> UpdateBook(P06Shop.Shared.Library.Book book, int id)
+        public async Task<ServiceResponse<bool>> UpdateBook(Book book, int id)
         {
             try
             {
