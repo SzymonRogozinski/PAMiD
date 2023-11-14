@@ -1,0 +1,55 @@
+﻿@page "/Library/editbook/{id:int}"
+
+@inject ILibraryServices LibraryService
+@inject NavigationManager NavigationManager
+
+@if (book == null)
+{
+    <p><em>@message</em></p>
+}
+else
+{
+    <BookForm book="book" OnValidSubmit="HandleValidSubmit" parameters="param"></BookForm>
+    <button class="btn btn-danger" @onclick=HandleDelete>Delete</button>
+}
+
+
+
+@code {
+    [Parameter]
+    public int Id { get; set; }
+
+    private Dictionary<string, Object> param { get; set; }
+
+    private BookViewModel book;
+    private string message = "Loading product...";
+
+    protected override async Task OnInitializedAsync()
+    {
+        param = new Dictionary<string, Object>();
+        param.Add("ButtonName","Update");
+        Book response = await LibraryService.GetBookAsync(Id);
+        if (response!=null)
+            book = new BookViewModel(response);
+        else
+            message = "Error";
+    }
+
+    async Task HandleValidSubmit()
+    {
+        bool response = await LibraryService.updateBookAsync(book.name,book.author,book.pages,book.genresString,Id);
+        if (response)
+            NavigationManager.NavigateTo("/Library");
+        else
+            message = "Error";
+    }
+
+    async Task HandleDelete()
+    {
+        var response = await LibraryService.removeBookAsync(book.id);
+        if (response)
+            NavigationManager.NavigateTo("/Library");
+        else
+            message = "Error";
+    }
+}

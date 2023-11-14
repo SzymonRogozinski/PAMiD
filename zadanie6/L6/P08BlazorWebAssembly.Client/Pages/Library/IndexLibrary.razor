@@ -1,0 +1,118 @@
+﻿@page "/Library"
+
+@inject ILibraryServices LibraryService
+@inject NavigationManager NavigationManager
+
+<h3>Full list of books</h3>
+
+@if (books == null)
+{
+    <p><em>@message</em></p>
+}
+
+else
+{
+    <!--<div>
+        <InputText @bind-Value=searchTerm></InputText>
+        <button class="btn btn-primary" @onclick=Search>Search</button>
+    </div>-->
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Pages</th>
+                <th>Genres</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (BookViewModel book in books)
+            {
+                <tr>
+                    <td>@book.id</td>
+                    <td>@book.name</td>
+                    <td>@book.author</td>
+                    <td>@book.pages</td>
+                    <td>@book.genresString</td>
+                    <td>
+                        <button class="btn btn-primary" @onclick="()=> GoToEdit(book.id)">Edit</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <!--<button class="btn btn-primary" disabled="@(currentPage==1)" @onclick="PreviousPage">Previous</button>
+    <span>@currentPage</span>
+    <button class="btn btn-primary" @onclick="NextPage">Next</button>-->
+}
+
+<p>
+    <a href="Library/addbook">Create new product</a>
+</p>
+
+@code {
+    private List<BookViewModel> books;
+    private string message = "Loading books...";
+
+    private int currentPage = 1;
+    private const int pageSize = 10;
+
+    private string searchTerm = "";
+
+    protected override async Task OnInitializedAsync()
+    {
+        await  LoadProducts();
+    }
+
+    private async Task LoadProducts()
+    {
+        List<Book> response = (List<Book>)await LibraryService.GetAllBooksAsync();
+        if (response!=null)
+        {
+            books = new List<BookViewModel>();
+            foreach (Book book in response)
+            {
+                books.Add(new BookViewModel(book));
+            }
+            
+            //.Skip(pageSize * (currentPage - 1))
+            //.Take(pageSize)
+            //.ToList();
+        }
+        else
+        {
+            message = "Error!";
+            //message = response.Message;
+        }
+    }
+
+
+    void GoToEdit(int id)
+    {
+        NavigationManager.NavigateTo($"/Library/editbook/{id}");
+    }
+
+    /*private async Task PreviousPage()
+    {
+        if (currentPage > 1)
+        {
+            currentPage--;
+            await LoadProducts();
+        }
+    }
+    private async Task NextPage()
+    {
+        currentPage++;
+        await LoadProducts();
+    }
+
+    private async Task Search()
+    {
+        currentPage = 1;
+        await LoadProducts();
+    }*/
+}
+
