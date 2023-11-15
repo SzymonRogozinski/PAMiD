@@ -16,4 +16,10 @@ namespace P06Shop.Shared
     
 
     }
+
+    public class ServiceResponseBookCut<T>:ServiceResponse<T>
+    {
+        public int MaxPage { get; set; }
+    }
+
 }

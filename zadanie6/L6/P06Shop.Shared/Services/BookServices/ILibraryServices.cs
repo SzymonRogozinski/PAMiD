@@ -9,11 +9,11 @@ namespace P06Shop.Shared.Services.LibraryServices
 {
     public interface ILibraryServices
     {
-        Task<IEnumerable<Book>> GetAllBooksAsync();
-        Task<Book> GetBookAsync(int id);
-        Task<bool> removeBookAsync(int id);
-        Task<bool> AddBookAsync(string name, string author,int pages, string genres);
-        Task<bool> updateBookAsync(string name, string author, int pages, string genres,int id);
-
+        Task<ServiceResponse<List<Book>>> GetAllBooksAsync();
+        Task<ServiceResponseBookCut<List<Book>>> GetBookPageAsync(int size, int page);
+        Task<ServiceResponse<Book>> GetBookAsync(int id);
+        Task<ServiceResponse<bool>> removeBookAsync(int id);
+        Task<ServiceResponse<bool>> AddBookAsync(string name, string author, int pages, string genres);
+        Task<ServiceResponse<bool>> updateBookAsync(string name, string author, int pages, string genres, int id);
     }
 }

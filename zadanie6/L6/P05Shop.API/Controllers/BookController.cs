@@ -3,6 +3,7 @@ using P05Shop.API.Services.BookDB;
 using P06Shop.Shared;
 using P06Shop.Shared.Library;
 using P06Shop.Shared.Services.BookServices;
+using System.Collections.Generic;
 
 namespace P05Shop.API.Controllers
 {
@@ -22,8 +23,8 @@ namespace P05Shop.API.Controllers
         }
 
         //https://localhost:7230/api/Book/getAll
-        [HttpGet("getAll")]
-        public async Task<ActionResult<ServiceResponse<IEnumerable<P06Shop.Shared.Library.Book>>>> GetBooks()
+        /*[HttpGet("getAll")]
+        public async Task<ActionResult<ServiceResponse<IEnumerable<Book>>>> GetBooks()
         {
             var res = await _bookDB.GetAllBooks();
             if (res.Success)
@@ -34,6 +35,53 @@ namespace P05Shop.API.Controllers
             {
                 return StatusCode(500, $"Internal server error {res.Message}");
                 
+            }
+        }*/
+
+        //https://localhost:7230/api/Book/getAll
+        [HttpGet("getAll")]
+        public async Task<ActionResult<ServiceResponse<List<Book>>>> GetBooks([FromQuery] int? size, [FromQuery] int? page)
+        {
+            var res = await _bookDB.GetAllBooks();
+            if (!size.HasValue || !page.HasValue) {
+                if (res.Success)
+                {
+                    return Ok(res);
+                }
+                else
+                {
+                    return StatusCode(500, $"Internal server error {res.Message}");
+
+                }
+            }
+
+            int PageIsReal, SizeIsReal;
+            PageIsReal = page.Value;
+            SizeIsReal = size.Value;
+
+            if (res.Success)
+            {
+                List<Book> books = new List<Book>();
+                int start = SizeIsReal * (PageIsReal - 1);
+                int end = (SizeIsReal * PageIsReal) > res.Data.Count ? res.Data.Count : (SizeIsReal * PageIsReal);
+
+                for (int i = start; i < end; i++)
+                {
+                    books.Add(res.Data[i]);
+                }
+                var bookPacked = new ServiceResponseBookCut<List<Book>>()
+                {
+                    Data = books,
+                    Message = "ok",
+                    Success = true,
+                    MaxPage = (int)Math.Ceiling(((double) res.Data.Count / SizeIsReal))
+                };
+                return Ok(bookPacked);
+            }
+            else
+            {
+                return StatusCode(500, $"Internal server error {res.Message}");
+
             }
         }
 

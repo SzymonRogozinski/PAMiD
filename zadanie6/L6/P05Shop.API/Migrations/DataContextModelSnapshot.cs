@@ -55,7 +55,7 @@ namespace P05Shop.API.Migrations
                         {
                             id = 1,
                             author = "Dagmar Hackett",
-                            genres = "Romance,History",
+                            genres = "Comic",
                             name = "et cumque",
                             pages = 423
                         },
@@ -63,7 +63,7 @@ namespace P05Shop.API.Migrations
                         {
                             id = 2,
                             author = "Orval Tillman",
-                            genres = "History,Horror,Horror",
+                            genres = "Romance,Action",
                             name = "error cupiditate",
                             pages = 1127
                         },
@@ -71,7 +71,7 @@ namespace P05Shop.API.Migrations
                         {
                             id = 3,
                             author = "Tyson Hudson",
-                            genres = "History",
+                            genres = "Comic,Romance,Comic",
                             name = "placeat qui",
                             pages = 848
                         },
@@ -79,7 +79,7 @@ namespace P05Shop.API.Migrations
                         {
                             id = 4,
                             author = "Janessa Botsford",
-                            genres = "Criminal",
+                            genres = "Comic,Criminal",
                             name = "ab non",
                             pages = 323
                         },
@@ -87,7 +87,7 @@ namespace P05Shop.API.Migrations
                         {
                             id = 5,
                             author = "Lera Flatley",
-                            genres = "Criminal,Criminal,Romance",
+                            genres = "Romance,Romance,Drama",
                             name = "et blanditiis",
                             pages = 206
                         },
@@ -95,7 +95,7 @@ namespace P05Shop.API.Migrations
                         {
                             id = 6,
                             author = "Earnestine Sauer",
-                            genres = "Horror,Horror,Criminal",
+                            genres = "Criminal,Comic,Romance",
                             name = "quis beatae",
                             pages = 541
                         },
@@ -103,7 +103,7 @@ namespace P05Shop.API.Migrations
                         {
                             id = 7,
                             author = "Chad Grimes",
-                            genres = "History,Horror,Romance",
+                            genres = "Horror,Romance",
                             name = "omnis veritatis",
                             pages = 221
                         },
@@ -111,7 +111,7 @@ namespace P05Shop.API.Migrations
                         {
                             id = 8,
                             author = "Tina Cassin",
-                            genres = "Comic,Action,Horror",
+                            genres = "Romance,Criminal,Criminal",
                             name = "est ut",
                             pages = 980
                         },
@@ -119,7 +119,7 @@ namespace P05Shop.API.Migrations
                         {
                             id = 9,
                             author = "Aidan Gleason",
-                            genres = "Action,Comic",
+                            genres = "Criminal",
                             name = "ad officiis",
                             pages = 898
                         },
@@ -127,9 +127,249 @@ namespace P05Shop.API.Migrations
                         {
                             id = 10,
                             author = "Griffin Mayert",
-                            genres = "Action,History,Horror",
+                            genres = "Drama,History,Drama",
                             name = "minima aut",
                             pages = 1090
+                        },
+                        new
+                        {
+                            id = 11,
+                            author = "Golda Jones",
+                            genres = "Drama,Comic",
+                            name = "ducimus dolor",
+                            pages = 1129
+                        },
+                        new
+                        {
+                            id = 12,
+                            author = "Wilber Farrell",
+                            genres = "Romance,Criminal,Romance",
+                            name = "neque dicta",
+                            pages = 1817
+                        },
+                        new
+                        {
+                            id = 13,
+                            author = "Zoie Murray",
+                            genres = "Criminal,Horror",
+                            name = "corrupti et",
+                            pages = 1592
+                        },
+                        new
+                        {
+                            id = 14,
+                            author = "Maci Gutmann",
+                            genres = "History",
+                            name = "est est",
+                            pages = 1613
+                        },
+                        new
+                        {
+                            id = 15,
+                            author = "Evert Morissette",
+                            genres = "Criminal,Horror",
+                            name = "illum repellat",
+                            pages = 1740
+                        },
+                        new
+                        {
+                            id = 16,
+                            author = "Fannie Schoen",
+                            genres = "Comic",
+                            name = "natus iusto",
+                            pages = 1614
+                        },
+                        new
+                        {
+                            id = 17,
+                            author = "Mckenzie Friesen",
+                            genres = "Romance,Comic",
+                            name = "quia tempore",
+                            pages = 1618
+                        },
+                        new
+                        {
+                            id = 18,
+                            author = "Neva Robel",
+                            genres = "Romance,Action,Horror",
+                            name = "qui nam",
+                            pages = 1855
+                        },
+                        new
+                        {
+                            id = 19,
+                            author = "May Erdman",
+                            genres = "Comic,Criminal",
+                            name = "occaecati aliquam",
+                            pages = 1978
+                        },
+                        new
+                        {
+                            id = 20,
+                            author = "Gia Krajcik",
+                            genres = "Horror,Criminal,Action",
+                            name = "doloremque officiis",
+                            pages = 1506
+                        },
+                        new
+                        {
+                            id = 21,
+                            author = "Bailee Sanford",
+                            genres = "Comic",
+                            name = "et praesentium",
+                            pages = 1449
+                        },
+                        new
+                        {
+                            id = 22,
+                            author = "Orpha Luettgen",
+                            genres = "Drama",
+                            name = "ducimus fugiat",
+                            pages = 1989
+                        },
+                        new
+                        {
+                            id = 23,
+                            author = "Cecilia Kautzer",
+                            genres = "History",
+                            name = "est quod",
+                            pages = 1476
+                        },
+                        new
+                        {
+                            id = 24,
+                            author = "Neoma Shields",
+                            genres = "Horror,History,Criminal",
+                            name = "vel sed",
+                            pages = 455
+                        },
+                        new
+                        {
+                            id = 25,
+                            author = "Tad Hodkiewicz",
+                            genres = "Romance,Action",
+                            name = "voluptatem eveniet",
+                            pages = 596
+                        },
+                        new
+                        {
+                            id = 26,
+                            author = "Bradley Murazik",
+                            genres = "Horror,Romance,Romance",
+                            name = "natus ullam",
+                            pages = 1679
+                        },
+                        new
+                        {
+                            id = 27,
+                            author = "Savannah Beier",
+                            genres = "Drama,Horror,Action",
+                            name = "nobis quae",
+                            pages = 385
+                        },
+                        new
+                        {
+                            id = 28,
+                            author = "Tina Lehner",
+                            genres = "Romance,Comic",
+                            name = "porro in",
+                            pages = 742
+                        },
+                        new
+                        {
+                            id = 29,
+                            author = "Cleve Rogahn",
+                            genres = "Drama,Horror,Action",
+                            name = "placeat rerum",
+                            pages = 438
+                        },
+                        new
+                        {
+                            id = 30,
+                            author = "Doug Kuhn",
+                            genres = "Criminal",
+                            name = "dolor dicta",
+                            pages = 389
+                        },
+                        new
+                        {
+                            id = 31,
+                            author = "Keenan Gleichner",
+                            genres = "Horror",
+                            name = "quos quia",
+                            pages = 1462
+                        },
+                        new
+                        {
+                            id = 32,
+                            author = "Mireya Kunze",
+                            genres = "Romance",
+                            name = "minus unde",
+                            pages = 359
+                        },
+                        new
+                        {
+                            id = 33,
+                            author = "Camren Reichel",
+                            genres = "Romance",
+                            name = "voluptatem quo",
+                            pages = 654
+                        },
+                        new
+                        {
+                            id = 34,
+                            author = "Berniece Funk",
+                            genres = "Comic,Criminal,Romance",
+                            name = "cum et",
+                            pages = 80
+                        },
+                        new
+                        {
+                            id = 35,
+                            author = "Daisy Kozey",
+                            genres = "Comic,Action",
+                            name = "labore est",
+                            pages = 947
+                        },
+                        new
+                        {
+                            id = 36,
+                            author = "Carroll Daugherty",
+                            genres = "Criminal,Romance,Comic",
+                            name = "dolores cumque",
+                            pages = 1020
+                        },
+                        new
+                        {
+                            id = 37,
+                            author = "Lorna Kling",
+                            genres = "Action,Horror,Romance",
+                            name = "rem voluptatem",
+                            pages = 717
+                        },
+                        new
+                        {
+                            id = 38,
+                            author = "Lelah Hauck",
+                            genres = "Romance,Comic",
+                            name = "natus corrupti",
+                            pages = 906
+                        },
+                        new
+                        {
+                            id = 39,
+                            author = "Hollis Hilpert",
+                            genres = "Action,Drama",
+                            name = "dolorem at",
+                            pages = 450
+                        },
+                        new
+                        {
+                            id = 40,
+                            author = "Jarrett Kertzmann",
+                            genres = "Horror,Comic,Comic",
+                            name = "eaque id",
+                            pages = 1065
                         });
                 });
 #pragma warning restore 612, 618

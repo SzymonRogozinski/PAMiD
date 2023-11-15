@@ -24,7 +24,7 @@ namespace P07Shop.DataSeeder
                 .RuleFor(x => x.genres, f => GenerateGenres())
                 .RuleFor(x => x.id, f => productId++);
 
-            return productFaker.Generate(10).ToList();
+            return productFaker.Generate(40).ToList();
 
         }
 

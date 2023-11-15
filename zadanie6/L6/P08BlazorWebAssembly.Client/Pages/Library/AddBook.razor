@@ -3,6 +3,8 @@
 @inject ILibraryServices LibraryService
 @inject NavigationManager NavigationManager
 
+<PageTitle>Add new book</PageTitle>
+<h3>Adding Book</h3>
 @if (message != null)
 {
     <p><em>@message</em></p>
@@ -28,10 +30,10 @@ else
     {
 
         var response = await LibraryService.AddBookAsync(book.name,book.author,book.pages,book.genresString);
-        if (response)
+        if (response.Success)
             NavigationManager.NavigateTo("/Library");
         else
-            message = "Error";
+            message = response.Message;
     }
 
 

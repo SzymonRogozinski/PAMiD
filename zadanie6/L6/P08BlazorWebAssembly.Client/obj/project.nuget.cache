@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "GGABAIwt4fOdvXaU1pjZHiYBbXzmEgSPgYwAxslxTTuUkD5pYm2oPsrptRK6Jn+jnxBLdrE/PorWhv9MfV2GIw==",
+  "dgSpecHash": "CzXWC5rDg23HzFkDsx7F/PVYP0tngBSy5rZLPXpbNvL9DEI04mXwgQWpJCz+2IBC3UpSvqx6oOVVcrkhR3cwlQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie6\\L6\\P08BlazorWebAssembly.Client\\P08BlazorWebAssembly.Client.csproj",
   "expectedPackageFiles": [
@@ -40,7 +40,7 @@
     "C:\\Users\\RetailAdmin\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512",
     "C:\\Users\\RetailAdmin\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
     "C:\\Users\\RetailAdmin\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512",
-    "C:\\Users\\RetailAdmin\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\7.0.13\\microsoft.netcore.app.runtime.mono.browser-wasm.7.0.13.nupkg.sha512"
+    "C:\\Users\\RetailAdmin\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\7.0.14\\microsoft.netcore.app.runtime.mono.browser-wasm.7.0.14.nupkg.sha512"
   ],
   "logs": []
 }

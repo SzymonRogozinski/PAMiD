@@ -3,6 +3,7 @@
 @inject ILibraryServices LibraryService
 @inject NavigationManager NavigationManager
 
+<PageTitle>ILibrary</PageTitle>
 <h3>Full list of books</h3>
 
 @if (books == null)
@@ -44,9 +45,17 @@ else
         </tbody>
     </table>
 
-    <!--<button class="btn btn-primary" disabled="@(currentPage==1)" @onclick="PreviousPage">Previous</button>
+    <button class="btn btn-primary" disabled="@(currentPage==1)" @onclick="PreviousPage">Previous</button>
     <span>@currentPage</span>
-    <button class="btn btn-primary" @onclick="NextPage">Next</button>-->
+    <button class="btn btn-primary" disabled="@(currentPage==maxPage)" @onclick="NextPage">Next</button>
+
+    <div>
+        <span>Page Size</span>
+        <button class="btn PageSize" disabled="@(pageSize==5)" @onclick="() => ChangePageSize(5)">5</button>
+        <button class="btn PageSize" disabled="@(pageSize==10)" @onclick="() => ChangePageSize(10)">10</button>
+        <button class="btn PageSize" disabled="@(pageSize==20)" @onclick="() => ChangePageSize(20)">20</button>
+    </div>
+    
 }
 
 <p>
@@ -58,7 +67,8 @@ else
     private string message = "Loading books...";
 
     private int currentPage = 1;
-    private const int pageSize = 10;
+    private int pageSize = 5;
+    private int maxPage = 1;
 
     private string searchTerm = "";
 
@@ -69,33 +79,33 @@ else
 
     private async Task LoadProducts()
     {
-        List<Book> response = (List<Book>)await LibraryService.GetAllBooksAsync();
-        if (response!=null)
+        var response = await LibraryService.GetBookPageAsync(pageSize,currentPage);
+        if (response.Success && response.Data != null)
         {
+            maxPage = response.MaxPage;
+            List<Book> bookList = response.Data;
             books = new List<BookViewModel>();
-            foreach (Book book in response)
+            foreach (Book book in response.Data)
             {
                 books.Add(new BookViewModel(book));
             }
-            
-            //.Skip(pageSize * (currentPage - 1))
-            //.Take(pageSize)
-            //.ToList();
+        }
+        else if (response.Data == null)
+        {
+            message = "Database is empty!";
         }
         else
         {
-            message = "Error!";
-            //message = response.Message;
+            message = response.Message;
         }
     }
-
 
     void GoToEdit(int id)
     {
         NavigationManager.NavigateTo($"/Library/editbook/{id}");
     }
 
-    /*private async Task PreviousPage()
+    private async Task PreviousPage()
     {
         if (currentPage > 1)
         {
@@ -105,14 +115,17 @@ else
     }
     private async Task NextPage()
     {
-        currentPage++;
-        await LoadProducts();
+        if (currentPage < maxPage)
+        {
+            currentPage++;
+            await LoadProducts();
+        }
     }
 
-    private async Task Search()
+    private async Task ChangePageSize(int newSize)
     {
-        currentPage = 1;
+        pageSize = newSize;
         await LoadProducts();
-    }*/
+    }
 }
 

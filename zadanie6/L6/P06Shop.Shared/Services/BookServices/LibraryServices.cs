@@ -25,7 +25,7 @@ namespace P06Shop.Shared.Services.LibraryServices
             baseURL = _appSettings.BaseAPIUrl+"/"+_appSettings.BaseProductEndpoint.Base_url;
         }
 
-        public async Task<bool> AddBookAsync(string name, string author, int pages, string genres) 
+        public async Task<ServiceResponse<bool>> AddBookAsync(string name, string author, int pages, string genres)
         {
             if (name == null || author==null || genres==null || pages==0) { 
                 throw new ArgumentException(); 
@@ -47,31 +47,26 @@ namespace P06Shop.Shared.Services.LibraryServices
             var response = await _httpClient.PostAsync(_appSettings.BaseProductEndpoint.AddProductEndpoint,data);
             var json = await response.Content.ReadAsStringAsync();
             var result = JsonConvert.DeserializeObject<ServiceResponse<bool>>(json);
-            if (!result.Success)
-            {
-                System.Console.WriteLine(result.Message);
-            }
-            return result.Success;
-
+            return result;
         }
 
-        public async Task<IEnumerable<Book>> GetAllBooksAsync()
+        public async Task<ServiceResponse<List<Book>>> GetAllBooksAsync()
         {
             var response = await _httpClient.GetAsync(_appSettings.BaseProductEndpoint.GetAllProductsEndpoint);
             var json = await response.Content.ReadAsStringAsync();
             var result = JsonConvert.DeserializeObject<ServiceResponse<List<Book>>>(json);
-            if (result.Success)
-            {
-                return (IEnumerable<Book>)result.Data;
-            }
-            else
-            {
-                System.Console.WriteLine(result.Message);
-                return null;
-            }
+            return result;
         }
 
-        public async Task<Book> GetBookAsync(int id)
+        public async Task<ServiceResponseBookCut<List<Book>>> GetBookPageAsync(int size, int page) 
+        {
+            var response = await _httpClient.GetAsync(_appSettings.BaseProductEndpoint.GetAllProductsEndpoint+$"?size={size}&page={page}");
+            var json = await response.Content.ReadAsStringAsync();
+            var result = JsonConvert.DeserializeObject<ServiceResponseBookCut<List<Book>>>(json);
+            return result;
+        }
+
+        public async Task<ServiceResponse<Book>> GetBookAsync(int id)
         {
 			if (id<=0)
 			{
@@ -80,18 +75,10 @@ namespace P06Shop.Shared.Services.LibraryServices
 			var response = await _httpClient.GetAsync(_appSettings.BaseProductEndpoint.GetOneProductEndpoint + $"?id={id}");
             var json = await response.Content.ReadAsStringAsync();
             var result = JsonConvert.DeserializeObject<ServiceResponse<Book>>(json);
-            if (result.Success)
-            {
-                return (Book)result.Data;
-            }
-            else
-            {
-                System.Console.WriteLine(result.Message);
-                return null;
-            }
+            return result;
         }
 
-        public async Task<bool> removeBookAsync(int id)
+        public async Task<ServiceResponse<bool>> removeBookAsync(int id)
         {
 			if (id <= 0)
 			{
@@ -99,16 +86,15 @@ namespace P06Shop.Shared.Services.LibraryServices
 			}
 			var response =await _httpClient.DeleteAsync(_appSettings.BaseProductEndpoint.DeleteProductEndpoint + $"?id={id}");
             var succes =response.IsSuccessStatusCode;
-            if (!succes)
-            {
-                System.Console.WriteLine(response.StatusCode);
-            }
-            return succes;
+            ServiceResponse<bool> result = new ServiceResponse<bool>();
+            result.Success = succes;
+            result.Message=response.StatusCode.ToString();
+            return result;
         }
 
-        public async Task<bool> updateBookAsync(string name, string author, int pages, string genres, int id)
+        public async Task<ServiceResponse<bool>> updateBookAsync(string name, string author, int pages, string genres, int id)
         {
-			if (name == null || author == null || genres == null || pages == 0 || id<=0)
+            if (name == null || author == null || genres == null || pages == 0 || id<=0)
 			{
 				throw new ArgumentException();
 			}
@@ -130,11 +116,7 @@ namespace P06Shop.Shared.Services.LibraryServices
             var response = await _httpClient.PutAsync(_appSettings.BaseProductEndpoint.UpdateProductsEndpoint,data);
             var json = await response.Content.ReadAsStringAsync();
             var result = JsonConvert.DeserializeObject<ServiceResponse<bool>>(json);
-            if (!result.Success)
-            {
-                System.Console.WriteLine(result.Message);
-            }
-            return result.Success;
+            return result;
         }
     }
 }

@@ -3,6 +3,8 @@
 @inject ILibraryServices LibraryService
 @inject NavigationManager NavigationManager
 
+<PageTitle>Edit book</PageTitle>
+<h3>Editing Book</h3>
 @if (book == null)
 {
     <p><em>@message</em></p>
@@ -28,28 +30,37 @@ else
     {
         param = new Dictionary<string, Object>();
         param.Add("ButtonName","Update");
-        Book response = await LibraryService.GetBookAsync(Id);
-        if (response!=null)
-            book = new BookViewModel(response);
+        var response = await LibraryService.GetBookAsync(Id);
+
+        if (response.Success && response.Data != null)
+        {
+            book = new BookViewModel(response.Data);
+        }
+        else if (response.Data == null)
+        {
+            message = "Book not found!";
+        }
         else
-            message = "Error";
+        {
+            message = response.Message;
+        }
     }
 
     async Task HandleValidSubmit()
     {
-        bool response = await LibraryService.updateBookAsync(book.name,book.author,book.pages,book.genresString,Id);
-        if (response)
+        var response = await LibraryService.updateBookAsync(book.name,book.author,book.pages,book.genresString,Id);
+        if (response.Success)
             NavigationManager.NavigateTo("/Library");
         else
-            message = "Error";
+            message = response.Message;
     }
 
     async Task HandleDelete()
     {
         var response = await LibraryService.removeBookAsync(book.id);
-        if (response)
+        if (response.Success)
             NavigationManager.NavigateTo("/Library");
         else
-            message = "Error";
+            message = "Error number "+response.Message;
     }
 }
