@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>P08Library.MAUI</name>
+    </assembly>
+    <members>
+        <member name="T:P08Library.MAUI.ViewModel.LibraryMainViewModel">
+            <inheritdoc/>
+        </member>
+        <member name="F:P08Library.MAUI.ViewModel.LibraryMainViewModel.getBooksCommand">
+            <summary>The backing field for <see cref="P:P08Library.MAUI.ViewModel.LibraryMainViewModel.GetBooksCommand"/>.</summary>
+        </member>
+        <member name="P:P08Library.MAUI.ViewModel.LibraryMainViewModel.GetBooksCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:P08Library.MAUI.ViewModel.LibraryMainViewModel.GetBooks"/>.</summary>
+        </member>
+    </members>
+</doc>

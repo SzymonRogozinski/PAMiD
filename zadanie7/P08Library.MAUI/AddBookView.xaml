@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="P08Library.MAUI.AddBookView"
+             Title="NewPage1">
+    <VerticalStackLayout>
+        <Grid Margin="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Label Text="Title:" Grid.Row="0" Grid.Column="0"/>
+            <Entry Text="{Binding BookViewModel.name}" Grid.Row="0" Grid.Column="1"/>
+
+            <Label Text="Author:" Grid.Row="1" Grid.Column="0"/>
+            <Entry Text="{Binding BookViewModel.author}" Grid.Row="1" Grid.Column="1"/>
+
+            <Label Text="Pages:" Grid.Row="2" Grid.Column="0"/>
+            <Entry Text="{Binding BookViewModel.pages}" Grid.Row="2" Grid.Column="1"/>
+
+            <Label Text="Genres:" Grid.Row="3" Grid.Column="0"/>
+            <Entry Text="{Binding BookViewModel.genresString}" Grid.Row="3" Grid.Column="1"/>
+
+            <Button Text="Add" Command="{Binding addBookCommand}" Grid.Row="4"/>
+            <Button Text="Go back" Command="{Binding goBackCommand}" Grid.Row="5"/>
+        </Grid>
+    </VerticalStackLayout>
+</ContentPage>

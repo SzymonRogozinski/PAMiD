@@ -343,3 +343,4 @@ C:\Users\RetailAdmin\Desktop\PAMiD\zadanie6\L6\P05Shop.API\obj\Debug\net7.0\refi
 C:\Users\RetailAdmin\Desktop\PAMiD\zadanie6\L6\P05Shop.API\obj\Debug\net7.0\P05Shop.API.pdb
 C:\Users\RetailAdmin\Desktop\PAMiD\zadanie6\L6\P05Shop.API\obj\Debug\net7.0\P05Shop.API.genruntimeconfig.cache
 C:\Users\RetailAdmin\Desktop\PAMiD\zadanie6\L6\P05Shop.API\obj\Debug\net7.0\ref\P05Shop.API.dll
+C:\Users\RetailAdmin\Desktop\PAMiD\zadanie6\L6\P05Shop.API\obj\Debug\net7.0\P05Shop.API.sourcelink.json

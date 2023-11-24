@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "CzXWC5rDg23HzFkDsx7F/PVYP0tngBSy5rZLPXpbNvL9DEI04mXwgQWpJCz+2IBC3UpSvqx6oOVVcrkhR3cwlQ==",
+  "dgSpecHash": "rUGsjGskIQHBiGakT51CjEkzrMgN+O/OWBhOz12iRH4e0doNe7kG8dECCAdrfKFs9Usfxv0Tnfn6IC4m9iXQnQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie6\\L6\\P08BlazorWebAssembly.Client\\P08BlazorWebAssembly.Client.csproj",
   "expectedPackageFiles": [
@@ -29,6 +29,9 @@
     "C:\\Users\\RetailAdmin\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
     "C:\\Users\\RetailAdmin\\.nuget\\packages\\microsoft.jsinterop\\7.0.5\\microsoft.jsinterop.7.0.5.nupkg.sha512",
     "C:\\Users\\RetailAdmin\\.nuget\\packages\\microsoft.jsinterop.webassembly\\7.0.5\\microsoft.jsinterop.webassembly.7.0.5.nupkg.sha512",
+    "C:\\Users\\RetailAdmin\\.nuget\\packages\\microsoft.net.illink.analyzers\\7.0.100-1.23211.1\\microsoft.net.illink.analyzers.7.0.100-1.23211.1.nupkg.sha512",
+    "C:\\Users\\RetailAdmin\\.nuget\\packages\\microsoft.net.illink.tasks\\7.0.100-1.23211.1\\microsoft.net.illink.tasks.7.0.100-1.23211.1.nupkg.sha512",
+    "C:\\Users\\RetailAdmin\\.nuget\\packages\\microsoft.net.sdk.webassembly.pack\\8.0.0\\microsoft.net.sdk.webassembly.pack.8.0.0.nupkg.sha512",
     "C:\\Users\\RetailAdmin\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\RetailAdmin\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\RetailAdmin\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",

@@ -73,10 +73,6 @@
       "url": "sample-data\/weather.json"
     },
     {
-      "hash": "sha256-Oo0Hi04+7CGCSRmE2zhIo7UBRAAQ5f0DwmQ89ObTMUo=",
-      "url": "P08BlazorWebAssembly.Client.styles.css"
-    },
-    {
       "hash": "sha256-V5Y5+xajHZGRCmw4Z6DZGfoZp3sHUMj6DjY7q7lrEV0=",
       "url": "appsettings.Development.json"
     },
@@ -87,6 +83,14 @@
     {
       "hash": "sha256-wLmmBFA4GYnUp1Ebnu92envDHtAZhfk0oXwonaa2xpI=",
       "url": "appsettings.Production.json"
+    },
+    {
+      "hash": "sha256-lOCs45frNf+D7me6lKLgUhRCdt4VwHCp9H6Ct+YWzfs=",
+      "url": "_framework\/blazor.webassembly.js"
+    },
+    {
+      "hash": "sha256-Oo0Hi04+7CGCSRmE2zhIo7UBRAAQ5f0DwmQ89ObTMUo=",
+      "url": "P08BlazorWebAssembly.Client.styles.css"
     },
     {
       "hash": "sha256-\/EkWRHMHBhfvvlx5hLVtXGPm8+Gyp4WkPiKKiiJIrqQ=",
@@ -873,10 +877,6 @@
       "url": "_framework\/dotnet.wasm"
     },
     {
-      "hash": "sha256-tO5O5YzMTVSaKBboxAqezOQL9ewmupzV2JrB5Rkc8a4=",
-      "url": "_framework\/icudt.dat"
-    },
-    {
       "hash": "sha256-SZLtQnRc0JkwqHab0VUVP7T3uBPSeYzxzDnpxPpUnHk=",
       "url": "_framework\/icudt_CJK.dat"
     },
@@ -897,21 +897,17 @@
       "url": "_framework\/P06Shop.Shared.pdb"
     },
     {
-      "hash": "sha256-fQp+Y9LpRl5WYBlVkjbQBABAeDFwrCyar1ykDVfo6dY=",
+      "hash": "sha256-3T9WBpN2LH0YCZpvS9eve8ep80xm1bMuh+CmW7qIZq8=",
       "url": "_framework\/P08BlazorWebAssembly.Client.dll"
     },
     {
-      "hash": "sha256-i6UMSvvApZB\/LRH0KxtZYAvzjD6C5x9P3iL3nVd6ChE=",
+      "hash": "sha256-tPiBNAdjw6htKMBsY5aPMk9YZ3IQTtQCd3cv04\/dNrw=",
       "url": "_framework\/P08BlazorWebAssembly.Client.pdb"
     },
     {
-      "hash": "sha256-lOCs45frNf+D7me6lKLgUhRCdt4VwHCp9H6Ct+YWzfs=",
-      "url": "_framework\/blazor.webassembly.js"
-    },
-    {
-      "hash": "sha256-x\/PelJc5T\/ClHW4h8YnW4L0WbR\/xGEy25\/rMBHsN+lU=",
+      "hash": "sha256-KTu2A72TCHHu4HQJ379TlW28LNAAEVWPEKrF+gcG6kE=",
       "url": "_framework\/blazor.boot.json"
     }
   ],
-  "version": "0nT+vKlg"
+  "version": "Awtep1b8"
 };

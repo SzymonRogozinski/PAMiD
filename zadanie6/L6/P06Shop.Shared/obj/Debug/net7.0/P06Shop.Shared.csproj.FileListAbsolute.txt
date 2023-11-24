@@ -56,3 +56,4 @@ C:\Users\RetailAdmin\Desktop\PAMiD\zadanie6\L6\P06Shop.Shared\obj\Debug\net7.0\P
 C:\Users\RetailAdmin\Desktop\PAMiD\zadanie6\L6\P06Shop.Shared\obj\Debug\net7.0\refint\P06Shop.Shared.dll
 C:\Users\RetailAdmin\Desktop\PAMiD\zadanie6\L6\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.pdb
 C:\Users\RetailAdmin\Desktop\PAMiD\zadanie6\L6\P06Shop.Shared\obj\Debug\net7.0\ref\P06Shop.Shared.dll
+C:\Users\RetailAdmin\Desktop\PAMiD\zadanie6\L6\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.sourcelink.json

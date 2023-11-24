@@ -73,3 +73,4 @@ C:\Users\RetailAdmin\Desktop\PAMiD\zadanie6\L6\P07Shop.DataSeeder\obj\Debug\net7
 C:\Users\RetailAdmin\Desktop\PAMiD\zadanie6\L6\P07Shop.DataSeeder\obj\Debug\net7.0\refint\P07Shop.DataSeeder.dll
 C:\Users\RetailAdmin\Desktop\PAMiD\zadanie6\L6\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.pdb
 C:\Users\RetailAdmin\Desktop\PAMiD\zadanie6\L6\P07Shop.DataSeeder\obj\Debug\net7.0\ref\P07Shop.DataSeeder.dll
+C:\Users\RetailAdmin\Desktop\PAMiD\zadanie6\L6\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.sourcelink.json
