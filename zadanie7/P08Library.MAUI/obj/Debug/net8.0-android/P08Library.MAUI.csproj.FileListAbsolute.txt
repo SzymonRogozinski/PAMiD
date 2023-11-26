@@ -104,3 +104,15 @@ C:\Users\RetailAdmin\Desktop\PAMiD\zadanie7\P08Library.MAUI\obj\Debug\net8.0-and
 C:\Users\RetailAdmin\Desktop\PAMiD\zadanie7\P08Library.MAUI\obj\Debug\net8.0-android\android\bin\com.companyname.p08library.maui.apks
 C:\Users\RetailAdmin\Desktop\PAMiD\zadanie7\P08Library.MAUI\obj\Debug\net8.0-android\res\values\colors.xml
 C:\Users\RetailAdmin\Desktop\PAMiD\zadanie7\P08Library.MAUI\obj\Debug\net8.0-android\uploadflags.txt
+C:\Users\RetailAdmin\Desktop\PAMiD\zadanie7\P08Library.MAUI\obj\Debug\net8.0-android\lp\91\jl\files.cache
+C:\Users\RetailAdmin\Desktop\PAMiD\zadanie7\P08Library.MAUI\obj\Debug\net8.0-android\lp\97\jl\files.cache
+C:\Users\RetailAdmin\Desktop\PAMiD\zadanie7\P08Library.MAUI\obj\Debug\net8.0-android\lp\101\jl\files.cache
+C:\Users\RetailAdmin\Desktop\PAMiD\zadanie7\P08Library.MAUI\obj\Debug\net8.0-android\lp\108\jl\files.cache
+C:\Users\RetailAdmin\Desktop\PAMiD\zadanie7\P08Library.MAUI\obj\Debug\net8.0-android\lp\114\jl\files.cache
+C:\Users\RetailAdmin\Desktop\PAMiD\zadanie7\P08Library.MAUI\obj\Debug\net8.0-android\lp\116\jl\files.cache
+C:\Users\RetailAdmin\Desktop\PAMiD\zadanie7\P08Library.MAUI\obj\Debug\net8.0-android\lp\120\jl\files.cache
+C:\Users\RetailAdmin\Desktop\PAMiD\zadanie7\P08Library.MAUI\obj\Debug\net8.0-android\lp\123\jl\files.cache
+C:\Users\RetailAdmin\Desktop\PAMiD\zadanie7\P08Library.MAUI\obj\Debug\net8.0-android\lp\125\jl\files.cache
+C:\Users\RetailAdmin\Desktop\PAMiD\zadanie7\P08Library.MAUI\obj\Debug\net8.0-android\lp\148\jl\files.cache
+C:\Users\RetailAdmin\Desktop\PAMiD\zadanie7\P08Library.MAUI\obj\Debug\net8.0-android\lp\150\jl\files.cache
+C:\Users\RetailAdmin\Desktop\PAMiD\zadanie7\P08Library.MAUI\obj\Debug\net8.0-android\lp\153\jl\files.cache

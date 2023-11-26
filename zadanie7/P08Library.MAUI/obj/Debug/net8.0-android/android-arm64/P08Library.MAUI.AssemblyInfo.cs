@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("P08Library.MAUI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+a852d3c4f72e24aa4641effb347fa29929063550")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("P08Library.MAUI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("P08Library.MAUI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

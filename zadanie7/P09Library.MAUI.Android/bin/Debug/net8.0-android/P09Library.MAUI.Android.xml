@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>P09Library.MAUI.Android</name>
+    </assembly>
+    <members>
+        <member name="T:P09Library.MAUI.Android.DetailsBookViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:P09Library.MAUI.Android.DetailsBookViewModel.BookViewModel">
+            <inheritdoc cref="F:P09Library.MAUI.Android.DetailsBookViewModel.bookViewModel"/>
+        </member>
+        <member name="F:P09Library.MAUI.Android.DetailsBookViewModel._addBookCommand">
+            <summary>The backing field for <see cref="P:P09Library.MAUI.Android.DetailsBookViewModel.addBookCommand"/>.</summary>
+        </member>
+        <member name="P:P09Library.MAUI.Android.DetailsBookViewModel.addBookCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:P09Library.MAUI.Android.DetailsBookViewModel.addBook"/>.</summary>
+        </member>
+        <member name="F:P09Library.MAUI.Android.DetailsBookViewModel._deleteBookCommand">
+            <summary>The backing field for <see cref="P:P09Library.MAUI.Android.DetailsBookViewModel.deleteBookCommand"/>.</summary>
+        </member>
+        <member name="P:P09Library.MAUI.Android.DetailsBookViewModel.deleteBookCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:P09Library.MAUI.Android.DetailsBookViewModel.deleteBook"/>.</summary>
+        </member>
+        <member name="F:P09Library.MAUI.Android.DetailsBookViewModel._updateBookCommand">
+            <summary>The backing field for <see cref="P:P09Library.MAUI.Android.DetailsBookViewModel.updateBookCommand"/>.</summary>
+        </member>
+        <member name="P:P09Library.MAUI.Android.DetailsBookViewModel.updateBookCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:P09Library.MAUI.Android.DetailsBookViewModel.updateBook"/>.</summary>
+        </member>
+        <member name="F:P09Library.MAUI.Android.DetailsBookViewModel._goBackCommand">
+            <summary>The backing field for <see cref="P:P09Library.MAUI.Android.DetailsBookViewModel.goBackCommand"/>.</summary>
+        </member>
+        <member name="P:P09Library.MAUI.Android.DetailsBookViewModel.goBackCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:P09Library.MAUI.Android.DetailsBookViewModel.goBack"/>.</summary>
+        </member>
+        <member name="T:P09Library.MAUI.Android.LibraryMainViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="F:P09Library.MAUI.Android.LibraryMainViewModel.getBooksCommand">
+            <summary>The backing field for <see cref="P:P09Library.MAUI.Android.LibraryMainViewModel.GetBooksCommand"/>.</summary>
+        </member>
+        <member name="P:P09Library.MAUI.Android.LibraryMainViewModel.GetBooksCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:P09Library.MAUI.Android.LibraryMainViewModel.GetBooks"/>.</summary>
+        </member>
+        <member name="F:P09Library.MAUI.Android.LibraryMainViewModel.showDetailsCommand">
+            <summary>The backing field for <see cref="P:P09Library.MAUI.Android.LibraryMainViewModel.ShowDetailsCommand"/>.</summary>
+        </member>
+        <member name="P:P09Library.MAUI.Android.LibraryMainViewModel.ShowDetailsCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:P09Library.MAUI.Android.LibraryMainViewModel.ShowDetails(P06Shop.Shared.Library.Book)"/>.</summary>
+        </member>
+        <member name="F:P09Library.MAUI.Android.LibraryMainViewModel.addNewBookCommand">
+            <summary>The backing field for <see cref="P:P09Library.MAUI.Android.LibraryMainViewModel.AddNewBookCommand"/>.</summary>
+        </member>
+        <member name="P:P09Library.MAUI.Android.LibraryMainViewModel.AddNewBookCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:P09Library.MAUI.Android.LibraryMainViewModel.AddNewBook"/>.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.BookViewModel">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "BookViewModel" generated properties.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.BookViewModel">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "BookViewModel" generated properties.</summary>
+        </member>
+    </members>
+</doc>
