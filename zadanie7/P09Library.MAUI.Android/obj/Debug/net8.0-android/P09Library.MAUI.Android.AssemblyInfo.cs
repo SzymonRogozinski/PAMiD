@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("P09Library.MAUI.Android")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+6726e8668f23b0a3ff2a10d680c113fa5190617d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+e08677d8ab0b8081645a45a810fa4783fe180f3c")]
 [assembly: System.Reflection.AssemblyProductAttribute("P09Library.MAUI.Android")]
 [assembly: System.Reflection.AssemblyTitleAttribute("P09Library.MAUI.Android")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

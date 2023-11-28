@@ -1,0 +1,41 @@
+﻿<EditForm Model="book" OnValidSubmit="OnValidSubmit" AdditionalAttributes="parameters">
+    <DataAnnotationsValidator />
+
+    <div class="form-group">
+        <label for="title">Title:</label>
+        <InputText id="title" @bind-Value="book.name" class="form-control"></InputText>
+    </div>
+    <div class="form-group">
+        <label for="author">Author:</label>
+        <InputText id="author" @bind-Value="book.author" class="form-control"></InputText>
+    </div>
+    <div class="form-group">
+        <label for="pages">Pages:</label>
+        <InputNumber id="pages" @bind-Value="book.pages" class="form-control"></InputNumber>
+    </div>
+    <div class="form-group">
+        <label for="genres">Genres:</label>
+        <InputText id="genres" @bind-Value="book.genresString" class="form-control"></InputText>
+    </div>
+    <button type="submit" class="btn btn-primary">@buttonName</button>
+</EditForm>
+
+
+@code {
+    [Parameter]
+    public Dictionary<string,object> parameters { get; set; }
+
+    [Parameter]
+    public BookViewModel book { get; set; }
+
+    [Parameter]
+    public EventCallback OnValidSubmit { get; set; }
+
+    private string buttonName { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        buttonName = parameters["ButtonName"].ToString();
+    }
+
+}

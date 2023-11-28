@@ -3,7 +3,7 @@ using Android.Runtime;
 
 namespace P08Library.MAUI
 {
-    [Application]
+    [Application(UsesCleartextTraffic=true)]
     public class MainApplication : MauiApplication
     {
         public MainApplication(IntPtr handle, JniHandleOwnership ownership)

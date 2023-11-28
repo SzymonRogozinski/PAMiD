@@ -40,7 +40,7 @@ namespace P09Library.MAUI.Android
         {
             var appSettingsSection = new AppSettings()
             {
-                BaseAPIUrl = "https://localhost:7230",
+                BaseAPIUrl = "http://localhost:7230",
                 BaseProductEndpoint = new BaseProductEndpoint()
                 {
                     Base_url = "api/Book/",
@@ -54,7 +54,7 @@ namespace P09Library.MAUI.Android
 
             if (DeviceInfo.Platform==DevicePlatform.Android)
             {
-                appSettingsSection.BaseAPIUrl = "https://10.0.2.2:7230";
+                appSettingsSection.BaseAPIUrl = "http://10.0.2.2:7230";
             }
             services.AddSingleton(appSettingsSection);
 

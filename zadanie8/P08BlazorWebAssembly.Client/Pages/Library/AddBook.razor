@@ -1,0 +1,40 @@
+﻿@page "/Library/addbook"
+
+@inject ILibraryServices LibraryService
+@inject NavigationManager NavigationManager
+
+<PageTitle>Add new book</PageTitle>
+<h3>Adding Book</h3>
+@if (message != null)
+{
+    <p><em>@message</em></p>
+}
+else
+{
+    <BookForm book="book" OnValidSubmit="HandleValidSubmit" parameters="param"></BookForm>
+}
+
+@code {
+    private Dictionary<string, Object> param { get; set; }
+
+    private BookViewModel book = new BookViewModel();
+    private string? message = null;
+
+    protected override async Task OnInitializedAsync()
+    {
+        param = new Dictionary<string, Object>();
+        param.Add("ButtonName", "Add");
+    }
+
+    async Task HandleValidSubmit()
+    {
+
+        var response = await LibraryService.AddBookAsync(book.name,book.author,book.pages,book.genresString);
+        if (response.Success)
+            NavigationManager.NavigateTo("/Library");
+        else
+            message = response.Message;
+    }
+
+
+}
