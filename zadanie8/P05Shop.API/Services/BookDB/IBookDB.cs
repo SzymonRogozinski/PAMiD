@@ -7,6 +7,7 @@ namespace P05Shop.API.Services.BookDB
 {
     public interface IBookDB
     {
+        public Task<ServiceResponse<string>> SecretAboutBook();
         public Task<ServiceResponse<Book>> GetBook(int id);
         public Task<ServiceResponse<List<Book>>> GetAllBooks();
         public Task<ServiceResponse<bool>> DeleteBook(int id);

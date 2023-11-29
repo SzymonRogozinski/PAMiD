@@ -147,6 +147,11 @@ namespace P05Shop.API.Services.BookDB
             }
         }
 
+        public Task<ServiceResponse<string>> SecretAboutBook()
+        {
+            throw new NotImplementedException();
+        }
+
         public async Task<ServiceResponse<bool>> UpdateBook(P06Shop.Shared.Library.Book book, int id)
         {
             try

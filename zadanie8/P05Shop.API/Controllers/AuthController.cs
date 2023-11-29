@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using P05Shop.API.Services.AuthService;
+using P05Shop.API.Services.BookDB;
 using P06Shop.Shared;
 using P06Shop.Shared.Auth;
 using System.Security.Claims;
@@ -13,18 +14,29 @@ namespace P05Shop.API.Controllers
     public class AuthController : ControllerBase
     {
         private readonly IAuthService _authService;
+        private IBookDB _bookDB;
 
-        public AuthController(IAuthService authService)
+        public AuthController(IAuthService authService, IBookDB bookDB)
         {
             this._authService = authService;
+            this._bookDB = bookDB;
         }
 
         [HttpGet("Secret"), Authorize]
-        public string SecretText()
+        public async Task<ActionResult<ServiceResponse<string>>> SecretText()
         {
-            return "secret";
-        }
 
+            var response = await _bookDB.SecretAboutBook();
+            if (!response.Success)
+            {
+                return BadRequest(response);
+            }
+            else 
+            {
+                return Ok(response);
+            }
+            
+        }
         [HttpPost("login")]
         public async Task<ActionResult<ServiceResponse<string>>> Login(UserLoginDTO userLoginDTO)
         {

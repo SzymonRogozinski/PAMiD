@@ -1492,12 +1492,9 @@ C:\Users\RetailAdmin\Desktop\PAMiD\zadanie8\P08BlazorWebAssembly.Client\obj\Debu
 C:\Users\RetailAdmin\Desktop\PAMiD\zadanie8\P08BlazorWebAssembly.Client\obj\Debug\net7.0\scopedcss\bundle\P08BlazorWebAssembly.Client.styles.css
 C:\Users\RetailAdmin\Desktop\PAMiD\zadanie8\P08BlazorWebAssembly.Client\obj\Debug\net7.0\scopedcss\projectbundle\P08BlazorWebAssembly.Client.bundle.scp.css
 C:\Users\RetailAdmin\Desktop\PAMiD\zadanie8\P08BlazorWebAssembly.Client\obj\Debug\net7.0\compressed\nmaizu6n2d.gz
-C:\Users\RetailAdmin\Desktop\PAMiD\zadanie8\P08BlazorWebAssembly.Client\obj\Debug\net7.0\compressed\bzybp4a1ne.gz
-C:\Users\RetailAdmin\Desktop\PAMiD\zadanie8\P08BlazorWebAssembly.Client\obj\Debug\net7.0\compressed\6y1yh6ih2x.gz
 C:\Users\RetailAdmin\Desktop\PAMiD\zadanie8\P08BlazorWebAssembly.Client\obj\Debug\net7.0\compressed\hk89tl4z3t.gz
 C:\Users\RetailAdmin\Desktop\PAMiD\zadanie8\P08BlazorWebAssembly.Client\obj\Debug\net7.0\compressed\qb9yggtmdd.gz
 C:\Users\RetailAdmin\Desktop\PAMiD\zadanie8\P08BlazorWebAssembly.Client\obj\Debug\net7.0\compressed\4czcuzk5yb.gz
-C:\Users\RetailAdmin\Desktop\PAMiD\zadanie8\P08BlazorWebAssembly.Client\obj\Debug\net7.0\compressed\p4zjni8q4v.gz
 C:\Users\RetailAdmin\Desktop\PAMiD\zadanie8\P08BlazorWebAssembly.Client\obj\Debug\net7.0\compressed\6kagx3wx9b.gz
 C:\Users\RetailAdmin\Desktop\PAMiD\zadanie8\P08BlazorWebAssembly.Client\obj\Debug\net7.0\compressed\ka53vr7mo0.gz
 C:\Users\RetailAdmin\Desktop\PAMiD\zadanie8\P08BlazorWebAssembly.Client\obj\Debug\net7.0\compressed\jgzulepwta.gz
@@ -1510,7 +1507,6 @@ C:\Users\RetailAdmin\Desktop\PAMiD\zadanie8\P08BlazorWebAssembly.Client\obj\Debu
 C:\Users\RetailAdmin\Desktop\PAMiD\zadanie8\P08BlazorWebAssembly.Client\obj\Debug\net7.0\compressed\z1uoomsfir.gz
 C:\Users\RetailAdmin\Desktop\PAMiD\zadanie8\P08BlazorWebAssembly.Client\obj\Debug\net7.0\compressed\b9wattpv8y.gz
 C:\Users\RetailAdmin\Desktop\PAMiD\zadanie8\P08BlazorWebAssembly.Client\obj\Debug\net7.0\compressed\nth3shr32n.gz
-C:\Users\RetailAdmin\Desktop\PAMiD\zadanie8\P08BlazorWebAssembly.Client\obj\Debug\net7.0\compressed\smugnqrr77.gz
 C:\Users\RetailAdmin\Desktop\PAMiD\zadanie8\P08BlazorWebAssembly.Client\obj\Debug\net7.0\compressed\h8e9gkmq6s.gz
 C:\Users\RetailAdmin\Desktop\PAMiD\zadanie8\P08BlazorWebAssembly.Client\obj\Debug\net7.0\compressed\4lwm18x2q8.gz
 C:\Users\RetailAdmin\Desktop\PAMiD\zadanie8\P08BlazorWebAssembly.Client\obj\Debug\net7.0\compressed\9qp1dsl8i3.gz
@@ -1700,3 +1696,15 @@ C:\Users\RetailAdmin\Desktop\PAMiD\zadanie8\P08BlazorWebAssembly.Client\obj\Debu
 C:\Users\RetailAdmin\Desktop\PAMiD\zadanie8\P08BlazorWebAssembly.Client\obj\Debug\net7.0\service-worker-assets.js.build
 C:\Users\RetailAdmin\Desktop\PAMiD\zadanie8\P08BlazorWebAssembly.Client\obj\Debug\net7.0\P08BlazorWebAssembly.Client.csproj.CopyComplete
 C:\Users\RetailAdmin\Desktop\PAMiD\zadanie8\P08BlazorWebAssembly.Client\obj\Debug\net7.0\ref\P08BlazorWebAssembly.Client.dll
+C:\Users\RetailAdmin\Desktop\PAMiD\zadanie8\P08BlazorWebAssembly.Client\bin\Debug\net7.0\wwwroot\_framework\Blazored.LocalStorage.dll
+C:\Users\RetailAdmin\Desktop\PAMiD\zadanie8\P08BlazorWebAssembly.Client\bin\Debug\net7.0\wwwroot\_framework\Microsoft.AspNetCore.Components.Authorization.dll
+C:\Users\RetailAdmin\Desktop\PAMiD\zadanie8\P08BlazorWebAssembly.Client\bin\Debug\net7.0\wwwroot\_framework\Microsoft.AspNetCore.Components.Authorization.dll.gz
+C:\Users\RetailAdmin\Desktop\PAMiD\zadanie8\P08BlazorWebAssembly.Client\bin\Debug\net7.0\wwwroot\_framework\Blazored.LocalStorage.dll.gz
+C:\Users\RetailAdmin\Desktop\PAMiD\zadanie8\P08BlazorWebAssembly.Client\bin\Debug\net7.0\Blazored.LocalStorage.dll
+C:\Users\RetailAdmin\Desktop\PAMiD\zadanie8\P08BlazorWebAssembly.Client\bin\Debug\net7.0\Microsoft.AspNetCore.Components.Authorization.dll
+C:\Users\RetailAdmin\Desktop\PAMiD\zadanie8\P08BlazorWebAssembly.Client\obj\Debug\net7.0\compressed\k0bzfxhoyv.gz
+C:\Users\RetailAdmin\Desktop\PAMiD\zadanie8\P08BlazorWebAssembly.Client\obj\Debug\net7.0\compressed\5421q7mdyk.gz
+C:\Users\RetailAdmin\Desktop\PAMiD\zadanie8\P08BlazorWebAssembly.Client\obj\Debug\net7.0\compressed\l92iuof993.gz
+C:\Users\RetailAdmin\Desktop\PAMiD\zadanie8\P08BlazorWebAssembly.Client\obj\Debug\net7.0\compressed\gmzohcv1ur.gz
+C:\Users\RetailAdmin\Desktop\PAMiD\zadanie8\P08BlazorWebAssembly.Client\obj\Debug\net7.0\compressed\twkej1jvw4.gz
+C:\Users\RetailAdmin\Desktop\PAMiD\zadanie8\P08BlazorWebAssembly.Client\obj\Debug\net7.0\compressed\wwzrr0x7uw.gz

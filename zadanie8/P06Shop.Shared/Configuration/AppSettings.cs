@@ -13,7 +13,6 @@ namespace P06Shop.Shared.Configuration
         public string BaseAPIUrl { get; set; }
         public SpeechSettings SpeechSettings { get; set; }
         public BaseProductEndpoint BaseProductEndpoint { get; set; }
-
-
+        public AuthEndpoint AuthEndpoint { get; set; }
     }
 }

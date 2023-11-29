@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "A8M6Im+YjRCkTfx9z/+EAln7SnYijUI2kbQVkwLmCdY=",
+  "Hash": "wjE9uJBLEpQuNFaYYF8FAxpA4fDD8Lt4uFNudKbeDZA=",
   "Source": "P08BlazorWebAssembly.Client",
   "BasePath": "/",
   "Mode": "Root",
@@ -53,6 +53,25 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\RetailAdmin\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly\\7.0.5\\build\\net7.0\\blazor.webassembly.js"
+    },
+    {
+      "Identity": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie8\\P08BlazorWebAssembly.Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Blazored.LocalStorage.dll",
+      "SourceId": "P08BlazorWebAssembly.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie8\\P08BlazorWebAssembly.Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Blazored.LocalStorage.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "WasmResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\RetailAdmin\\.nuget\\packages\\blazored.localstorage\\4.4.0\\lib\\net7.0\\Blazored.LocalStorage.dll"
     },
     {
       "Identity": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie8\\P08BlazorWebAssembly.Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\dotnet.7.0.14.rgfoigzh6g.js",
@@ -185,7 +204,26 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\RetailAdmin\\.nuget\\packages\\microsoft.aspnetcore.authorization\\7.0.5\\lib\\net7.0\\Microsoft.AspNetCore.Authorization.dll"
+      "OriginalItemSpec": "C:\\Users\\RetailAdmin\\.nuget\\packages\\microsoft.aspnetcore.authorization\\7.0.14\\lib\\net7.0\\Microsoft.AspNetCore.Authorization.dll"
+    },
+    {
+      "Identity": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie8\\P08BlazorWebAssembly.Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Authorization.dll",
+      "SourceId": "P08BlazorWebAssembly.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie8\\P08BlazorWebAssembly.Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Components.Authorization.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "WasmResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\RetailAdmin\\.nuget\\packages\\microsoft.aspnetcore.components.authorization\\7.0.14\\lib\\net7.0\\Microsoft.AspNetCore.Components.Authorization.dll"
     },
     {
       "Identity": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie8\\P08BlazorWebAssembly.Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.dll",
@@ -204,7 +242,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\RetailAdmin\\.nuget\\packages\\microsoft.aspnetcore.components\\7.0.5\\lib\\net7.0\\Microsoft.AspNetCore.Components.dll"
+      "OriginalItemSpec": "C:\\Users\\RetailAdmin\\.nuget\\packages\\microsoft.aspnetcore.components\\7.0.14\\lib\\net7.0\\Microsoft.AspNetCore.Components.dll"
     },
     {
       "Identity": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie8\\P08BlazorWebAssembly.Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Forms.dll",
@@ -280,7 +318,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\RetailAdmin\\.nuget\\packages\\microsoft.aspnetcore.metadata\\7.0.5\\lib\\net7.0\\Microsoft.AspNetCore.Metadata.dll"
+      "OriginalItemSpec": "C:\\Users\\RetailAdmin\\.nuget\\packages\\microsoft.aspnetcore.metadata\\7.0.14\\lib\\net7.0\\Microsoft.AspNetCore.Metadata.dll"
     },
     {
       "Identity": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie8\\P08BlazorWebAssembly.Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.CSharp.dll",
@@ -527,7 +565,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\RetailAdmin\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.0\\lib\\net7.0\\Microsoft.Extensions.Logging.Abstractions.dll"
+      "OriginalItemSpec": "C:\\Users\\RetailAdmin\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.1\\lib\\net7.0\\Microsoft.Extensions.Logging.Abstractions.dll"
     },
     {
       "Identity": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie8\\P08BlazorWebAssembly.Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Logging.dll",
@@ -4406,6 +4444,25 @@
       "OriginalItemSpec": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie8\\P08BlazorWebAssembly.Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\P06Shop.Shared.dll"
     },
     {
+      "Identity": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie8\\P08BlazorWebAssembly.Client\\obj\\Debug\\net7.0\\compressed\\5421q7mdyk.gz",
+      "SourceId": "P08BlazorWebAssembly.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie8\\P08BlazorWebAssembly.Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Authorization.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie8\\P08BlazorWebAssembly.Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Authorization.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie8\\P08BlazorWebAssembly.Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Authorization.dll"
+    },
+    {
       "Identity": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie8\\P08BlazorWebAssembly.Client\\obj\\Debug\\net7.0\\compressed\\58bk402v8v.gz",
       "SourceId": "P08BlazorWebAssembly.Client",
       "SourceType": "Computed",
@@ -4556,25 +4613,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie8\\P08BlazorWebAssembly.Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Xml.XmlSerializer.dll"
-    },
-    {
-      "Identity": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie8\\P08BlazorWebAssembly.Client\\obj\\Debug\\net7.0\\compressed\\6y1yh6ih2x.gz",
-      "SourceId": "P08BlazorWebAssembly.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie8\\P08BlazorWebAssembly.Client\\bin\\Debug\\net7.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.AspNetCore.Components.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie8\\P08BlazorWebAssembly.Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie8\\P08BlazorWebAssembly.Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.dll"
     },
     {
       "Identity": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie8\\P08BlazorWebAssembly.Client\\obj\\Debug\\net7.0\\compressed\\6yvo647u84.gz",
@@ -5166,25 +5204,6 @@
       "OriginalItemSpec": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie8\\P08BlazorWebAssembly.Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Runtime.Loader.dll"
     },
     {
-      "Identity": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie8\\P08BlazorWebAssembly.Client\\obj\\Debug\\net7.0\\compressed\\bzybp4a1ne.gz",
-      "SourceId": "P08BlazorWebAssembly.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie8\\P08BlazorWebAssembly.Client\\bin\\Debug\\net7.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.AspNetCore.Authorization.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie8\\P08BlazorWebAssembly.Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Authorization.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie8\\P08BlazorWebAssembly.Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Authorization.dll"
-    },
-    {
       "Identity": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie8\\P08BlazorWebAssembly.Client\\obj\\Debug\\net7.0\\compressed\\c6fd4k2tba.gz",
       "SourceId": "P08BlazorWebAssembly.Client",
       "SourceType": "Computed",
@@ -5660,6 +5679,25 @@
       "OriginalItemSpec": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie8\\P08BlazorWebAssembly.Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Runtime.Numerics.dll"
     },
     {
+      "Identity": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie8\\P08BlazorWebAssembly.Client\\obj\\Debug\\net7.0\\compressed\\gmzohcv1ur.gz",
+      "SourceId": "P08BlazorWebAssembly.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie8\\P08BlazorWebAssembly.Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Components.Authorization.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie8\\P08BlazorWebAssembly.Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Authorization.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie8\\P08BlazorWebAssembly.Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Authorization.dll"
+    },
+    {
       "Identity": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie8\\P08BlazorWebAssembly.Client\\obj\\Debug\\net7.0\\compressed\\h49jwywkx2.gz",
       "SourceId": "P08BlazorWebAssembly.Client",
       "SourceType": "Computed",
@@ -6078,6 +6116,25 @@
       "OriginalItemSpec": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie8\\P08BlazorWebAssembly.Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Linq.Expressions.dll"
     },
     {
+      "Identity": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie8\\P08BlazorWebAssembly.Client\\obj\\Debug\\net7.0\\compressed\\k0bzfxhoyv.gz",
+      "SourceId": "P08BlazorWebAssembly.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie8\\P08BlazorWebAssembly.Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Blazored.LocalStorage.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie8\\P08BlazorWebAssembly.Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Blazored.LocalStorage.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie8\\P08BlazorWebAssembly.Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Blazored.LocalStorage.dll"
+    },
+    {
       "Identity": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie8\\P08BlazorWebAssembly.Client\\obj\\Debug\\net7.0\\compressed\\k679ki96io.gz",
       "SourceId": "P08BlazorWebAssembly.Client",
       "SourceType": "Computed",
@@ -6190,6 +6247,25 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie8\\P08BlazorWebAssembly.Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Resources.ResourceManager.dll"
+    },
+    {
+      "Identity": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie8\\P08BlazorWebAssembly.Client\\obj\\Debug\\net7.0\\compressed\\l92iuof993.gz",
+      "SourceId": "P08BlazorWebAssembly.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie8\\P08BlazorWebAssembly.Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Components.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie8\\P08BlazorWebAssembly.Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie8\\P08BlazorWebAssembly.Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.dll"
     },
     {
       "Identity": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie8\\P08BlazorWebAssembly.Client\\obj\\Debug\\net7.0\\compressed\\lv2wilgink.gz",
@@ -6667,25 +6743,6 @@
       "OriginalItemSpec": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie8\\P08BlazorWebAssembly.Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Collections.Concurrent.dll"
     },
     {
-      "Identity": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie8\\P08BlazorWebAssembly.Client\\obj\\Debug\\net7.0\\compressed\\p4zjni8q4v.gz",
-      "SourceId": "P08BlazorWebAssembly.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie8\\P08BlazorWebAssembly.Client\\bin\\Debug\\net7.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.AspNetCore.Metadata.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie8\\P08BlazorWebAssembly.Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Metadata.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie8\\P08BlazorWebAssembly.Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Metadata.dll"
-    },
-    {
       "Identity": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie8\\P08BlazorWebAssembly.Client\\obj\\Debug\\net7.0\\compressed\\pehknjfsnx.gz",
       "SourceId": "P08BlazorWebAssembly.Client",
       "SourceType": "Computed",
@@ -7047,25 +7104,6 @@
       "OriginalItemSpec": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie8\\P08BlazorWebAssembly.Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Runtime.Extensions.dll"
     },
     {
-      "Identity": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie8\\P08BlazorWebAssembly.Client\\obj\\Debug\\net7.0\\compressed\\smugnqrr77.gz",
-      "SourceId": "P08BlazorWebAssembly.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie8\\P08BlazorWebAssembly.Client\\bin\\Debug\\net7.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.Extensions.Logging.Abstractions.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie8\\P08BlazorWebAssembly.Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Logging.Abstractions.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie8\\P08BlazorWebAssembly.Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Logging.Abstractions.dll"
-    },
-    {
       "Identity": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie8\\P08BlazorWebAssembly.Client\\obj\\Debug\\net7.0\\compressed\\so3u7kmzqt.gz",
       "SourceId": "P08BlazorWebAssembly.Client",
       "SourceType": "Computed",
@@ -7140,6 +7178,25 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie8\\P08BlazorWebAssembly.Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Reflection.TypeExtensions.dll"
+    },
+    {
+      "Identity": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie8\\P08BlazorWebAssembly.Client\\obj\\Debug\\net7.0\\compressed\\twkej1jvw4.gz",
+      "SourceId": "P08BlazorWebAssembly.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie8\\P08BlazorWebAssembly.Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Metadata.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie8\\P08BlazorWebAssembly.Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Metadata.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie8\\P08BlazorWebAssembly.Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Metadata.dll"
     },
     {
       "Identity": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie8\\P08BlazorWebAssembly.Client\\obj\\Debug\\net7.0\\compressed\\twpbe8e859.gz",
@@ -7444,6 +7501,25 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie8\\P08BlazorWebAssembly.Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.FileProviders.Physical.dll"
+    },
+    {
+      "Identity": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie8\\P08BlazorWebAssembly.Client\\obj\\Debug\\net7.0\\compressed\\wwzrr0x7uw.gz",
+      "SourceId": "P08BlazorWebAssembly.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie8\\P08BlazorWebAssembly.Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Logging.Abstractions.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie8\\P08BlazorWebAssembly.Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Logging.Abstractions.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie8\\P08BlazorWebAssembly.Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Logging.Abstractions.dll"
     },
     {
       "Identity": "C:\\Users\\RetailAdmin\\Desktop\\PAMiD\\zadanie8\\P08BlazorWebAssembly.Client\\obj\\Debug\\net7.0\\compressed\\xd0rvnmr32.gz",

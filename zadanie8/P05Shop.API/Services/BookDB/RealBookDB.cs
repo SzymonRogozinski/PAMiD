@@ -23,6 +23,42 @@ namespace P05Shop.API.Services.BookDB
             _dataContext = context;
         }
 
+        public async Task<ServiceResponse<string>> SecretAboutBook()
+        {
+            try
+            {
+
+                var bookList = await _dataContext.Books.ToListAsync();
+                double avaragePages = 0.0;
+                int bookNumber=bookList.Count;
+                foreach (var book in bookList) 
+                {
+                    avaragePages += book.pages;
+                }
+                avaragePages /= bookList.Count;
+
+                var secret = string.Format("In ILibrary is {0} books and avarage size of book is {1:0.00}",bookNumber,avaragePages);
+
+                var response = new ServiceResponse<string>()
+                {
+                    Data = secret,
+                    Message = "Ok",
+                    Success = true
+                };
+
+                return response;
+            }
+            catch (Exception)
+            {
+                return new ServiceResponse<string>()
+                {
+                    Data = null,
+                    Message = "Problem with data base",
+                    Success = false
+                };
+            }
+        }
+
         public async Task<ServiceResponse<bool>> AddBook(P06Shop.Shared.Library.Book book)
         {
             try
@@ -93,7 +129,7 @@ namespace P05Shop.API.Services.BookDB
             }
         }
 
-        public async Task<ServiceResponse<List<P06Shop.Shared.Library.Book>>> GetAllBooks()
+        public async Task<ServiceResponse<List<Book>>> GetAllBooks()
         {
             try
             {
