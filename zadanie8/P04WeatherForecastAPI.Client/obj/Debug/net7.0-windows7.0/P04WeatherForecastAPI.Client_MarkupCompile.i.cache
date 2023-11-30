@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
 C:\Users\RetailAdmin\Desktop\PAMiD\zadanie8\P04WeatherForecastAPI.Client\App.xaml
-2621576412
+3-1041084437
 
-26-1619541340
+17-255473177
 218-1619005812
-FavoriteCitiesView.xaml;MainWindow.xaml;
+LoginWindow.xaml;MainWindow.xaml;RegisterWindow.xaml;
 
-True
+False
 

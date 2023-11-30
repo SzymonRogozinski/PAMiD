@@ -1,5 +1,6 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using Microsoft.Extensions.DependencyInjection;
 using P04WeatherForecastAPI.Client.Services.LibraryServices;
 using P06Shop.Shared.Library;
 using System;
@@ -25,11 +26,34 @@ namespace P04WeatherForecastAPI.Client.ViewModels
             books=new ObservableCollection<SimplyfiedBookViewModel> ();
             _serviceProvider = serviceProvider;
             _libraryServices = libraryServices;
+            _authorizedViewModel=new AuthorizedViewModel();
+        }
+
+        [ObservableProperty]
+        private AuthorizedViewModel _authorizedViewModel;
+
+        public AuthorizedViewModel Authorized
+        {
+            get => _authorizedViewModel;
+            set
+            {
+                _authorizedViewModel = value;
+                OnPropertyChanged();
+            }
         }
 
         public void AddReference(MainWindow MainWindowReference)
         {
             this.MainWindowReference= MainWindowReference;
+        }
+
+        [RelayCommand]
+        public void Login() 
+        {
+            LoginWindow loginView = _serviceProvider.GetService<LoginWindow>();
+            LoginViewModel loginViewModel = _serviceProvider.GetService<LoginViewModel>();
+
+            loginView.Show();
         }
 
         [ObservableProperty]

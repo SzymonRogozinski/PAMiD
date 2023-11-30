@@ -905,17 +905,17 @@
       "url": "_framework\/P06Shop.Shared.pdb"
     },
     {
-      "hash": "sha256-m\/UPp0mbkmy1\/\/8DKBnwxEZiP9g7KukfW9n128d7GMU=",
+      "hash": "sha256-7WAg7cebXVDni5kbNqqVCLvthwvQXZ7IcanQnkBmM6Q=",
       "url": "_framework\/P08BlazorWebAssembly.Client.dll"
     },
     {
-      "hash": "sha256-A0A2j0RmNx7C\/D3o7EI9Wg85nIblTnSx1FGdPAPjfBQ=",
+      "hash": "sha256-bGYr20wgLNw8Becb+yu8s4pBNkg53VOWLvDR7YZwj1g=",
       "url": "_framework\/P08BlazorWebAssembly.Client.pdb"
     },
     {
-      "hash": "sha256-a\/fwWedAaKEOkQDB5Tz+ySchA4xgMKiX7GYKKik0Xt4=",
+      "hash": "sha256-1O19x4EOQLpm21SvKAMuGk9GLlS\/xUZokpbH7FG\/Y4M=",
       "url": "_framework\/blazor.boot.json"
     }
   ],
-  "version": "SRDuIuVG"
+  "version": "aQceyr1a"
 };

@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:P04WeatherForecastAPI.Client"
         xmlns:boxTexts="clr-namespace:P04WeatherForecastAPI.Client.ViewModels"
         mc:Ignorable="d"
-        Title="MainWindow" Height="400" Width="600">
+        Title="MainWindow" Height="500" Width="600">
     <Window.Resources>
         <BooleanToVisibilityConverter x:Key="boolToVisConv" ></BooleanToVisibilityConverter>
         <Style x:Key="mainButtonStyle" TargetType="Button">
@@ -25,6 +25,7 @@
 
     <Grid>
         <Grid.RowDefinitions>
+            <RowDefinition Height="100" />
             <RowDefinition Height="500" />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
@@ -33,12 +34,28 @@
             <ColumnDefinition Width="200" />
         </Grid.ColumnDefinitions>
 
-        <StackPanel Grid.Column="0" Margin="10">
+        <!--Autorization-->
+        <StackPanel Grid.Column="0" Grid.Row="0" Margin="10">
+            <Button Content="Login" Command="{Binding LoginCommand}" Style="{StaticResource mainButtonStyle}" ></Button>
+        </StackPanel>
+
+        <StackPanel Grid.Column="1" Grid.Row="0" Margin="10">
+            <Label HorizontalContentAlignment="Center" Content="Hello" ></Label>
+            <Label HorizontalContentAlignment="Center" Content="{Binding Authorized.HelloMessage}" ></Label>
+        </StackPanel>
+
+        <StackPanel Grid.Column="2" Grid.Row="0" Margin="10">
+            <Label HorizontalContentAlignment="Center" Content="Secret message is" ></Label>
+            <Label HorizontalContentAlignment="Center" Content="{Binding Authorized.Secret}" ></Label>
+        </StackPanel>
+
+        <!--Content-->
+        <StackPanel Grid.Column="0" Grid.Row="1" Margin="10">
             <Button Content="Load books" Command="{Binding LoadAllBooksCommand}" Style="{StaticResource mainButtonStyle}" ></Button>
             <Label HorizontalContentAlignment="Center" Content="Book list:" ></Label>
             <ListBox x:Name="lbData" ItemsSource="{Binding books}" SelectedItem="{Binding SelectedBook}" DisplayMemberPath="Title" Margin="0,10,0,0"></ListBox>
         </StackPanel>
-        <StackPanel Grid.Column="1" Margin="10">
+        <StackPanel Grid.Column="1" Grid.Row="1" Margin="10">
             <Label  HorizontalContentAlignment="Center" Content="Details" ></Label>
             <Label  HorizontalContentAlignment="Center" Content="Name" Height="30"></Label>
             <Label x:Name="lblBookName" Height="30" Content="{Binding DetailedBook.name}"></Label>
@@ -50,7 +67,7 @@
             <ListBox x:Name="lbBookGenre" ItemsSource="{Binding DetailedBook.genres}"></ListBox>
             <Button x:Name="btnRemove" Content="Remove" Command="{Binding RemoveBookCommand}"></Button>
         </StackPanel>
-        <StackPanel Grid.Column="2" Margin="10">
+        <StackPanel Grid.Column="2" Grid.Row="1" Margin="10">
             <Label  HorizontalContentAlignment="Center" Content="Add/Modify" Height="30"></Label>
             <Label  HorizontalContentAlignment="Center" Content="Name" Height="30"></Label>
             <TextBox x:Name="txtNewBookName" Height="30" ></TextBox>

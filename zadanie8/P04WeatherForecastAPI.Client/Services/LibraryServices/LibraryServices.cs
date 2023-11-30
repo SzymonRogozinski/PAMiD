@@ -1,6 +1,5 @@
 ﻿using Microsoft.Extensions.Options;
 using Newtonsoft.Json;
-using P04WeatherForecastAPI.Client.Configuration;
 using P06Shop.Shared;
 using System;
 using System.Collections.Generic;
@@ -11,6 +10,7 @@ using System.Threading.Tasks;
 using P06Shop.Shared.Library;
 using System.Xml.Linq;
 using System.Windows.Documents;
+using P06Shop.Shared.Configuration;
 
 namespace P04WeatherForecastAPI.Client.Services.LibraryServices
 {

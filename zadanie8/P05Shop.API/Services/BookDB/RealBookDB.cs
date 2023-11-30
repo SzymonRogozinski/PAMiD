@@ -37,7 +37,7 @@ namespace P05Shop.API.Services.BookDB
                 }
                 avaragePages /= bookList.Count;
 
-                var secret = string.Format("In ILibrary is {0} books and avarage size of book is {1:0.00}",bookNumber,avaragePages);
+                var secret = string.Format("In ILibrary is {0} books and \n avarage size of book is {1:0.00}",bookNumber,avaragePages);
 
                 var response = new ServiceResponse<string>()
                 {

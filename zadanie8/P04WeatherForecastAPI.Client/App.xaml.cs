@@ -1,9 +1,9 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using P04WeatherForecastAPI.Client.Configuration;
 using P04WeatherForecastAPI.Client.Services.LibraryServices;
-using P04WeatherForecastAPI.Client.Services.WeatherServices;
 using P04WeatherForecastAPI.Client.ViewModels;
+using P06Shop.Shared.Configuration;
+using P06Shop.Shared.Services.AuthService;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -30,8 +30,6 @@ namespace P04WeatherForecastAPI.Client
               .SetBasePath(Directory.GetCurrentDirectory())
               .AddJsonFile("appsettings.json");
             _configuration = builder.Build();
-
-
 
             var serviceCollection = new ServiceCollection();
             ConfigureServices(serviceCollection);
@@ -61,11 +59,8 @@ namespace P04WeatherForecastAPI.Client
         private void ConfigureAppServices(IServiceCollection services)
         {
             // konfiguracja serwisów 
-
-            //services.AddSingleton<IAccuWeatherService, AccuWeatherService>();
-            //services.AddSingleton<IFavoriteCityService, FavoriteCityService>();
-            //services.AddSingleton<IProductService, ProductService>();
             services.AddSingleton<ILibraryServices,LibraryServices>();
+            services.AddSingleton<IAuthService, AuthService>();
 
         }
 
@@ -73,19 +68,17 @@ namespace P04WeatherForecastAPI.Client
         {
 
             // konfiguracja viewModeli 
-            //services.AddSingleton<MainViewModelV4>();
-            //services.AddSingleton<FavoriteCityViewModel>();
-            //services.AddSingleton<ProductsViewModel>();
             services.AddSingleton<LibraryMainViewModel>();
-            // services.AddSingleton<BaseViewModel,MainViewModelV3>();
+            services.AddTransient<LoginViewModel>();
+            services.AddTransient<RegisterViewModel>();
         }
 
         private void ConfigureViews(IServiceCollection services)
         {
             // konfiguracja okienek 
             services.AddTransient<MainWindow>();
-            //services.AddTransient<FavoriteCitiesView>();
-            //services.AddTransient<ShopProductsView>();
+            services.AddTransient<LoginWindow>();
+            services.AddTransient<RegisterWindow>();
         }
 
         private void ConfigureHttpClients(IServiceCollection services, AppSettings appSettingsSection)
@@ -95,8 +88,15 @@ namespace P04WeatherForecastAPI.Client
                 Path = appSettingsSection.BaseProductEndpoint.Base_url,
             };
             //Microsoft.Extensions.Http
-            //services.AddHttpClient<IProductService, ProductService>(client => client.BaseAddress = uriBuilder.Uri);
             services.AddHttpClient<ILibraryServices, LibraryServices>(client => client.BaseAddress = uriBuilder.Uri);
+
+            var nextUriBuilder = new UriBuilder(appSettingsSection.BaseAPIUrl)
+            {
+                Path = appSettingsSection.AuthEndpoint.Base_url,
+            };
+
+            services.AddHttpClient<IAuthService,AuthService>(client => client.BaseAddress = nextUriBuilder.Uri);
+
         }
 
         private void OnStartup(object sender, StartupEventArgs e)

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("P07Shop.DataSeeder")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8b06095d6096d31c19ee0f61c9e6cbf01d190497")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("P07Shop.DataSeeder")]
 [assembly: System.Reflection.AssemblyTitleAttribute("P07Shop.DataSeeder")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
