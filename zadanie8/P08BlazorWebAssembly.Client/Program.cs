@@ -39,6 +39,7 @@ var authUriBuilder = new UriBuilder(appSettingsSection.BaseAPIUrl)
 builder.Services.AddHttpClient<IAuthService, AuthService>(client => client.BaseAddress = authUriBuilder.Uri);
 
 
+builder.Services.AddSingleton<TokenHolder, TokenHolder>();
 builder.Services.AddSingleton<IOptions<AppSettings>>(new OptionsWrapper<AppSettings>(appSettingsSection));
 
 

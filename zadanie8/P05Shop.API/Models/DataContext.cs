@@ -2,6 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using P06Shop.Shared.Auth;
 using P06Shop.Shared.Library;
 using P07Shop.DataSeeder;
+using System.Data.Entity.ModelConfiguration.Conventions;
 
 namespace P05Shop.API.Models
 {
@@ -13,10 +14,13 @@ namespace P05Shop.API.Models
         }
         public DbSet<Book> Books { get; set; }
 
+        //public DbSet<User> Users { get; set; }
+
         public DbSet<User> Users { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+
             // fluent api 
             modelBuilder.Entity<Book>()
                 .Property(p => p.name)
@@ -49,6 +53,30 @@ namespace P05Shop.API.Models
             // data seed 
 
             modelBuilder.Entity<Book>().HasData(BookSeeder.GenerateProductData());
+
+            //Users
+            modelBuilder.Entity<User>()
+                .ToTable("Users");
+
+            modelBuilder.Entity<User>()
+                .Property(u => u.Email)
+                .IsRequired()
+                .HasMaxLength(60);
+
+            modelBuilder.Entity<User>()
+                .Property(u => u.Role)
+                .IsRequired()
+                .HasMaxLength(30);
+
+            modelBuilder.Entity<User>()
+                .Property(u => u.Username)
+                .IsRequired()
+                .HasMaxLength(60);
+
+            modelBuilder.Entity<User>()
+                .HasKey(p => p.Id);
+
+            modelBuilder.Entity<User>().HasData(AddAdmin());
         }
 
         private string ConvertGenreListToString(List<Genre> genres) 
@@ -71,6 +99,41 @@ namespace P05Shop.API.Models
                 result.Add(new Genre(g));
             }
             return result;
+        }
+
+        private List<User> AddAdmin() 
+        {
+            var password = "admin";
+            var res=new List<User>();
+            var admin = new User() 
+            { 
+                Email = "admin@admin.pl",
+                Username = "admin",
+                Role = Roles.ADMIN,
+                Id = 1
+            };
+
+            // create password hash and salt
+            CreatePasswordHash(password, out byte[] passwordHash, out byte[] passwordSalt);
+
+            // assign hash and salt to user
+            admin.PasswordHash = passwordHash;
+            admin.PasswordSalt = passwordSalt;
+
+            res.Add(admin);
+            return res;
+        }
+
+        public void CreatePasswordHash(string password, out byte[] passwordHash, out byte[] passwordSalt)
+        {
+            // using statement to dispose of IDisposable objects
+            using (var hmac = new System.Security.Cryptography.HMACSHA512())
+            {
+                // generate random salt
+                passwordSalt = hmac.Key;
+                // generate hash
+                passwordHash = hmac.ComputeHash(System.Text.Encoding.UTF8.GetBytes(password));
+            }
         }
     }
 }

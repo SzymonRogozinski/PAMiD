@@ -35,7 +35,8 @@ namespace P05Shop.API.Migrations
 
                     b.Property<string>("Email")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(60)
+                        .HasColumnType("nvarchar(60)");
 
                     b.Property<byte[]>("PasswordHash")
                         .IsRequired()
@@ -47,15 +48,29 @@ namespace P05Shop.API.Migrations
 
                     b.Property<string>("Role")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(30)
+                        .HasColumnType("nvarchar(30)");
 
                     b.Property<string>("Username")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(60)
+                        .HasColumnType("nvarchar(60)");
 
                     b.HasKey("Id");
 
-                    b.ToTable("Users");
+                    b.ToTable("Users", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            DateCreated = new DateTime(2023, 12, 6, 18, 38, 7, 662, DateTimeKind.Local).AddTicks(1774),
+                            Email = "admin@admin.pl",
+                            PasswordHash = new byte[] { 111, 81, 3, 109, 191, 7, 126, 212, 243, 175, 24, 120, 79, 221, 195, 112, 210, 193, 147, 40, 130, 49, 176, 189, 99, 105, 73, 40, 76, 192, 62, 41, 92, 36, 192, 147, 250, 249, 203, 165, 166, 124, 208, 189, 109, 138, 226, 25, 146, 31, 136, 237, 82, 62, 85, 49, 147, 28, 83, 216, 231, 154, 219, 68 },
+                            PasswordSalt = new byte[] { 114, 202, 78, 100, 16, 28, 152, 133, 24, 58, 142, 114, 126, 103, 223, 168, 211, 71, 168, 45, 208, 239, 98, 137, 56, 36, 222, 71, 139, 37, 152, 31, 125, 191, 218, 166, 17, 214, 21, 18, 235, 183, 155, 40, 53, 91, 186, 26, 71, 160, 81, 53, 160, 21, 244, 221, 20, 233, 113, 235, 42, 234, 31, 37, 199, 238, 40, 168, 163, 22, 25, 202, 84, 112, 35, 1, 150, 48, 23, 166, 33, 57, 144, 24, 83, 134, 44, 5, 114, 15, 183, 121, 37, 101, 131, 2, 104, 107, 243, 36, 174, 11, 98, 230, 208, 198, 167, 31, 156, 144, 35, 221, 166, 63, 3, 232, 243, 13, 234, 169, 190, 69, 34, 75, 90, 127, 64, 75 },
+                            Role = "Admin",
+                            Username = "admin"
+                        });
                 });
 
             modelBuilder.Entity("P06Shop.Shared.Library.Book", b =>
@@ -92,7 +107,7 @@ namespace P05Shop.API.Migrations
                         {
                             id = 1,
                             author = "Dagmar Hackett",
-                            genres = "Drama,Romance",
+                            genres = "Romance,Criminal,Romance",
                             name = "et cumque",
                             pages = 423
                         },
@@ -100,7 +115,7 @@ namespace P05Shop.API.Migrations
                         {
                             id = 2,
                             author = "Orval Tillman",
-                            genres = "Criminal",
+                            genres = "Horror,Romance,Action",
                             name = "error cupiditate",
                             pages = 1127
                         },
@@ -108,7 +123,7 @@ namespace P05Shop.API.Migrations
                         {
                             id = 3,
                             author = "Tyson Hudson",
-                            genres = "History",
+                            genres = "Comic,Drama,Criminal",
                             name = "placeat qui",
                             pages = 848
                         },
@@ -116,7 +131,7 @@ namespace P05Shop.API.Migrations
                         {
                             id = 4,
                             author = "Janessa Botsford",
-                            genres = "Criminal,Action,Criminal",
+                            genres = "History,History,Horror",
                             name = "ab non",
                             pages = 323
                         },
@@ -124,7 +139,7 @@ namespace P05Shop.API.Migrations
                         {
                             id = 5,
                             author = "Lera Flatley",
-                            genres = "Romance,Romance",
+                            genres = "Drama,History,Romance",
                             name = "et blanditiis",
                             pages = 206
                         },
@@ -132,7 +147,7 @@ namespace P05Shop.API.Migrations
                         {
                             id = 6,
                             author = "Earnestine Sauer",
-                            genres = "Horror,History",
+                            genres = "Comic,Romance",
                             name = "quis beatae",
                             pages = 541
                         },
@@ -140,7 +155,7 @@ namespace P05Shop.API.Migrations
                         {
                             id = 7,
                             author = "Chad Grimes",
-                            genres = "Criminal",
+                            genres = "Horror,Comic,History",
                             name = "omnis veritatis",
                             pages = 221
                         },
@@ -148,7 +163,7 @@ namespace P05Shop.API.Migrations
                         {
                             id = 8,
                             author = "Tina Cassin",
-                            genres = "Romance,Horror",
+                            genres = "Criminal",
                             name = "est ut",
                             pages = 980
                         },
@@ -156,7 +171,7 @@ namespace P05Shop.API.Migrations
                         {
                             id = 9,
                             author = "Aidan Gleason",
-                            genres = "Criminal",
+                            genres = "Drama,Comic",
                             name = "ad officiis",
                             pages = 898
                         },
@@ -164,7 +179,7 @@ namespace P05Shop.API.Migrations
                         {
                             id = 10,
                             author = "Griffin Mayert",
-                            genres = "Romance",
+                            genres = "Horror,Romance,History",
                             name = "minima aut",
                             pages = 1090
                         },
@@ -172,7 +187,7 @@ namespace P05Shop.API.Migrations
                         {
                             id = 11,
                             author = "Golda Jones",
-                            genres = "Criminal,Comic,History",
+                            genres = "Horror,Criminal",
                             name = "ducimus dolor",
                             pages = 1129
                         },
@@ -180,7 +195,7 @@ namespace P05Shop.API.Migrations
                         {
                             id = 12,
                             author = "Wilber Farrell",
-                            genres = "Criminal,Horror",
+                            genres = "Criminal,Drama",
                             name = "neque dicta",
                             pages = 1817
                         },
@@ -188,7 +203,7 @@ namespace P05Shop.API.Migrations
                         {
                             id = 13,
                             author = "Zoie Murray",
-                            genres = "Comic",
+                            genres = "Romance",
                             name = "corrupti et",
                             pages = 1592
                         },
@@ -196,7 +211,7 @@ namespace P05Shop.API.Migrations
                         {
                             id = 14,
                             author = "Maci Gutmann",
-                            genres = "Horror,Action",
+                            genres = "Comic,Horror,Criminal",
                             name = "est est",
                             pages = 1613
                         },
@@ -204,7 +219,7 @@ namespace P05Shop.API.Migrations
                         {
                             id = 15,
                             author = "Evert Morissette",
-                            genres = "Drama,Horror,Criminal",
+                            genres = "Comic",
                             name = "illum repellat",
                             pages = 1740
                         },
@@ -212,7 +227,7 @@ namespace P05Shop.API.Migrations
                         {
                             id = 16,
                             author = "Fannie Schoen",
-                            genres = "Drama,Action,Horror",
+                            genres = "Drama",
                             name = "natus iusto",
                             pages = 1614
                         },
@@ -220,7 +235,7 @@ namespace P05Shop.API.Migrations
                         {
                             id = 17,
                             author = "Mckenzie Friesen",
-                            genres = "History,Criminal",
+                            genres = "Criminal,Action",
                             name = "quia tempore",
                             pages = 1618
                         },
@@ -228,7 +243,7 @@ namespace P05Shop.API.Migrations
                         {
                             id = 18,
                             author = "Neva Robel",
-                            genres = "Comic",
+                            genres = "Criminal,Horror,Horror",
                             name = "qui nam",
                             pages = 1855
                         },
@@ -236,7 +251,7 @@ namespace P05Shop.API.Migrations
                         {
                             id = 19,
                             author = "May Erdman",
-                            genres = "Romance,Comic,History",
+                            genres = "Horror,Action,Romance",
                             name = "occaecati aliquam",
                             pages = 1978
                         },
@@ -244,7 +259,7 @@ namespace P05Shop.API.Migrations
                         {
                             id = 20,
                             author = "Gia Krajcik",
-                            genres = "Romance,Comic",
+                            genres = "History",
                             name = "doloremque officiis",
                             pages = 1506
                         },
@@ -252,7 +267,7 @@ namespace P05Shop.API.Migrations
                         {
                             id = 21,
                             author = "Bailee Sanford",
-                            genres = "Romance,Criminal",
+                            genres = "History",
                             name = "et praesentium",
                             pages = 1449
                         },
@@ -260,7 +275,7 @@ namespace P05Shop.API.Migrations
                         {
                             id = 22,
                             author = "Orpha Luettgen",
-                            genres = "Action,Horror",
+                            genres = "Comic,Criminal",
                             name = "ducimus fugiat",
                             pages = 1989
                         },
@@ -268,7 +283,7 @@ namespace P05Shop.API.Migrations
                         {
                             id = 23,
                             author = "Cecilia Kautzer",
-                            genres = "Action",
+                            genres = "Criminal,Drama",
                             name = "est quod",
                             pages = 1476
                         },
@@ -276,7 +291,7 @@ namespace P05Shop.API.Migrations
                         {
                             id = 24,
                             author = "Neoma Shields",
-                            genres = "Criminal",
+                            genres = "Action,Romance,Action",
                             name = "vel sed",
                             pages = 455
                         },
@@ -284,7 +299,7 @@ namespace P05Shop.API.Migrations
                         {
                             id = 25,
                             author = "Tad Hodkiewicz",
-                            genres = "History,Comic",
+                            genres = "Comic,Criminal",
                             name = "voluptatem eveniet",
                             pages = 596
                         },
@@ -292,7 +307,7 @@ namespace P05Shop.API.Migrations
                         {
                             id = 26,
                             author = "Bradley Murazik",
-                            genres = "Romance",
+                            genres = "History",
                             name = "natus ullam",
                             pages = 1679
                         },
@@ -300,7 +315,7 @@ namespace P05Shop.API.Migrations
                         {
                             id = 27,
                             author = "Savannah Beier",
-                            genres = "Horror",
+                            genres = "Romance,Criminal",
                             name = "nobis quae",
                             pages = 385
                         },
@@ -308,7 +323,7 @@ namespace P05Shop.API.Migrations
                         {
                             id = 28,
                             author = "Tina Lehner",
-                            genres = "Criminal",
+                            genres = "History,Romance,Comic",
                             name = "porro in",
                             pages = 742
                         },
@@ -316,7 +331,7 @@ namespace P05Shop.API.Migrations
                         {
                             id = 29,
                             author = "Cleve Rogahn",
-                            genres = "History",
+                            genres = "Criminal,Romance",
                             name = "placeat rerum",
                             pages = 438
                         },
@@ -324,7 +339,7 @@ namespace P05Shop.API.Migrations
                         {
                             id = 30,
                             author = "Doug Kuhn",
-                            genres = "Action",
+                            genres = "Romance",
                             name = "dolor dicta",
                             pages = 389
                         },
@@ -332,7 +347,7 @@ namespace P05Shop.API.Migrations
                         {
                             id = 31,
                             author = "Keenan Gleichner",
-                            genres = "Romance",
+                            genres = "Romance,History,History",
                             name = "quos quia",
                             pages = 1462
                         },
@@ -340,7 +355,7 @@ namespace P05Shop.API.Migrations
                         {
                             id = 32,
                             author = "Mireya Kunze",
-                            genres = "Drama,History",
+                            genres = "Action",
                             name = "minus unde",
                             pages = 359
                         },
@@ -348,7 +363,7 @@ namespace P05Shop.API.Migrations
                         {
                             id = 33,
                             author = "Camren Reichel",
-                            genres = "Comic,Romance,Romance",
+                            genres = "Action",
                             name = "voluptatem quo",
                             pages = 654
                         },
@@ -356,7 +371,7 @@ namespace P05Shop.API.Migrations
                         {
                             id = 34,
                             author = "Berniece Funk",
-                            genres = "Horror",
+                            genres = "History,History",
                             name = "cum et",
                             pages = 80
                         },
@@ -364,7 +379,7 @@ namespace P05Shop.API.Migrations
                         {
                             id = 35,
                             author = "Daisy Kozey",
-                            genres = "Romance,Comic,Criminal",
+                            genres = "History,Action",
                             name = "labore est",
                             pages = 947
                         },
@@ -372,7 +387,7 @@ namespace P05Shop.API.Migrations
                         {
                             id = 36,
                             author = "Carroll Daugherty",
-                            genres = "Drama",
+                            genres = "Comic,Criminal,Comic",
                             name = "dolores cumque",
                             pages = 1020
                         },
@@ -380,7 +395,7 @@ namespace P05Shop.API.Migrations
                         {
                             id = 37,
                             author = "Lorna Kling",
-                            genres = "Drama,Comic,History",
+                            genres = "Comic",
                             name = "rem voluptatem",
                             pages = 717
                         },
@@ -388,7 +403,7 @@ namespace P05Shop.API.Migrations
                         {
                             id = 38,
                             author = "Lelah Hauck",
-                            genres = "History,Criminal,Romance",
+                            genres = "Action,History,History",
                             name = "natus corrupti",
                             pages = 906
                         },
@@ -396,7 +411,7 @@ namespace P05Shop.API.Migrations
                         {
                             id = 39,
                             author = "Hollis Hilpert",
-                            genres = "Horror,Comic,Drama",
+                            genres = "Romance,Comic,History",
                             name = "dolorem at",
                             pages = 450
                         },
@@ -404,7 +419,7 @@ namespace P05Shop.API.Migrations
                         {
                             id = 40,
                             author = "Jarrett Kertzmann",
-                            genres = "Action,Romance",
+                            genres = "Drama,Action,Comic",
                             name = "eaque id",
                             pages = 1065
                         });

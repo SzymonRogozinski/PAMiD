@@ -25,8 +25,8 @@ namespace P05Shop.API.Services.AuthService
             var user = await _context.Users.FindAsync(userId);
             if (user == null)
             {
-                  return new ServiceResponse<bool>
-                  {
+                return new ServiceResponse<bool>
+                {
                     Success = false,
                     Message = "User not found."
                 };
@@ -49,26 +49,31 @@ namespace P05Shop.API.Services.AuthService
         {
             var response = new ServiceResponse<string>();
 
-            var user = await _context.Users.FirstOrDefaultAsync(x => x.Email.ToLower() == email.ToLower());
-            if (user == null)
+            try
             {
-                response.Success = false;
-                response.Message = "User not found.";
+                var user = await _context.Users.FirstOrDefaultAsync(x => x.Email.ToLower() == email.ToLower());
+                if (user == null)
+                {
+                    response.Success = false;
+                    response.Message = "User not found.";
+                }
+                else if (!VerifyPasswordHash(password, user.PasswordHash, user.PasswordSalt))
+                {
+                    response.Success = false;
+                    response.Message = "Incorrect password.";
+                }
+                else
+                {
+                    response.Data = CreateToken(user);
+                    response.Success = true;
+                    response.Message = "Login successful.";
+                }
+                return response;
             }
-            else if (!VerifyPasswordHash(password, user.PasswordHash, user.PasswordSalt))
+            catch (Exception ex)
             {
-                response.Success = false;
-                response.Message = "Incorrect password.";
+                return null;
             }
-            else
-            {
-                response.Data = CreateToken(user);
-                response.Success = true;
-                response.Message = "Login successful.";
-            }
-
-           
-            return response;
         }
 
         private bool VerifyPasswordHash(string password, byte[] passwordHash, byte[] passwordSalt)

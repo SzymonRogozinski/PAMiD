@@ -1,5 +1,6 @@
 ﻿using Blazored.LocalStorage;
 using Microsoft.AspNetCore.Components.Authorization;
+using P06Shop.Shared.Services.AuthService;
 using System.Net.Http.Headers;
 using System.Security.Claims;
 using System.Text.Json;
@@ -11,11 +12,13 @@ namespace P11BlazorWebAssembly.Client.Services.CustomAuthStateProvider
     {
         private readonly ILocalStorageService _localStorageService;
         private readonly HttpClient _httpClient;
+        private readonly TokenHolder _tokenHolder;
 
-        public CustomAuthStateProvider(ILocalStorageService localStorageService, HttpClient httpClient)
+        public CustomAuthStateProvider(ILocalStorageService localStorageService, HttpClient httpClient, TokenHolder tokenHolder)
         {
             _httpClient = httpClient;
             _localStorageService = localStorageService;
+            _tokenHolder = tokenHolder;
         }
 
         public override async Task<AuthenticationState> GetAuthenticationStateAsync()
@@ -30,11 +33,13 @@ namespace P11BlazorWebAssembly.Client.Services.CustomAuthStateProvider
                 try
                 {
                     identity = new ClaimsIdentity(ParseClaimsFromJwt(authToken), "jwt");
-                    _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", authToken.Replace("\"", ""));
+                    _tokenHolder.token = authToken.Replace("\"", "");
+                    //_httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", authToken.Replace("\"", ""));
                 }
                 catch (Exception)
                 {
                     await _localStorageService.RemoveItemAsync("authToken");
+                    _tokenHolder.token = "";
                     identity = new ClaimsIdentity();
                 }
             }

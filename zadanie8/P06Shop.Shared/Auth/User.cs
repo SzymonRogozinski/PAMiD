@@ -15,8 +15,14 @@ namespace P06Shop.Shared.Auth
 
         public string Email { get; set; }
 
-        public string Role { get; set; } = "Customer";
+        public string Role { get; set; }
 
         public DateTime DateCreated { get; set; } = DateTime.Now;
+    }
+
+    public static class Roles 
+    {
+        public static readonly string ADMIN = "Admin";
+        public static readonly string CUSTOMER = "Customer";
     }
 }

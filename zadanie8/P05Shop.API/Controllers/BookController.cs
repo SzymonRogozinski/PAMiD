@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using P05Shop.API.Services.BookDB;
 using P06Shop.Shared;
@@ -11,34 +12,17 @@ namespace P05Shop.API.Controllers
     [ApiController]
     public class BookController : Controller    //https://localhost:7230/api/Book
     {
-        //private readonly IBookServices _bookService;
         private IBookDB _bookDB;
         private static int nextId = 11;
 
         public BookController(IBookDB bookDB)
         {
-            this._bookDB=bookDB;
-            //_bookService = bookService;
-            //_bookDB=bookDB;
+            _bookDB=bookDB;
         }
 
-        //https://localhost:7230/api/Book/getAll
-        /*[HttpGet("getAll")]
-        public async Task<ActionResult<ServiceResponse<IEnumerable<Book>>>> GetBooks()
-        {
-            var res = await _bookDB.GetAllBooks();
-            if (res.Success)
-            {
-                return Ok(res);
-            }
-            else 
-            {
-                return StatusCode(500, $"Internal server error {res.Message}");
-                
-            }
-        }*/
 
         //https://localhost:7230/api/Book/getAll
+        [Authorize]
         [HttpGet("getAll")]
         public async Task<ActionResult<ServiceResponse<List<Book>>>> GetBooks([FromQuery] int? size, [FromQuery] int? page)
         {
@@ -86,8 +70,9 @@ namespace P05Shop.API.Controllers
         }
 
         //https://localhost:7230/api/Book/get?id=$
+        [Authorize]
         [HttpGet("get")]
-        public async Task<ActionResult<ServiceResponse<P06Shop.Shared.Library.Book>>> GetBook([FromQuery] int id)
+        public async Task<ActionResult<ServiceResponse<Book>>> GetBook([FromQuery] int id)
         {
             var res = await _bookDB.GetBook(id);
             if (res.Success)
@@ -107,6 +92,7 @@ namespace P05Shop.API.Controllers
         }
 
         //https://localhost:7230/api/Book/add?name=sample&author=au&pages=$$$genres=*,*,*
+        [Authorize(Roles ="admin")]
         [HttpPost("add")]
         public async Task<ActionResult<ServiceResponse<bool>>> AddBook(P06Shop.Shared.Library.Book book)//[FromQuery] string name, [FromQuery] string author, [FromQuery] int pages, [FromQuery] string genres)
         {
@@ -124,6 +110,7 @@ namespace P05Shop.API.Controllers
         }
 
         //https://localhost:7230/api/Book/delete?&id=$
+        [Authorize(Roles = "admin")]
         [HttpDelete("delete")]
         public async Task<ActionResult<ServiceResponse<bool>>> deleteBook( int id)
         {
@@ -144,6 +131,7 @@ namespace P05Shop.API.Controllers
         }
 
         //https://localhost:7230/api/Book/update?name=sample&author=au&pages=$$$genres=*,*,*&id=$
+        [Authorize(Roles = "admin")]
         [HttpPut("update")]
         public async Task<ActionResult<ServiceResponse<bool>>>  updateBook(Book book)
         {

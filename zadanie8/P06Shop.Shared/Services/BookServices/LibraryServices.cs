@@ -10,6 +10,7 @@ using System.Xml.Linq;
 using P06Shop.Shared.Configuration;
 using Microsoft.Extensions.Options;
 using Newtonsoft.Json;
+using P06Shop.Shared.Services.AuthService;
 
 namespace P06Shop.Shared.Services.LibraryServices
 {
@@ -17,12 +18,17 @@ namespace P06Shop.Shared.Services.LibraryServices
     {
         private readonly HttpClient _httpClient;
         private readonly AppSettings _appSettings;
-        private readonly string baseURL;
-        public LibraryServices(HttpClient httpClient, IOptions<AppSettings> appSettings)
+        private readonly TokenHolder _tokenHolder;
+        public LibraryServices(HttpClient httpClient, IOptions<AppSettings> appSettings, TokenHolder tokenHolder)
         {
+
             _httpClient = httpClient;
             _appSettings = appSettings.Value;
-            baseURL = _appSettings.BaseAPIUrl+"/"+_appSettings.BaseProductEndpoint.Base_url;
+            _tokenHolder = tokenHolder;
+
+            //Authorization
+            _httpClient.DefaultRequestHeaders.Add("Authorization", string.Format("Bearer {0}", _tokenHolder.token));
+
         }
 
         public async Task<ServiceResponse<bool>> AddBookAsync(string name, string author, int pages, string genres)
@@ -68,7 +74,7 @@ namespace P06Shop.Shared.Services.LibraryServices
 
         public async Task<ServiceResponse<Book>> GetBookAsync(int id)
         {
-			if (id<=0)
+            if (id<=0)
 			{
 				throw new ArgumentException();
 			}
@@ -80,7 +86,7 @@ namespace P06Shop.Shared.Services.LibraryServices
 
         public async Task<ServiceResponse<bool>> removeBookAsync(int id)
         {
-			if (id <= 0)
+            if (id <= 0)
 			{
 				throw new ArgumentException();
 			}

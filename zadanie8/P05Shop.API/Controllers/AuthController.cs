@@ -55,7 +55,8 @@ namespace P05Shop.API.Controllers
             var user = new User()
             {
                 Email = userRegisterDTO.Email,
-                Username = userRegisterDTO.Username
+                Username = userRegisterDTO.Username,
+                Role = Roles.CUSTOMER
             };
 
             var response = await _authService.Register(user, userRegisterDTO.Password);

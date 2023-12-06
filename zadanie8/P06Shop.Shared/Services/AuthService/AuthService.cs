@@ -17,17 +17,19 @@ namespace P06Shop.Shared.Services.AuthService
     
         private readonly HttpClient _httpClient;
         private readonly AppSettings _appSettings;
+        private readonly TokenHolder _tokenHolder;
 
-        public AuthService(HttpClient httpClient, IOptions<AppSettings> appSettings)
+        public AuthService(HttpClient httpClient, IOptions<AppSettings> appSettings, TokenHolder tokenHolder)
         {
             _httpClient = httpClient;
             _appSettings = appSettings.Value;
+            _tokenHolder = tokenHolder;
+            _httpClient.DefaultRequestHeaders.Add("Authorization", string.Format("Bearer {0}", _tokenHolder.token));
+
         }
 
-        public async Task<ServiceResponse<string>> Secret(string token) 
+        public async Task<ServiceResponse<string>> Secret() 
         {
-            _httpClient.DefaultRequestHeaders.Add("Authorization",string.Format("Bearer {0}",token));
-
             var result = await _httpClient.GetAsync(_appSettings.AuthEndpoint.SecretEndpoint);
 
             var json = await result.Content.ReadFromJsonAsync<ServiceResponse<string>>();
